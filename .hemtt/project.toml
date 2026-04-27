@@ -1,7 +1,7 @@
 name = "187th Legion Aux Mod"
 author = "187th Legion"
 prefix = "aux187"
-mainprefix = "aux187"
+mainprefix = "z"
 
 [files]
 include = [
@@ -17,3 +17,12 @@ url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 [signing]
 authority = "aux187"
+
+[version]
+
+major = 1
+minor = 0
+patch = 4
+build = 3
+
+git_hash = 0

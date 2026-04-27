@@ -1,0 +1,11 @@
+name = "187th Legion Aux Mod";
+tooltipOwned="187th Aux";
+logoSmall = "logo.paa";
+logo = "logo.paa";
+logoOver = "logo.paa";
+picture = "logo.paa";
+hidePicture = 0;
+hideName = 0;
+description = "187th Legion Auxilliary Assets";
+overview = "187th Aux";
+website = "https://discord.gg/wY6vMVusmm";
