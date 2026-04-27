@@ -1,0 +1,19 @@
+name = "187th Legion Aux Mod"
+author = "187th Legion"
+prefix = "aux187"
+mainprefix = "aux187"
+
+[files]
+include = [
+    "mod.cpp",
+    "meta.cpp",
+    "LICENSE",
+    "logo.paa",
+]
+
+[properties]
+author = "187th Legion"
+url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+[signing]
+authority = "aux187"
