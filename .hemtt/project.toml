@@ -11,6 +11,10 @@ include = [
     "logo.paa",
 ]
 
+exclude = [
+    "TODO",
+]
+
 [properties]
 author = "187th Legion"
 url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
