@@ -17,3 +17,7 @@ class CfgPatches
 		ammo[] = {};
 	};
 };
+
+#include "CfgFactionClasses.hpp"
+#include "CfgEditorCategories.hpp"
+#include "CfgEditorSubCategories.hpp"

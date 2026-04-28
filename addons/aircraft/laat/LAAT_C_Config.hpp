@@ -43,11 +43,11 @@
 	tcw_afterburner_force_array[] = {{0,100,2562500},{100,316,4562500},{316,650,8750000}};
     */
 
-    textureList[] = {"aux187_LAAT_Skin_Default", 1};
+    textureList[] = {"aux187_LAAT_C_Skin_Default", 1};
 
     class ACE_SelfActions : ACE_SelfActions
     {
-        class aux187_LAAT_Skins
+        class aux187_LAAT_C_Skins
         {
             displayName = "Change LAAT Skin";
             exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
@@ -56,22 +56,10 @@
             priority = 2.5;
             icon = "";
             
-            class aux187_LAAT_Skin_Default
+            class aux187_LAAT_C_Skin_Default
             {
                 displayName = "Plain";
-                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\187th_Default_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'187th_legion_aux\addons\aircraft\laat\data\187th_Default_Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa'];(vehicle player) setObjectTextureGlobal[4,'187th_legion_aux\addons\aircraft\laat\data\187th_Default_Interior_co.paa'];";
-            };
-
-            class aux187_LAAT_Skin_Gypsy
-            {
-                displayName = "Custom (Gypsy)";
-                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Gypsy_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'3AS\3as_Laat\LAATI\data\Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa'];(vehicle player) setObjectTextureGlobal[4,'3AS\3as_Laat\LAATI\data\Interior_co.paa'];";
-            };
-
-            class aux187_LAAT_Skin_Tim
-            {
-                displayName = "Custom (Tim)";
-                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Tim_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Tim_Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa'];(vehicle player) setObjectTextureGlobal[4,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Tim_Interior_co.paa'];";
+                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\187th_LAAT_C_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'187th_legion_aux\addons\aircraft\laat\data\187th_LAAT_C_Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'187th_legion_aux\addons\aircraft\laat\data\187th_LAAT_C_Top_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3AS_LAATC\data\Textures\LAAT_C_Detail_Front_co.paa'];";
             };
         };
         class TFAR_IntercomChannel 
@@ -122,48 +110,20 @@
 
     class TextureSources
     {
-        class aux187_LAAT_Texture_Default
+        class aux187_LAAT_C_Texture_Default
         {
             displayName = "Plain";
             author = "187th Legion";
             textures[] = 
             {
-                QPATHTOF(laat\data\187th_Default_Hull_co.paa),
-                QPATHTOF(laat\data\187th_Default_Wings_co.paa),
-                "3AS\3as_Laat\LAATI\data\Weapons_co.paa",
-                "3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa",
-                QPATHTOF(laat\data\187th_Default_Interior_co.paa)
-            };
-        };
-
-        class aux187_LAAT_Texture_Gypsy
-        {
-            displayName = "Custom (Gypsy)";
-            author = "187th Legion";
-            textures[] = 
-            {
-                QPATHTOF(laat\data\Customs\187th_Gypsy_Hull_co.paa),
-                "3AS\3as_Laat\LAATI\data\Wings_CO.paa",
-                "3AS\3as_Laat\LAATI\data\Weapons_co.paa",
-                "3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa",
-                "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
-            };
-        };
-
-        class aux187_LAAT_Texture_Tim
-        {
-            displayName = "Custom (Tim)";
-            author = "187th Legion";
-            textures[] = 
-            {
-                QPATHTOF(laat\data\Customs\187th_Tim_Hull_co.paa),
-                QPATHTOF(laat\data\Customs\187th_Tim_Wings_co.paa),
-                "3AS\3as_Laat\LAATI\data\Weapons_co.paa",
-                "3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa",
-                QPATHTOF(laat\data\Customs\187th_Tim_Interior_co.paa)
+                QPATHTOF(laat\data\187th_LAAT_C_Hull_CO.paa),
+                QPATHTOF(laat\data\187th_LAAT_C_Wings_CO.paa),
+                QPATHTOF(laat\data\187th_LAAT_C_Top_CO.paa),
+                "3AS\3AS_LAATC\data\Textures\LAAT_C_Detail_Front_co.paa"
             };
         };
     };
+
     /*
     class UserActions
     {
@@ -194,6 +154,34 @@
             onlyforplayer = 0;
             condition = "(alive this) AND ((speed this) > 50) AND (player == driver this)";
             statement = "0 = this spawn OES_fnc_afterburners_turn_off;";
+        };
+        class LoadCargo
+        {
+            userActionID=6;
+            displayName="Load Vehicle";
+            displayNameDefault="Load Vehicle";
+            textToolTip="Load Vehicle";
+            position="pilotview";
+            showWindow=0;
+            radius=5;
+            priority=1;
+            onlyForPlayer=0;
+            condition="((speed this < TAS_lcLoadSpeed) AND (player == currentPilot vehicle player))";
+            statement="0 = [this] spawn TAS_fnc_Maglift;";
+        };
+        class UnLoadCargo
+        {
+            userActionID=7;
+            displayName="Unload Vehicles";
+            displayNameDefault="Unload Vehicles";
+            textToolTip="Unload Vehicles";
+            position="pilotview";
+            showWindow=0;
+            radius=15;
+            priority=3;
+            onlyForPlayer=0;
+            condition="(count(this getVariable [""TAS_Loaded"",[]]) > 0)";
+            statement="0 = [this] spawn TAS_fnc_MagDrop;";
         };
     };
     */

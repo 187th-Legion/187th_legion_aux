@@ -11,7 +11,11 @@ class CfgPatches
 		{
 			"3AS_LAAT"
 		};
-		units[] = { "Aux187_LAAT_Mk1" };
+		units[] = 
+		{
+			"aux187_LAAT_Mk1",
+			"aux187_LAAT_C"
+		};
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
@@ -26,4 +30,9 @@ class CfgVehicles
 class CfgWeapons
 {
     #include "laat\CfgWeapons.hpp"
+};
+
+class CfgMagazines
+{
+	#include "laat\CfgMagazines.hpp"
 };
