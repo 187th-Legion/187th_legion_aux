@@ -21,7 +21,7 @@
 		uniformClass = "aux187_P2_Recruit_Uniform";
 		
 
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P2_Recruit_Torso.paa), QPATHTOF(uniforms\data\187th_P2_Base_Legs.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P2_Recruit_Torso.paa), "\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa" };
 	};
 	
 	class aux187_P2_Base : JLTS_Clone_P2_DC15S // Phase 2 Base
@@ -180,7 +180,7 @@
 		uniformClass = "aux187_Airborne_Base_Uniform";
 		
 
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_Base_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Legs.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_Base_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
 	
 	class aux187_Airborne_BaseEOD : JLTS_Clone_P2_DC15S // Phase 2 Base EOD
@@ -189,7 +189,7 @@
 		uniformClass = "aux187_Airborne_BaseEOD_Uniform";
 		
 
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_BaseEOD_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Legs.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_BaseEOD_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
 	
 	class aux187_Airborne_BaseMedic : JLTS_Clone_P2_DC15S // Phase 2 Base Medic
@@ -198,7 +198,7 @@
 		uniformClass = "aux187_Airborne_BaseMedic_Uniform";
 		
 
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_BaseMedic_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Legs.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_BaseMedic_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
 	
 	class aux187_Airborne_Veteran : JLTS_Clone_P2_DC15S
@@ -207,7 +207,7 @@
 		uniformClass = "aux187_Airborne_Veteran_Uniform"; // Phase 2 Veteran
 		
 
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_Veteran_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Legs.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_Veteran_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
 	
 	class aux187_Airborne_VeteranEOD : JLTS_Clone_P2_DC15S // Phase 2 Veteran EOD
@@ -216,7 +216,7 @@
 		uniformClass = "aux187_Airborne_VeteranEOD_Uniform";
 		
 
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_VeteranEOD_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Legs.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_VeteranEOD_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
 	
 	class aux187_Airborne_VeteranMedic : JLTS_Clone_P2_DC15S // Phase 2 Veteran Medic
@@ -225,7 +225,7 @@
 		uniformClass = "aux187_Airborne_VeteranMedic_Uniform";
 		
 
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_VeteranMedic_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Legs.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_VeteranMedic_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
 	/*
 	---------------------------------------------------------------

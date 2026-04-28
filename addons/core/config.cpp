@@ -5,7 +5,7 @@ class CfgPatches
 	class aux187_Core_Addon
 	{
 		name = "187th Legion Core";
-		author = "Tim";
+		author = "Tim, PraetorPanda,";
 		requiredVersion = 0.01;
 		requiredAddons[] = 
 		{
@@ -21,3 +21,4 @@ class CfgPatches
 #include "CfgFactionClasses.hpp"
 #include "CfgEditorCategories.hpp"
 #include "CfgEditorSubCategories.hpp"
+#include "event_handlers.hpp"

@@ -579,6 +579,7 @@
 	};
 	
 	//P3 UNIFORM CLASSES
+	
 	class aux187_P3_Base_Uniform : WM_P3Scout
 	{
 		author = "Tim";
@@ -697,7 +698,8 @@
 			camoType = "Wood";
 			roleType = "Trooper";
 		};
-	};
+	}; 
+
 	//COMMANDO UNIFORM CLASSES
 	class aux187_RC_Base_Uniform : 3AS_U_Rep_Katarn_Armor
 	{
