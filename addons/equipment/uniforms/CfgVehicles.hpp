@@ -238,7 +238,7 @@
 		scope = 1;
 		uniformClass = "aux187_P3_Base_Uniform";
 		
-		
+		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Base.paa) };
 	};
 	
@@ -247,7 +247,7 @@
 		scope = 1;
 		uniformClass = "aux187_P3_Veteran_Uniform";
 		
-		
+		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Veteran.paa) };
 	};
 	
@@ -256,7 +256,7 @@
 		scope = 1;
 		uniformClass = "aux187_P3_Sand_Uniform";
 		
-		
+		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Sand.paa) };
 	};
 	
@@ -265,7 +265,7 @@
 		scope = 1;
 		uniformClass = "aux187_P3_Snow_Uniform";
 		
-		
+		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Snow.paa) };
 	};
 	
@@ -274,7 +274,7 @@
 		scope = 1;
 		uniformClass = "aux187_P3_Wood_Uniform";
 		
-		
+		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Wood.paa) };
 	};
 	

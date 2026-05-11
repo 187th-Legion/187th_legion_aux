@@ -9,7 +9,7 @@
 	                      UNIFORM BASE CLASSES
 	---------------------------------------------------------------
 	*/
-	class aux187_Uniform_Base : baseClass
+	class aux187_Uniform_Base : JLTS_CloneArmor
 	{
 		author = "Tim";
 		scope = 2;
@@ -38,7 +38,7 @@
 	*/
 	
 	//P2 UNIFORM CLASSES
-	class aux187_P2_Recruit_Uniform : JLTS_CloneArmor
+	class aux187_P2_Recruit_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -62,7 +62,7 @@
 		};
 	};
 	
-	class aux187_P2_Base_Uniform : JLTS_CloneArmor
+	class aux187_P2_Base_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -86,7 +86,7 @@
 		};
 	};
 	
-		class aux187_P2_BaseEOD_Uniform : JLTS_CloneArmor
+		class aux187_P2_BaseEOD_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -110,7 +110,7 @@
 		};
 	};
 	
-	class aux187_P2_BaseMedic_Uniform : JLTS_CloneArmor
+	class aux187_P2_BaseMedic_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -134,7 +134,7 @@
 		};
 	};
 	
-	class aux187_P2_Veteran_Uniform : JLTS_CloneArmor
+	class aux187_P2_Veteran_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -158,7 +158,7 @@
 		};
 	};
 	
-	class aux187_P2_VeteranEOD_Uniform : JLTS_CloneArmor
+	class aux187_P2_VeteranEOD_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -182,7 +182,7 @@
 		};
 	};
 	
-	class aux187_P2_VeteranMedic_Uniform : JLTS_CloneArmor
+	class aux187_P2_VeteranMedic_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -206,7 +206,7 @@
 		};
 	};
 	
-	class aux187_P2_CP_Uniform : JLTS_CloneArmor
+	class aux187_P2_CP_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -228,7 +228,7 @@
 		};
 	};
 	
-	class aux187_P2_CS_Uniform : JLTS_CloneArmor
+	class aux187_P2_CS_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -250,7 +250,7 @@
 		};
 	};
 	
-	class aux187_P2_CGS_Uniform : JLTS_CloneArmor
+	class aux187_P2_CGS_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -360,7 +360,7 @@
 		};
 	};
 	
-	class aux187_P2_Sand_Uniform : JLTS_CloneArmor
+	class aux187_P2_Sand_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -384,7 +384,7 @@
 		};
 	};
 	
-	class aux187_P2_Snow_Uniform : JLTS_CloneArmor
+	class aux187_P2_Snow_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -408,7 +408,7 @@
 		};
 	};
 	
-	class aux187_P2_Wood_Uniform : JLTS_CloneArmor
+	class aux187_P2_Wood_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -434,7 +434,7 @@
 	
 	//AIRBORNE UNIFORM CLASSES
 	
-	class aux187_Airborne_Base_Uniform : JLTS_CloneArmor
+	class aux187_Airborne_Base_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -458,7 +458,7 @@
 		};
 	};
 	
-		class aux187_Airborne_BaseEOD_Uniform : JLTS_CloneArmor
+		class aux187_Airborne_BaseEOD_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -482,7 +482,7 @@
 		};
 	};
 	
-	class aux187_Airborne_BaseMedic_Uniform : JLTS_CloneArmor
+	class aux187_Airborne_BaseMedic_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -506,7 +506,7 @@
 		};
 	};
 	
-	class aux187_Airborne_Veteran_Uniform : JLTS_CloneArmor
+	class aux187_Airborne_Veteran_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -530,7 +530,7 @@
 		};
 	};
 	
-	class aux187_Airborne_VeteranEOD_Uniform : JLTS_CloneArmor
+	class aux187_Airborne_VeteranEOD_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -554,7 +554,7 @@
 		};
 	};
 	
-	class aux187_Airborne_VeteranMedic_Uniform : JLTS_CloneArmor
+	class aux187_Airborne_VeteranMedic_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;

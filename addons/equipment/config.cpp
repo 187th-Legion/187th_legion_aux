@@ -44,6 +44,36 @@ class CfgPatches
 			"aux187_RC_Sand",
 			"aux187_RC_Snow",
 			"aux187_RC_Wood",
+
+			//CUSTOM UNIFORMS
+			"aux187_Custom_Blade",
+			"aux187_Custom_Boss",
+			"aux187_Custom_Buzz",
+			"aux187_Custom_Crypto",
+			"aux187_Custom_Dross",
+			"aux187_Custom_Dubz",
+			"aux187_Custom_Fader",
+			"aux187_Custom_Hesh",
+			"aux187_Custom_Horizon",
+			"aux187_Custom_Hunt",
+			"aux187_Custom_Iron",
+			"aux187_Custom_Isaac",
+			"aux187_Custom_Kalani",
+			"aux187_Custom_Kraken",
+			"aux187_Custom_Lord",
+			"aux187_Custom_Mindless",
+			"aux187_Custom_Mixer",
+			"aux187_Custom_Nexu",
+			"aux187_Custom_Ouroboros",
+			"aux187_Custom_Ringer",
+			"aux187_Custom_Seek",
+			"aux187_Custom_Solembum",
+			"aux187_Custom_Tac",
+			"aux187_Custom_Tim",
+			"aux187_Custom_Toad",
+			"aux187_Custom_Un",
+			"aux187_Custom_Vinokurov",
+			"aux187_Custom_Revan",
 		};
 		weapons[] = 
         {
@@ -100,7 +130,78 @@ class CfgPatches
 			"aux187_RC_Wood_Helmet",
             "aux187_BARC_Base_Helmet",
             "aux187_ARC_Base_Helmet",
-            "aux187_Airborne_Base_Helmet"
+            "aux187_Airborne_Base_Helmet",
+
+			//CUSTOM UNIFORMS
+			"aux187_Uniform_Custom_Blade",
+			"aux187_Uniform_Custom_Boss",
+			"aux187_Uniform_Custom_Buzz",
+			"aux187_Uniform_Custom_Crypto",
+			"aux187_Uniform_Custom_Dross",
+			"aux187_Uniform_Custom_Dubz",
+			"aux187_Uniform_Custom_Fader",
+			"aux187_Uniform_Custom_Hesh",
+			"aux187_Uniform_Custom_Horizon",
+			"aux187_Uniform_Custom_Hunt",
+			"aux187_Uniform_Custom_Iron",
+			"aux187_Uniform_Custom_Isaac",
+			"aux187_Uniform_Custom_Kalani",
+			"aux187_Uniform_Custom_Kraken",
+			"aux187_Uniform_Custom_Lord",
+			"aux187_Uniform_Custom_Mindless",
+			"aux187_Uniform_Custom_Mixer",
+			"aux187_Uniform_Custom_Nexu",
+			"aux187_Uniform_Custom_Ouroboros",
+			"aux187_Uniform_Custom_Horizon",
+			"aux187_Uniform_Custom_Ringer",
+			"aux187_Uniform_Custom_Seek",
+			"aux187_Uniform_Custom_Solembum",
+			"aux187_Uniform_Custom_Tac",
+			"aux187_Uniform_Custom_Tim",
+			"aux187_Uniform_Custom_Toad",
+			"aux187_Uniform_Custom_Un",
+			"aux187_Uniform_Custom_Vinokurov",
+			"aux187_Uniform_Custom_Revan",
+
+			"aux187_Helmet_Custom_Ouroboros",
+			"aux187_Helmet_Custom_Blade",
+			"aux187_Helmet_Custom_Boss",
+			"aux187_Helmet_Custom_Knight",
+			"aux187_Helmet_Custom_Buzz",
+			"aux187_Helmet_Custom_Carmine",
+			"aux187_Helmet_Custom_Crypto",
+			"aux187_Helmet_Custom_Dross",
+			"aux187_Helmet_Custom_Fader",
+			"aux187_Helmet_Custom_Fish",
+			"aux187_Helmet_Custom_Fives",
+			"aux187_Helmet_Custom_Fluffy",
+			"aux187_Helmet_Custom_Hesh",
+			"aux187_Helmet_Custom_Horizon",
+			"aux187_Helmet_Custom_Hunt",
+			"aux187_Helmet_Custom_Iron",
+			"aux187_Helmet_Custom_Isaac",
+			"aux187_Helmet_Custom_Kalani",
+			"aux187_Helmet_Custom_Koss",
+			"aux187_Helmet_Custom_Kraken",
+			"aux187_Helmet_Custom_Lord",
+			"aux187_Helmet_Custom_Mindless",
+			"aux187_Helmet_Custom_Mixer",
+			"aux187_Helmet_Custom_Nexu",
+			"aux187_Helmet_Custom_Panda",
+			"aux187_Helmet_Custom_Ringer",
+			"aux187_Helmet_Custom_Seek",
+			"aux187_Helmet_Custom_Solembum",
+			"aux187_Helmet_Custom_Star",
+			"aux187_Helmet_Custom_Tac",
+			"aux187_Helmet_Custom_Ted",
+			"aux187_Helmet_Custom_Tim",
+			"aux187_Helmet_Custom_Un",
+			"aux187_Helmet_Custom_Vinokurov",
+			"aux187_Helmet_Custom_Icarus",
+			"aux187_Helmet_Custom_Revan",
+			"aux187_Helmet_Custom_Tyr",
+			"aux187_Helmet_Custom_Dubz",
+			"aux187_Helmet_Custom_Ixi",
         };
 		magazines[] = {};
 		ammo[] = {};
@@ -113,17 +214,24 @@ class XtdGearModels
     {
         #include "uniforms\XtdGearModels.hpp"
         #include "helmets\XtdGearModels.hpp"
+
+		#include "helmets\customs\XtdGearModels_Custom.hpp"
+		#include "uniforms\customs\XtdGearModels_Custom.hpp"
     };
 };
 
 class CfgVehicles
 {
     #include "uniforms\CfgVehicles.hpp"
+
+	#include "uniforms\customs\CfgVehicles_Custom.hpp"
 };
 
 class CfgWeapons
 {
-    class baseClass;
     #include "uniforms\CfgWeapons.hpp"
     #include "helmets\CfgWeapons.hpp"
+
+	#include "helmets\customs\CfgWeapons_Custom.hpp"
+	#include "uniforms\customs\CfgWeapons_Custom.hpp"
 };

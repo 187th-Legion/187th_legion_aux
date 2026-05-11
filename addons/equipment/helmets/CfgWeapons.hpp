@@ -241,7 +241,7 @@
 		author = "Tim";
 		
 		
-		hiddenSelectionsTextures[] = { QPATHTOF(helmets\data\187th_Pilot_Base_Helmet.paa), QPATHTOF(helmets\data\187th_Pilot_Base_Helmet.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(helmets\data\187th_Pilot_Base_Helmet.paa), "", "3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", QPATHTOF(helmets\data\187th_Pilot_Base_Helmet.paa), "" };
 		
 		class XtdGearInfo {
 			model = "aux187_Helmet_Model";
