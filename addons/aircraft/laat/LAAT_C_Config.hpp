@@ -1,35 +1,32 @@
 	scope = 2;
-	side = 2;
-	scopeCurator = 2;
-
-	faction = "aux187_Faction_187th";
-	editorCategory = "aux187_edCat_187th";
-	editorSubcategory = "aux187_edSubcat_Aircraft";
-	
-    crew="aux187_Pilot";
-	
+    side = 1;
+    scopeCurator = 2;
+    faction = "aux187_Faction_187th";
+    editorCategory = "aux187_edCat_187th";
+    editorSubcategory = "aux187_edSubcat_Aircraft";
+    crew="aux187_pilot";
     reportRemoteTargets = 1;
-	TFAR_hasIntercom = 1;
-	
+    TFAR_hasIntercom = 1;
+
     weapons[]=
-	{
-		"ParticleBeamCannon_F",
-		"aux187_LAAT_AGM_Missile",
-		"aux187_LAAT_AA_Missile",
-		"CMFlareLauncher",
-		"Laserdesignator_pilotCamera"
-	};
-	magazines[]=
-	{
-		"Laser_Battery",
-		"Laser_Battery",
-		"aux187_LAAT_6Rnd_AGM_Missile",
-		"aux187_LAAT_4Rnd_AA_Missile",
-		"240Rnd_CMFlare_Chaff_Magazine",
-		"240Rnd_CMFlare_Chaff_Magazine",
-		"240Rnd_CMFlare_Chaff_Magazine",
-		"Laserbatteries"
-	};
+    {
+        "ParticleBeamCannon_F",
+        "aux187_LAATC_AGM_Missile",
+        "aux187_LAATC_AA_Missile",
+        "CMFlareLauncher",
+        "Laserdesignator_pilotCamera"
+    };
+    magazines[]=
+    {
+        "Laser_Battery",
+        "Laser_Battery",
+        "aux187_LAATC_2Rnd_AGM_Missile",
+        "aux187_LAATC_2Rnd_AA_Missile",
+        "240Rnd_CMFlare_Chaff_Magazine",
+        "240Rnd_CMFlare_Chaff_Magazine",
+        "240Rnd_CMFlare_Chaff_Magazine",
+        "Laserbatteries"
+    };
 	
     /*
     tcw_emp_protection = 1;
@@ -47,21 +44,6 @@
 
     class ACE_SelfActions : ACE_SelfActions
     {
-        class aux187_LAAT_C_Skins
-        {
-            displayName = "Change LAAT Skin";
-            exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
-            condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-            showDisabled = 0;
-            priority = 2.5;
-            icon = "";
-            
-            class aux187_LAAT_C_Skin_Default
-            {
-                displayName = "Plain";
-                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\187th_LAAT_C_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'187th_legion_aux\addons\aircraft\laat\data\187th_LAAT_C_Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'187th_legion_aux\addons\aircraft\laat\data\187th_LAAT_C_Top_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3AS_LAATC\data\Textures\LAAT_C_Detail_Front_co.paa'];";
-            };
-        };
         class TFAR_IntercomChannel 
         {
             displayName = "Intercom Channel"; 
@@ -106,22 +88,6 @@
                 statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],4,true];";
             };
         }; 
-    };
-
-    class TextureSources
-    {
-        class aux187_LAAT_C_Texture_Default
-        {
-            displayName = "Plain";
-            author = "187th Legion";
-            textures[] = 
-            {
-                QPATHTOF(laat\data\187th_LAAT_C_Hull_CO.paa),
-                QPATHTOF(laat\data\187th_LAAT_C_Wings_CO.paa),
-                QPATHTOF(laat\data\187th_LAAT_C_Top_CO.paa),
-                "3AS\3AS_LAATC\data\Textures\LAAT_C_Detail_Front_co.paa"
-            };
-        };
     };
 
     /*

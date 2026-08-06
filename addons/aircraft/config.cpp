@@ -14,6 +14,8 @@ class CfgPatches
 		units[] = 
 		{
 			"aux187_LAAT_Mk1",
+            "aux187_LAAT_Mk1_Lamps",
+            "aux187_LAAT_Mk2",
 			"aux187_LAAT_C"
 		};
 		weapons[] = {};
