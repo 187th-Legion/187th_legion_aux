@@ -1,7 +1,6 @@
     class UniformItem;
 	class JLTS_CloneArmor;
 	class JLTS_CloneArmorCM;
-	class WM_P3Scout;
 	class 3AS_U_Rep_Katarn_Armor;
 	
 	/*
@@ -577,128 +576,6 @@
 			roleType = "Medic";
 		};
 	};
-	
-	//P3 UNIFORM CLASSES
-	
-	class aux187_P3_Base_Uniform : WM_P3Scout
-	{
-		author = "Tim";
-		scope = 2;
-		displayName = "[187th] Phase 3 Scout Armour (Base)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_P3_Base";
-			uniformModel="-";
-			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_Uniform_Model";
-			uniformType = "P3";
-			camoType = "Base";
-			roleType = "Trooper";
-		};
-	};
-	
-	class aux187_P3_Veteran_Uniform : WM_P3Scout
-	{
-		author = "Tim";
-		scope = 2;
-		displayName = "[187th] Phase 3 Scout Armour (Veteran)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_P3_Veteran";
-			uniformModel="-";
-			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_Uniform_Model";
-			uniformType = "P3";
-			camoType = "Veteran";
-			roleType = "Trooper";
-		};
-	};
-	
-	class aux187_P3_Sand_Uniform : WM_P3Scout
-	{
-		author = "Tim";
-		scope = 2;
-		displayName = "[187th] Phase 3 Scout Armour (Sand)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_P3_Sand";
-			uniformModel="-";
-			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_Uniform_Model";
-			uniformType = "P3";
-			camoType = "Sand";
-			roleType = "Trooper";
-		};
-	};
-	
-	class aux187_P3_Snow_Uniform : WM_P3Scout
-	{
-		author = "Tim";
-		scope = 2;
-		displayName = "[187th] Phase 3 Scout Armour (Snow)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_P3_Snow";
-			uniformModel="-";
-			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_Uniform_Model";
-			uniformType = "P3";
-			camoType = "Snow";
-			roleType = "Trooper";
-		};
-	};
-	
-	class aux187_P3_Wood_Uniform : WM_P3Scout
-	{
-		author = "Tim";
-		scope = 2;
-		displayName = "[187th] Phase 3 Scout Armour (Wood)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_P3_Wood";
-			uniformModel="-";
-			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_Uniform_Model";
-			uniformType = "P3";
-			camoType = "Wood";
-			roleType = "Trooper";
-		};
-	}; 
 
 	//COMMANDO UNIFORM CLASSES
 	class aux187_RC_Base_Uniform : 3AS_U_Rep_Katarn_Armor

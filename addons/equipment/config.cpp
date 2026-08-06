@@ -12,7 +12,6 @@ class CfgPatches
 			"ace_arsenal_extended", 
 			"A3_Characters_F",
 			"JLTS_characters_CloneArmor",
-			"WM_Clones",
 			"3AS_Characters",
 		};
 		units[] = 
@@ -32,14 +31,6 @@ class CfgPatches
 			"aux187_P2_Veteran",
 			"aux187_P2_VeteranEOD",
 			"aux187_P2_VeteranMedic",
-			"aux187_P3_Base",
-			"aux187_P3_Sand",
-			"aux187_P3_Snow",
-			"aux187_P3_Wood",
-			"aux187_P3_Veteran",
-			"aux187_P3_Sand",
-			"aux187_P3_Snow",
-			"aux187_P3_Wood",
 			"aux187_RC_Base",
 			"aux187_RC_Sand",
 			"aux187_RC_Snow",
@@ -66,11 +57,6 @@ class CfgPatches
 			"aux187_P2_Veteran_Uniform",
 			"aux187_P2_VeteranEOD_Uniform",
 			"aux187_P2_VeteranMedic_Uniform",
-			"aux187_P3_Base_Uniform",
-			"aux187_P3_Sand_Uniform",
-			"aux187_P3_Snow_Uniform",
-			"aux187_P3_Wood_Uniform",
-			"aux187_P3_Veteran_Uniform",
 			"aux187_RC_Base_Uniform",
 			"aux187_RC_Sand_Uniform",
 			"aux187_RC_Snow_Uniform",
@@ -123,7 +109,9 @@ class CfgPatches
 			"aux187_DLT16",
 			"aux187_DC17",
 			"aux187_DC15P",
-			"aux187_DP23"
+			"aux187_DP23",
+			"aux187_Knife",
+			"aux187_Baton"
         };
 		magazines[] = {};
 		ammo[] = {};
@@ -140,6 +128,14 @@ class XtdGearModels
     };
 };
 
+class XtdGearInfos
+{
+	class CfgWeapons
+	{
+		#include "weapons\XtdGearInfos.hpp"
+	};
+};
+
 class CfgVehicles
 {
     #include "uniforms\CfgVehicles.hpp"
@@ -151,4 +147,14 @@ class CfgWeapons
     #include "uniforms\CfgWeapons.hpp"
     #include "helmets\CfgWeapons.hpp"
 	#include "weapons\CfgWeapons.hpp"
+};
+
+class CfgMagazines
+{
+	#include "weapons\CfgMagazines.hpp"
+};
+
+class CfgAmmo
+{
+	#include "weapons\CfgAmmo.hpp"
 };

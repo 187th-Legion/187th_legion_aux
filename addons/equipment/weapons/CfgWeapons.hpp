@@ -8,6 +8,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15S";
             displayName = "[187th] DC-15S Blaster Carbine";
             
             class XtdGearInfo {
@@ -21,6 +24,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15C";
             displayName = "[187th] DC-15C Blaster Carbine";
             
             class XtdGearInfo {
@@ -34,6 +40,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15A";
             displayName = "[187th] DC-15A Blaster Rifle";
             
             class XtdGearInfo {
@@ -53,11 +62,14 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15L";
             displayName = "[187th] DC-15L Heavy Blaster Rifle";
             
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
-                Autorfileman = "DC15L";
+                Autorifleman = "DC15L";
             };
         };
 
@@ -66,11 +78,14 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_z6";
             displayName = "[187th] Z6 Rotary Cannon";
             
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
-                Autorfileman = "Z6";
+                Autorifleman = "Z6";
             };
         };
 
@@ -85,6 +100,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15S_GL";
             displayName = "[187th] DC-15S Blaster Carbine (UGL)";
             
             class XtdGearInfo {
@@ -98,6 +116,8 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+            baseWeapon = "aux187_DC15C_GL";
             displayName = "[187th] DC-15C Blaster Carbine (UGL)";
             
             class XtdGearInfo {
@@ -111,6 +131,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15A_GL";
             displayName = "[187th] DC-15A Blaster Rifle (UGL)";
             
             class XtdGearInfo {
@@ -130,6 +153,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_Valken38X";
             displayName = "[187th] Valken-38X";
             
             class XtdGearInfo {
@@ -143,6 +169,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_Firepuncher";
             displayName = "[187th] 773-Firepuncher Sniper Blaster Rifle";
             
             class XtdGearInfo {
@@ -162,6 +191,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DP23";
             displayName = "[187th] DP-23 Scatter Blaster";
             
             class XtdGearInfo {
@@ -181,6 +213,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15S_Shield";
             displayName = "[187th] DC-15S Blaster Carbine (Shield)";
             
             class XtdGearInfo {
@@ -194,6 +229,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15X";
             displayName = "[187th] DC-15X Heavy Sniper Rifle";
             
             class XtdGearInfo {
@@ -207,6 +245,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_E7";
             displayName = "[187th] E-7 Experimental Rifle";
             
             class XtdGearInfo {
@@ -220,6 +261,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DLT16";
             displayName = "[187th] DLT-16 Experimental Heavy Blaster";
             
             class XtdGearInfo {
@@ -233,6 +277,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC17M";
             displayName = "[187th] DC-17M Interchangeable Weapon System";
             
             class XtdGearInfo {
@@ -246,6 +293,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_PLX1";
             displayName = "[187th] PLX-1 Guided Missile Launcher";
         };
 
@@ -260,6 +310,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_RPS6_Disposable";
             displayName = "[187th] RPS-6 Disposable Launcher";
         };
 
@@ -268,6 +321,9 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_RPS6";
             displayName = "[187th] RPS-6 Rocket Launcher";
         };
 
@@ -282,10 +338,13 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC17";
             displayName = "[187th] DC-17 Blaster Pistol";
             class XtdGearInfo {
                 model = "aux187_SecondaryWeapon_Model";
-                Pistols = "DP17";
+                Pistols = "DC17";
             };
         };
 
@@ -294,9 +353,42 @@
         {
             author = "Tim";
             scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_DC15P";
             displayName = "[187th] DC-15P Blaster Pistol";
             class XtdGearInfo {
                 model = "aux187_SecondaryWeapon_Model";
                 Pistols = "DC15P";
+            };
+        };
+
+        class IDA_Clone_Knife;
+        class aux187_Knife : IDA_Clone_Knife
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_Knife";
+            displayName = "[187th] Clone Knife";
+            class XtdGearInfo {
+                model = "aux187_SecondaryWeapon_Model";
+                Melees = "Knife";
+            };
+        };
+
+        class IDA_StunStick;
+        class aux187_Baton : IDA_StunStick
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            baseWeapon = "aux187_Baton";
+            displayName = "[187th] Stun Stick";
+            class XtdGearInfo {
+                model = "aux187_SecondaryWeapon_Model";
+                Melees = "Baton";
             };
         };
