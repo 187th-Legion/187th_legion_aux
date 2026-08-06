@@ -1,35 +1,32 @@
 	scope = 2;
-	side = 2;
-	scopeCurator = 2;
-
-	faction = "aux187_Faction_187th";
-	editorCategory = "aux187_edCat_187th";
-	editorSubcategory = "aux187_edSubcat_Aircraft";
-	
-    crew="aux187_Pilot";
-	
+    side = 1;
+    scopeCurator = 2;
+    faction = "aux187_Faction_187th";
+    editorCategory = "aux187_edCat_187th";
+    editorSubcategory = "aux187_edSubcat_Aircraft";
+    crew="aux187_pilot";
     reportRemoteTargets = 1;
-	TFAR_hasIntercom = 1;
-	
+    TFAR_hasIntercom = 1;
+
     weapons[]=
-	{
-		"ParticleBeamCannon_F",
-		"aux187_LAAT_AGM_Missile",
-		"aux187_LAAT_AA_Missile",
-		"CMFlareLauncher",
-		"Laserdesignator_pilotCamera"
-	};
-	magazines[]=
-	{
-		"Laser_Battery",
-		"Laser_Battery",
-		"aux187_LAAT_6Rnd_AGM_Missile",
-		"aux187_LAAT_4Rnd_AA_Missile",
-		"240Rnd_CMFlare_Chaff_Magazine",
-		"240Rnd_CMFlare_Chaff_Magazine",
-		"240Rnd_CMFlare_Chaff_Magazine",
-		"Laserbatteries"
-	};
+    {
+        "ParticleBeamCannon_F",
+        "Aux187_LAAT_AGM_Missile",
+        "Aux187_LAAT_AA_Missile",
+        "CMFlareLauncher",
+        "Laserdesignator_pilotCamera"
+    };
+    magazines[]=
+    {
+        "Laser_Battery",
+        "Laser_Battery",
+        "aux187_LAAT_6Rnd_AGM_Missile",
+        "aux187_LAAT_4Rnd_AA_Missile",
+        "240Rnd_CMFlare_Chaff_Magazine",
+        "240Rnd_CMFlare_Chaff_Magazine",
+        "240Rnd_CMFlare_Chaff_Magazine",
+        "Laserbatteries"
+    };
 	
     /*
     tcw_emp_protection = 1;
@@ -45,6 +42,12 @@
 
     textureList[] = {"aux187_LAAT_Skin_Default", 1};
 
+    class EventHandlers
+    {
+        fired = "_this execVM '\3AS\3as_Laat\LAATI\scripts\fired_laser.sqf';";
+        init = "(_this select 0) execVM 'z\aux187\addons\core\functions\loadSupply';";
+    };
+
     class ACE_SelfActions : ACE_SelfActions
     {
         class aux187_LAAT_Skins
@@ -58,20 +61,14 @@
             
             class aux187_LAAT_Skin_Default
             {
-                displayName = "Plain";
-                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\187th_Default_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'187th_legion_aux\addons\aircraft\laat\data\187th_Default_Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa'];(vehicle player) setObjectTextureGlobal[4,'187th_legion_aux\addons\aircraft\laat\data\187th_Default_Interior_co.paa'];";
-            };
-
-            class aux187_LAAT_Skin_Gypsy
-            {
-                displayName = "Custom (Gypsy)";
-                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Gypsy_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'3AS\3as_Laat\LAATI\data\Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa'];(vehicle player) setObjectTextureGlobal[4,'3AS\3as_Laat\LAATI\data\Interior_co.paa'];";
+                displayName = "Default";
+                statement = "(vehicle player) setObjectTextureGlobal [0,'z\aux187\addons\aircraft\laat\data\187th_Default_Hull_CO.paa']; (vehicle player) setObjectTextureGlobal[1,'z\aux187\addons\aircraft\laat\data\187th_Default_Wings_CO.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa']; (vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa']; (vehicle player) setObjectTextureGlobal[4,'z\aux187\addons\aircraft\laat\data\187th_Default_Interior_CO.paa'];";
             };
 
             class aux187_LAAT_Skin_Tim
             {
                 displayName = "Custom (Tim)";
-                statement = "(vehicle player) setObjectTextureGlobal [0,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Tim_Hull_co.paa']; (vehicle player) setObjectTextureGlobal[1,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Tim_Wings_co.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa'];(vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa'];(vehicle player) setObjectTextureGlobal[4,'187th_legion_aux\addons\aircraft\laat\data\Customs\187th_Tim_Interior_co.paa'];";
+                statement = "(vehicle player) setObjectTextureGlobal [0,'z\aux187\addons\aircraft\laat\data\customs\187th_Tim_Hull_CO.paa']; (vehicle player) setObjectTextureGlobal[1,'z\aux187\addons\aircraft\laat\data\customs\187th_Tim_Wings_CO.paa']; (vehicle player) setObjectTextureGlobal[2,'3AS\3as_Laat\LAATI\data\Weapons_co.paa']; (vehicle player) setObjectTextureGlobal[3,'3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa']; (vehicle player) setObjectTextureGlobal[4,'z\aux187\addons\aircraft\laat\data\customs\187th_Tim_Interior_CO.paa'];";
             };
         };
         class TFAR_IntercomChannel 
@@ -130,23 +127,9 @@
             {
                 QPATHTOF(laat\data\187th_Default_Hull_co.paa),
                 QPATHTOF(laat\data\187th_Default_Wings_co.paa),
-                "3AS\3as_Laat\LAATI\data\Weapons_co.paa",
-                "3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa",
+                "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                 QPATHTOF(laat\data\187th_Default_Interior_co.paa)
-            };
-        };
-
-        class aux187_LAAT_Texture_Gypsy
-        {
-            displayName = "Custom (Gypsy)";
-            author = "187th Legion";
-            textures[] = 
-            {
-                QPATHTOF(laat\data\Customs\187th_Gypsy_Hull_co.paa),
-                "3AS\3as_Laat\LAATI\data\Wings_CO.paa",
-                "3AS\3as_Laat\LAATI\data\Weapons_co.paa",
-                "3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa",
-                "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
             };
         };
 
@@ -156,11 +139,11 @@
             author = "187th Legion";
             textures[] = 
             {
-                QPATHTOF(laat\data\Customs\187th_Tim_Hull_co.paa),
-                QPATHTOF(laat\data\Customs\187th_Tim_Wings_co.paa),
-                "3AS\3as_Laat\LAATI\data\Weapons_co.paa",
-                "3AS\3as_Laat\LAATI\data\Weapon_Details_co.paa",
-                QPATHTOF(laat\data\Customs\187th_Tim_Interior_co.paa)
+                QPATHTOF(laat\data\customs\187th_Tim_Hull_co.paa),
+                QPATHTOF(laat\data\customs\187th_Tim_Wings_co.paa),
+                "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                QPATHTOF(laat\data\customs\187th_Tim_Interior_co.paa)
             };
         };
     };

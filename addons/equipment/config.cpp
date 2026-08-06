@@ -100,7 +100,30 @@ class CfgPatches
 			"aux187_RC_Wood_Helmet",
             "aux187_BARC_Base_Helmet",
             "aux187_ARC_Base_Helmet",
-            "aux187_Airborne_Base_Helmet"
+            "aux187_Airborne_Base_Helmet",
+
+			//WEAPONS
+			"aux187_DC15S",
+			"aux187_DC15A",
+			"aux187_DC15C",
+			"aux187_DC15S_GL",
+			"aux187_DC15A_GL",
+			"aux187_DC15C_GL",
+			"aux187_RPS6",
+			"aux187_RPS6_Disposable",
+			"aux187_PLX1",
+			"aux187_Z6",
+			"aux187_DC15L",
+			"aux187_DC15X",
+			"aux187_Valken38X",
+			"aux187_Firepuncher",
+			"aux187_E7",
+			"aux187_DC15S_shield",
+			"aux187_DC17M",
+			"aux187_DLT16",
+			"aux187_DC17",
+			"aux187_DC15P",
+			"aux187_DP23"
         };
 		magazines[] = {};
 		ammo[] = {};
@@ -113,6 +136,7 @@ class XtdGearModels
     {
         #include "uniforms\XtdGearModels.hpp"
         #include "helmets\XtdGearModels.hpp"
+		#include "weapons\XtdGearModels.hpp"
     };
 };
 
@@ -126,4 +150,5 @@ class CfgWeapons
     class baseClass;
     #include "uniforms\CfgWeapons.hpp"
     #include "helmets\CfgWeapons.hpp"
+	#include "weapons\CfgWeapons.hpp"
 };
