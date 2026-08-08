@@ -43,15 +43,45 @@ class CfgPatches
 			"aux187_RC_Sand",
 			"aux187_RC_Snow",
 			"aux187_RC_Wood",
+
+			//CUSTOM UNIFORMS
+			"aux187_Custom_Blade",
+			"aux187_Custom_Boss",
+			"aux187_Custom_Buzz",
+			"aux187_Custom_Crypto",
+			"aux187_Custom_Dross",
+			"aux187_Custom_Dubz",
+			"aux187_Custom_Fader",
+			"aux187_Custom_Hesh",
+			"aux187_Custom_Horizon",
+			"aux187_Custom_Hunt",
+			"aux187_Custom_Iron",
+			"aux187_Custom_Isaac",
+			"aux187_Custom_Kalani",
+			"aux187_Custom_Kraken",
+			"aux187_Custom_Lord",
+			"aux187_Custom_Mindless",
+			"aux187_Custom_Mixer",
+			"aux187_Custom_Nexu",
+			"aux187_Custom_Ouroboros",
+			"aux187_Custom_Ringer",
+			"aux187_Custom_Seek",
+			"aux187_Custom_Solembum",
+			"aux187_Custom_Tac",
+			"aux187_Custom_Tim",
+			"aux187_Custom_Toad",
+			"aux187_Custom_Un",
+			"aux187_Custom_Vinokurov",
+			"aux187_Custom_Revan",
 		};
 		weapons[] = 
         {
             //UNIFORMS
             "aux187_Uniform_Base",
-			"aux187_P2_Base_Uniform",
+			      "aux187_P2_Base_Uniform",
             "aux187_P2_Recruit_Uniform",
-			"aux187_P2_CC_Uniform",
-			"aux187_P2_CP_Uniform",
+			      "aux187_P2_CC_Uniform",
+			      "aux187_P2_CP_Uniform",
 			"aux187_P2_CS_Uniform",
 			"aux187_P2_CGS_Uniform",
 			"aux187_P2_CL_Uniform",
@@ -92,11 +122,11 @@ class CfgPatches
 			"aux187_RC_Sand_Helmet",
 			"aux187_RC_Snow_Helmet",
 			"aux187_RC_Wood_Helmet",
-            "aux187_BARC_Base_Helmet",
-            "aux187_ARC_Base_Helmet",
-            "aux187_Airborne_Base_Helmet",
-
-			//WEAPONS
+      "aux187_BARC_Base_Helmet",
+      "aux187_ARC_Base_Helmet",
+      "aux187_Airborne_Base_Helmet",
+      
+      //WEAPONS
 			"aux187_DC15S",
 			"aux187_DC15A",
 			"aux187_DC15C",
@@ -141,21 +171,25 @@ class XtdGearModels
     {
         #include "uniforms\XtdGearModels.hpp"
         #include "helmets\XtdGearModels.hpp"
-		#include "weapons\XtdGearModels.hpp"
+		    #include "weapons\XtdGearModels.hpp"
     };
 };
 
 class CfgVehicles
 {
     #include "uniforms\CfgVehicles.hpp"
+
+	#include "uniforms\customs\CfgVehicles_Custom.hpp"
 };
 
 class CfgWeapons
 {
-    class baseClass;
     #include "uniforms\CfgWeapons.hpp"
     #include "helmets\CfgWeapons.hpp"
-	#include "weapons\CfgWeapons.hpp"
+	  #include "weapons\CfgWeapons.hpp"
+
+	  #include "helmets\customs\CfgWeapons_Custom.hpp"
+    #include "uniforms\customs\CfgWeapons_Custom.hpp"
 };
 
 class CfgMagazines

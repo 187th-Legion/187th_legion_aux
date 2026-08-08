@@ -226,7 +226,7 @@
 
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_VeteranMedic_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
-	
+
 	/*
 	---------------------------------------------------------------
 	                  COMMANDO VEHICLE CLASSES

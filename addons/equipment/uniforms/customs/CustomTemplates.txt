@@ -1,0 +1,88 @@
+
+	---------------------------------------------------------------
+	                        JLTS PHASE 2 UNIFORM
+	---------------------------------------------------------------
+
+
+    class aux187_Uniform_Custom_????? : aux187_Uniform_Base
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (?????)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_?????";
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "?????";
+		};
+    };
+
+    class aux187_Custom_????? : JLTS_Clone_P2_DC15S
+	{
+		scope = 1;
+		uniformClass = "aux187_Uniform_Custom_?????";
+		
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_?????_Torso.paa), QPATHTOF(uniforms\customs\data\187th_Uniform_?????_Legs.paa) };
+	};
+
+
+	---------------------------------------------------------------
+	                        WM PHASE 3 UNIFORM
+	---------------------------------------------------------------
+
+
+    class aux187_Uniform_Custom_????? : WM_P3Scout_E11
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (?????)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_?????";
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "?????";
+		};
+    };
+
+    class aux187_Custom_????? : WM_P3Scout_E11
+	{
+		scope = 1;
+		uniformClass = "aux187_Uniform_Custom_?????";
+		
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_?????.paa) };
+	};
+
+	---------------------------------------------------------------
+	                        3AS REPUBLIC COMMANDO UNIFORM
+	---------------------------------------------------------------
+
+
+    class aux187_Uniform_Custom_????? : 3AS_U_Rep_Katarn_Armor
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (?????)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_?????";
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "?????";
+		};
+    };
+
+    class aux187_Custom_????? : 3AS_U_Rep_Katarn_Armor
+	{
+		scope = 1;
+		uniformClass = "aux187_Uniform_Custom_?????";
+		
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_?????.paa) };
+	};
