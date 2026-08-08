@@ -12,8 +12,15 @@ class CfgPatches
 			"ace_arsenal_extended", 
 			"A3_Characters_F",
 			"JLTS_characters_CloneArmor",
-			"WM_Clones",
 			"3AS_Characters",
+			"3AS_Weapons_Republic_DC15L",
+			"3AS_Weapons_Republic_DC15C",
+			"3AS_Weapons_Republic_DC15A",
+			"3AS_Weapons_Republic_DC15S",
+			"3AS_Weapons_Republic_DC15X",
+			"IDA_Republic",
+			"ls_loadorder"
+
 		};
 		units[] = 
 		{
@@ -32,14 +39,6 @@ class CfgPatches
 			"aux187_P2_Veteran",
 			"aux187_P2_VeteranEOD",
 			"aux187_P2_VeteranMedic",
-			"aux187_P3_Base",
-			"aux187_P3_Sand",
-			"aux187_P3_Snow",
-			"aux187_P3_Wood",
-			"aux187_P3_Veteran",
-			"aux187_P3_Sand",
-			"aux187_P3_Snow",
-			"aux187_P3_Wood",
 			"aux187_RC_Base",
 			"aux187_RC_Sand",
 			"aux187_RC_Snow",
@@ -96,11 +95,6 @@ class CfgPatches
 			"aux187_P2_Veteran_Uniform",
 			"aux187_P2_VeteranEOD_Uniform",
 			"aux187_P2_VeteranMedic_Uniform",
-			"aux187_P3_Base_Uniform",
-			"aux187_P3_Sand_Uniform",
-			"aux187_P3_Snow_Uniform",
-			"aux187_P3_Wood_Uniform",
-			"aux187_P3_Veteran_Uniform",
 			"aux187_RC_Base_Uniform",
 			"aux187_RC_Sand_Uniform",
 			"aux187_RC_Snow_Uniform",
@@ -147,15 +141,26 @@ class CfgPatches
 			"aux187_DC15X",
 			"aux187_Valken38X",
 			"aux187_Firepuncher",
-			"aux187_E7",
+			"aux187_XLE7",
 			"aux187_DC15S_shield",
 			"aux187_DC17M",
 			"aux187_DLT16",
 			"aux187_DC17",
 			"aux187_DC15P",
-			"aux187_DP23"
+			"aux187_DP23",
+			"aux187_Knife",
+			"aux187_Baton",
+
+			//ATTACHMENTS
+			"aux187_optic_LPVO",
+			"aux187_optic_reflex",
+			"aux187_optic_brScope",
+			"aux187_optic_holo"
         };
-		magazines[] = {};
+		magazines[] = 
+		{
+			
+		};
 		ammo[] = {};
 	};
 };
@@ -185,4 +190,14 @@ class CfgWeapons
 
 	  #include "helmets\customs\CfgWeapons_Custom.hpp"
     #include "uniforms\customs\CfgWeapons_Custom.hpp"
+};
+
+class CfgMagazines
+{
+	#include "weapons\CfgMagazines.hpp"
+};
+
+class CfgAmmo
+{
+	#include "weapons\CfgAmmo.hpp"
 };

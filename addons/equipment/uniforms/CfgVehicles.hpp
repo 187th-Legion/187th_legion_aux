@@ -1,4 +1,3 @@
-    class WM_P3Scout_E11;
 	class JLTS_Clone_P2_DC15S;
 	class JLTS_Clone_P2_marshalcommander;
 	class 3AS_Rep_Commando_F;
@@ -227,57 +226,7 @@
 
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_Airborne_VeteranMedic_Torso.paa), QPATHTOF(uniforms\data\187th_Airborne_Base_Legs.paa) };
 	};
-	/*
-	---------------------------------------------------------------
-	                  PHASE 3 VEHICLE CLASSES
-	---------------------------------------------------------------
-	*/
-	
-	class aux187_P3_Base : WM_P3Scout_E11 // Phase 3 Base
-	{
-		scope = 1;
-		uniformClass = "aux187_P3_Base_Uniform";
-		
-		hiddenSelections[] = { "camo" };
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Base.paa) };
-	};
-	
-	class aux187_P3_Veteran : WM_P3Scout_E11 // Phase 3 Veteran
-	{
-		scope = 1;
-		uniformClass = "aux187_P3_Veteran_Uniform";
-		
-		hiddenSelections[] = { "camo" };
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Veteran.paa) };
-	};
-	
-	class aux187_P3_Sand : WM_P3Scout_E11 // Phase 3 Sand
-	{
-		scope = 1;
-		uniformClass = "aux187_P3_Sand_Uniform";
-		
-		hiddenSelections[] = { "camo" };
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Sand.paa) };
-	};
-	
-	class aux187_P3_Snow : WM_P3Scout_E11 // Phase 3 Snow
-	{
-		scope = 1;
-		uniformClass = "aux187_P3_Snow_Uniform";
-		
-		hiddenSelections[] = { "camo" };
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Snow.paa) };
-	};
-	
-	class aux187_P3_Wood : WM_P3Scout_E11 // Phase 3 Wood
-	{
-		scope = 1;
-		uniformClass = "aux187_P3_Wood_Uniform";
-		
-		hiddenSelections[] = { "camo" };
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P3_Wood.paa) };
-	};
-	
+
 	/*
 	---------------------------------------------------------------
 	                  COMMANDO VEHICLE CLASSES

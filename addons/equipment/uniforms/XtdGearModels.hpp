@@ -7,7 +7,7 @@
 			class uniformType
 			{
 				label = "Uniform Options";
-				values[] = { "P2", "P3", "RC", "Airborne" };
+				values[] = { "P2", "RC", "Airborne" };
 			};
 			class camoType
 			{
