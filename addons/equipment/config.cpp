@@ -13,6 +13,14 @@ class CfgPatches
 			"A3_Characters_F",
 			"JLTS_characters_CloneArmor",
 			"3AS_Characters",
+			"3AS_Weapons_Republic_DC15L",
+			"3AS_Weapons_Republic_DC15C",
+			"3AS_Weapons_Republic_DC15A",
+			"3AS_Weapons_Republic_DC15S",
+			"3AS_Weapons_Republic_DC15X",
+			"IDA_Republic",
+			"ls_loadorder"
+
 		};
 		units[] = 
 		{
@@ -103,7 +111,7 @@ class CfgPatches
 			"aux187_DC15X",
 			"aux187_Valken38X",
 			"aux187_Firepuncher",
-			"aux187_E7",
+			"aux187_XLE7",
 			"aux187_DC15S_shield",
 			"aux187_DC17M",
 			"aux187_DLT16",
@@ -111,9 +119,18 @@ class CfgPatches
 			"aux187_DC15P",
 			"aux187_DP23",
 			"aux187_Knife",
-			"aux187_Baton"
+			"aux187_Baton",
+
+			//ATTACHMENTS
+			"aux187_optic_LPVO",
+			"aux187_optic_reflex",
+			"aux187_optic_brScope",
+			"aux187_optic_holo"
         };
-		magazines[] = {};
+		magazines[] = 
+		{
+			
+		};
 		ammo[] = {};
 	};
 };
@@ -126,14 +143,6 @@ class XtdGearModels
         #include "helmets\XtdGearModels.hpp"
 		#include "weapons\XtdGearModels.hpp"
     };
-};
-
-class XtdGearInfos
-{
-	class CfgWeapons
-	{
-		#include "weapons\XtdGearInfos.hpp"
-	};
 };
 
 class CfgVehicles

@@ -97,7 +97,7 @@
 
                 class E7
 				{
-					label = "E-7";
+					label = "XLE-7";
 					description = "CVT+";
 				};
 
