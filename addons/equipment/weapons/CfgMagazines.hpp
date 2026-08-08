@@ -41,6 +41,15 @@
             count = 40;
         };
 
+        class aux187_Mag_40Rnd_DC17M : aux187_magazine_base
+        {
+            displayName = "[187th] DC-17M 40rnd High Power Magazine";
+            author = "Tim";
+            ammo = "aux187_ammo_rifle_HP";
+
+            count = 40;
+        };
+
         class aux187_Mag_45Rnd_DC15C : aux187_magazine_base
         {
             displayName = "[187th] DC-15C 45rnd High Power Magazine";

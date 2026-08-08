@@ -867,6 +867,17 @@
                 model = "aux187_PrimaryWeapon_Model";
                 Marksman = "Valken";
             };
+
+            canShootInWater = 1;
+            drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
+            recoil = "IDA_recoil_BlasterCarbine";
+            recoilProne = "assaultRifleBase";
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+
+            magazines[] = 
+            {
+                "aux187_Mag_20Rnd_Valken38X"
+            };
         };
 
         class ls_weapon_firepuncher;
@@ -882,6 +893,17 @@
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
                 Marksman = "Firepuncher";
+            };
+
+            canShootInWater = 1;
+            drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
+            recoil = "IDA_recoil_BlasterCarbine";
+            recoilProne = "assaultRifleBase";
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+
+            magazines[] = 
+            {
+                "aux187_Mag_10Rnd_Firepuncher"
             };
         };
 
@@ -946,6 +968,90 @@
                 model = "aux187_PrimaryWeapon_Model";
                 Restricted = "Shield";
             };
+
+            canShootInWater = 1;
+            drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
+            recoil = "IDA_recoil_BlasterCarbine";
+            recoilProne = "assaultRifleBase";
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+
+            magazines[] = 
+            {
+                "aux187_Mag_40Rnd_DC15S",
+                "aux187_Mag_80Rnd_DC15S"
+            };
+
+            modes[] = { "Single","FullAuto" };
+
+            class WeaponSlotsInfo
+            {
+                class PointerSlot : PointerSlot
+                {
+                    access = 1;
+                    compatibleItems[] = {"acc_flashlight","ACE_SPIR","OPTRE_M12_Laser","acc_pointer_IR","ACE_acc_pointer_green","ACE_DBAL_A3_Red","ACE_DBAL_A3_Green"};
+                    displayName = "Pointer Slot";
+                    iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+                    iconPinpoint = "Center";
+                    iconPosition[] = {0,0};
+                    iconScale = 0;
+                    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+                    scope = 0;
+                };
+            };
+
+            class Single : Single
+            {
+                dispersion = 0.0010;
+
+                recoil = "recoil_single_primary_3outof10";
+                recoilProne = "recoil_single_primary_prone_3outof10";
+
+                sounds[] = { "StandardSound" };
+
+                class StandardSound : BaseSoundModeType
+                {
+                    begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1,1800};
+                    begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.025,1800};
+                    begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.95,1800};
+                    begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.05,1800};
+                    begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.9,1800};
+                    beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1,1,400};
+                    closure1[] = {};
+                    closure2[] = {};
+                    soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+                    soundBeginWater[] = {"beginwater1",1};
+                    soundClosure[] = {};
+                    weaponSoundEffect = "";
+                };
+            };
+
+            class FullAuto : FullAuto
+            {
+                autoFire = 1;
+                dispersion = 0.00133;
+                reloadTime = 0.085;
+
+                recoil = "recoil_auto_primary_3outof10";
+                recoilProne = "recoil_auto_primary_prone_3outof10";
+
+                sounds[] = { "StandardSound" };
+
+                class StandardSound : BaseSoundModeType
+                {
+                    begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1,1800};
+                    begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.025,1800};
+                    begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.95,1800};
+                    begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.05,1800};
+                    begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.9,1800};
+                    beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1,1,400};
+                    closure1[] = {};
+                    closure2[] = {};
+                    soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+                    soundBeginWater[] = {"beginwater1",1};
+                    soundClosure[] = {};
+                    weaponSoundEffect = "";
+                };
+            };
         };
 
         class 3AS_DC15X_F;
@@ -961,6 +1067,18 @@
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
                 Restricted = "DC15X";
+            };
+
+            canShootInWater = 1;
+            drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
+            recoil = "IDA_recoil_BlasterCarbine";
+            recoilProne = "assaultRifleBase";
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+
+            magazines[] = 
+            {
+                "aux187_Mag_5Rnd_DC15X",
+                "aux187_Mag_1Rnd_CMag"
             };
         };
 
@@ -978,6 +1096,17 @@
                 model = "aux187_PrimaryWeapon_Model";
                 Restricted = "E7";
             };
+
+            canShootInWater = 1;
+            drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
+            recoil = "IDA_recoil_BlasterCarbine";
+            recoilProne = "assaultRifleBase";
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+
+            magazines[] = 
+            {
+                "aux187_Mag_40Rnd_XLE7"
+            };
         };
 
         class IDA_DLT19;
@@ -994,6 +1123,29 @@
                 model = "aux187_PrimaryWeapon_Model";
                 Restricted = "DLT16";
             };
+
+            canShootInWater = 1;
+            drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
+            recoil = "IDA_recoil_BlasterCarbine";
+            recoilProne = "assaultRifleBase";
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+
+            magazines[] = 
+            {
+                "aux187_Mag_250Rnd_DLT16"
+            };
+
+            class Auto : Auto
+            {
+                autoFire = 1;
+                dispersion = 0.00208;
+                reloadTime = 0.07;
+
+                recoil = "recoil_auto_primary_3outof10";
+                recoilProne = "recoil_auto_primary_prone_3outof10";
+
+                sounds[] = { "StandardSound" };
+            };
         };
 
         class IDA_DC17M;
@@ -1009,6 +1161,17 @@
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
                 Restricted = "DC17M";
+            };
+
+            canShootInWater = 1;
+            drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
+            recoil = "IDA_recoil_BlasterCarbine";
+            recoilProne = "assaultRifleBase";
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+
+            magazines[] = 
+            {
+                "aux187_Mag_40Rnd_DC17M"
             };
         };
 

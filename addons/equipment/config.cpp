@@ -47,7 +47,6 @@ class CfgPatches
 			//CUSTOM UNIFORMS
 			"aux187_Custom_Blade",
 			"aux187_Custom_Boss",
-			"aux187_Custom_Buzz",
 			"aux187_Custom_Crypto",
 			"aux187_Custom_Dross",
 			"aux187_Custom_Dubz",
@@ -78,10 +77,10 @@ class CfgPatches
         {
             //UNIFORMS
             "aux187_Uniform_Base",
-			      "aux187_P2_Base_Uniform",
+			"aux187_P2_Base_Uniform",
             "aux187_P2_Recruit_Uniform",
-			      "aux187_P2_CC_Uniform",
-			      "aux187_P2_CP_Uniform",
+			"aux187_P2_CC_Uniform",
+			"aux187_P2_CP_Uniform",
 			"aux187_P2_CS_Uniform",
 			"aux187_P2_CGS_Uniform",
 			"aux187_P2_CL_Uniform",
@@ -122,9 +121,9 @@ class CfgPatches
 			"aux187_RC_Sand_Helmet",
 			"aux187_RC_Snow_Helmet",
 			"aux187_RC_Wood_Helmet",
-      "aux187_BARC_Base_Helmet",
-      "aux187_ARC_Base_Helmet",
-      "aux187_Airborne_Base_Helmet",
+      		"aux187_BARC_Base_Helmet",
+      		"aux187_ARC_Base_Helmet",
+      		"aux187_Airborne_Base_Helmet",
       
       //WEAPONS
 			"aux187_DC15S",
@@ -171,14 +170,14 @@ class XtdGearModels
     {
         #include "uniforms\XtdGearModels.hpp"
         #include "helmets\XtdGearModels.hpp"
-		    #include "weapons\XtdGearModels.hpp"
+		#include "weapons\XtdGearModels.hpp"
+		#include "backpacks\XtdGearModels.hpp"
     };
 };
 
 class CfgVehicles
 {
     #include "uniforms\CfgVehicles.hpp"
-
 	#include "uniforms\customs\CfgVehicles_Custom.hpp"
 };
 
@@ -186,9 +185,10 @@ class CfgWeapons
 {
     #include "uniforms\CfgWeapons.hpp"
     #include "helmets\CfgWeapons.hpp"
-	  #include "weapons\CfgWeapons.hpp"
+	#include "weapons\CfgWeapons.hpp"
+	#include "backpacks\CfgWeapons.hpp"
 
-	  #include "helmets\customs\CfgWeapons_Custom.hpp"
+	#include "helmets\customs\CfgWeapons_Custom.hpp"
     #include "uniforms\customs\CfgWeapons_Custom.hpp"
 };
 
