@@ -9,14 +9,20 @@ class CfgPatches
 		requiredVersion = 0.01;
 		requiredAddons[] = 
 		{
-			"3AS_LAAT"
+			"3AS_LAAT",
+			"3AS_ARC_170",
+			"3AS_BTLB_Bomber",
+			"3AS_Z95"
 		};
 		units[] = 
 		{
 			"aux187_LAAT_Mk1",
             "aux187_LAAT_Mk1_Lamps",
             "aux187_LAAT_Mk2",
-			"aux187_LAAT_C"
+			"aux187_LAAT_C",
+			"aux187_ARC_170",
+			"aux187_BTLB_Y_Wing",
+			"aux187_Z95"
 		};
 		weapons[] = {};
 		magazines[] = {};
@@ -27,6 +33,9 @@ class CfgPatches
 class CfgVehicles
 {
     #include "laat\CfgVehicles.hpp"
+	#include "z95\CfgVehicles.hpp"
+	#include "ywing\CfgVehicles.hpp"
+	#include "arc170\CfgVehicles.hpp"
 };
 
 class CfgWeapons

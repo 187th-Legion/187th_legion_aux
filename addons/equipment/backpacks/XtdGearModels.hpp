@@ -2,12 +2,12 @@
 		{
 			label = "[187th] Backpacks";
 			author = "Tim";
-			options[] = { "roleType", "strapType", "radioType" };
+			options[] = { "roleType", "strapType", "radioType", "camoType" };
 			
 			class roleType
 			{
 				label = "Backpack Type";
-				values[] = { "Trooper", "Medic", "Autorifleman", "Anti-Tank", "Engineer", "Marksman", "Support" };
+				values[] = { "Trooper", "Medic", "Engineer", "Ammo" };
 			};
 
 			class strapType
@@ -43,6 +43,62 @@
 					label = "Wood";
 					image = QPATHTOF(uniforms\data\ui\Wood_UI.paa);
 					description = "Wood Camouflage";
+				};
+			};
+		};
+
+		class aux187_MiscBags_Model
+		{
+			label = "[187th] Miscellaneous Packs";
+			author = "Tim";
+			options[] = { "Bags", "Radios" };
+			
+			class Bags
+			{
+				label = "Backpack Type";
+				values[] = { "BeltBag", "ScoutBag", "PatrolPack" };
+				alwaysSelectable = 1;
+
+				class BeltBag
+				{
+					label = "Belt Bags";
+				};
+
+				class ScoutBag
+				{
+					label = "Scout Pack";
+				};
+
+				class PatrolPack
+				{
+					label = "Patrol Pack";
+				};
+			};
+
+			class Radios
+			{
+				label = "Backpack Type";
+				values[] = { "Mini1", "Mini2", "PatrolPackR", "RTO2" };
+				alwaysSelectable = 1;
+
+				class Mini1
+				{
+					label = "Mini LR Pack";
+				};
+
+				class Mini2
+				{
+					label = "RTO Attachment";
+				};
+
+				class PatrolPackR
+				{
+					label = "Patrol LR Pack";
+				};
+
+				class RTO2
+				{
+					label = "Heavy LR Pack";
 				};
 			};
 		};
