@@ -4,4 +4,9 @@ class CfgEditorSubcategories
 	{
 		displayName = "Aircraft";
 	};
+
+	class aux187_edSubcat_Vehicles
+	{
+		displayName = "Ground Vehicles";
+	};
 };

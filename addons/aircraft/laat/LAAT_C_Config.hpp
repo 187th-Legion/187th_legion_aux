@@ -28,17 +28,15 @@
         "Laserbatteries"
     };
 	
-    /*
-    tcw_emp_protection = 1;
-	tcw_can_use_afterburner = 1;
-	tcw_afterburner_max_boost_speed = 650;
-	tcw_afterburner_min_boost_speed = 20;
-	tcw_afterburner_min_brake_speed = 20;
-	tcw_afterburner_increment = 10;
-	tcw_afterburner_fuel_drag = 2000;
-	tcw_afterburner_fuel_multi = 4;
-	tcw_afterburner_force_array[] = {{0,100,2562500},{100,316,4562500},{316,650,8750000}};
-    */
+    class ls_impulsor : ls_impulsor_base
+    {
+        enabled = 1;
+        speed = 400;
+        fuelDrain = 0.00015;
+        overchargeSpeed = 600;
+        overchargeFuelDrain = 0.0004;
+        overchargeCooldown = 60;
+    };
 
     textureList[] = {"aux187_LAAT_C_Skin_Default", 1};
 

@@ -30,22 +30,6 @@
 		};
     };
 
-	class aux187_Uniform_Custom_Buzz : WM_P3Scout
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Buzz)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Buzz";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Buzz";
-		};
-    };
-
 	class aux187_Uniform_Custom_Crypto : aux187_Uniform_Base
     {
 		scope = 2;

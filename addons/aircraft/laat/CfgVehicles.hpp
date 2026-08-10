@@ -1,4 +1,5 @@
     class ACE_SelfActions;
+    class ls_impulsor_base;
 
     class 3as_LAAT_Mk1;
     class 3as_LAAT_Mk1Lights;
@@ -63,4 +64,3 @@
             "3AS\3AS_LAATC\data\Textures\LAAT_C_Detail_Front_co.paa"
         };
     };
-

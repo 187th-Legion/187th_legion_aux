@@ -14,15 +14,6 @@
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_Boss_Torso.paa), QPATHTOF(uniforms\customs\data\187th_Uniform_Boss_Legs.paa) };
 	};
 
-    class aux187_Custom_Buzz : WM_P3Scout_E11
-	{
-		scope = 1;
-		uniformClass = "aux187_Uniform_Custom_Buzz";
-		
-        hiddenSelections[] = { "camo" };
-		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_Buzz_Torso.paa) };
-	};
-
     class aux187_Custom_Crypto : JLTS_Clone_P2_DC15S
 	{
 		scope = 1;

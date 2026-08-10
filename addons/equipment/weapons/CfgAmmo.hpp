@@ -67,7 +67,7 @@
         model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
         ACE_damageType = "plasma";
         ace_vehicle_damage_incendiary = 0.1;
-        maxspeed = 200;
+        maxspeed = 180;
     };
     
     class aux187_ammo_rifle_HP : aux187_ammo_base
