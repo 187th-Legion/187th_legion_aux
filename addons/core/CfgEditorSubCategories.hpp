@@ -9,4 +9,9 @@ class CfgEditorSubcategories
 	{
 		displayName = "Ground Vehicles";
 	};
+
+	class aux187_edSubcat_Emplacements
+	{
+		displayName = "Ground Vehicles";
+	};
 };

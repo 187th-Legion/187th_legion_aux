@@ -12,7 +12,7 @@ class CfgPatches
 			"3AS_LAAT",
 			"3AS_ARC_170",
 			"3AS_BTLB_Bomber",
-			"3AS_Z95"
+			"3AS_Z95_base"
 		};
 		units[] = 
 		{
@@ -32,6 +32,7 @@ class CfgPatches
 
 class CfgVehicles
 {
+	class ACE_SelfActions;
     #include "laat\CfgVehicles.hpp"
 	#include "z95\CfgVehicles.hpp"
 	#include "ywing\CfgVehicles.hpp"

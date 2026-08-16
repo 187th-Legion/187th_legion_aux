@@ -152,26 +152,54 @@
 
     class aux187_ammo_sniper_CMAG : aux187_ammo_base
     {
-        aiAmmoUsageFlags = "128 + 256"; // INF + VEH + AIR
+        aiAmmoUsageFlags = "128 + 256"; // VEH + AIR
 
-        caliber = 8;
-        hit = 40;
-        coefGravity = 0.00;
-        airfriction = 0;
-        waterFriction = -0.01;
+        author = "Vinokurov";
+		hit = 500;
+		caliber = 230;
+		effectfly = "IDA_Laser_Red_fly";
+		indirecthit = 5.0;
+		flaresize = 5;
+		tracerscale = 3.5;
+		ACE_damageType = "bullet";
+		coefGravity = 0.0;
+		airFriction = -0.000;
+		class CamShakeExplode
+		{
+			power = "(13^0.5)";
+			duration = "((round (13^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((13^0.5)*3)";
+		};
+		class CamShakeHit
+		{
+			power = 13;
+			duration = "((round (13^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		explosionEffectsRadius = 5;
+		explosionEffects = "GrenadeExplosion";
+		craterEffects = "ExploAmmoCrater";
+    };
 
-        effectfly = "IDA_Laser_Red_fly";
-        model = "";
+    class G_40mm_HE;
+    class aux187_Ammo_HE : G_40mm_HE
+    {
+        model="3AS\3AS_Weapons\Data\tracer_shell_red.p3d";
+        tracerScale=1;
+        effectFly="3AS_PlasmaBolt_Red_Fly";
+    };
 
-        Lightcolor[] = {1,0,0};
-        timeToLive = 6;
-        brightness = 1000;
-        deflecting = 0;
-
-        explosionTime = -1;
-        effectsFire = "CannonFire";
-        explosionDir = "explosionDir";
-        explosionEffects = "ATMissileExplosion";
-        explosionEffectsDir = "explosionDir";
-        explosionForceCoef = 1;
+    class G_40mm_HEDP;
+    class aux187_Ammo_HEDP : G_40mm_HEDP
+    {
+        explosive = 0.05;
+        hit = 500;
+        caliber=60;
+        indirecthit = 5;
+        indrectrange = 2;
+        model="3AS\3AS_Weapons\Data\tracer_shell_green.p3d";
+        tracerScale=1;
+        effectFly="3AS_PlasmaBolt_Green_Fly";
     };

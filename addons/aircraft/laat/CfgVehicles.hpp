@@ -1,4 +1,3 @@
-    class ACE_SelfActions;
     class ls_impulsor_base;
 
     class 3as_LAAT_Mk1;

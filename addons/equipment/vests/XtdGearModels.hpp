@@ -1,0 +1,17 @@
+    class aux187_Vests_Model
+    {
+        label = "[187th] Vests";
+        author = "Tim";
+        options[] = { "vestType" };
+        
+        class vestType
+        {
+            label = "Vest Options";
+            values[] = { "Holster", "Grenade", "CFR", "EOD" };
+        };
+
+        class Grenade
+        {
+            label = "Grenade Holster";
+        };
+    };
