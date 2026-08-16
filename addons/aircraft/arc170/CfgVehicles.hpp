@@ -1,5 +1,5 @@
-    class 3AS_ARC_170_Republic;
-    class aux187_ARC_170 : 3AS_ARC_170_Republic
+    class 3AS_ARC_170_Blue;
+    class aux187_ARC_170 : 3AS_ARC_170_Blue
     {
         displayName = "ARC-170";
 

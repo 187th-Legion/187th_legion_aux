@@ -8,6 +8,11 @@
         class 3AS_CowsSlot_DP23;
         class 3AS_CowsSlot_DC15L;
         class 3AS_UnderBarrelSlot_DC15L;
+        class 3AS_UnderBarrelSlot_DC15X;
+        class 3AS_UnderBarrelSlot_VK38X;
+        class CowsSlot;
+        class WeaponSlotsInfo;
+        class UGL_F;
         class PointerSlot;
         class Mode_FullAuto;
         class Mode_SemiAuto;
@@ -49,6 +54,7 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -183,17 +189,18 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
                 "aux187_Mag_45Rnd_DC15C"
             };
 
-            modes[] = { "Single","FullAuto" };
+            //modes[] = { "Single","FullAuto" };
 
             class TAS_Stun_F {};
 
-            class Single : Mode_SemiAuto
+            /*class Single : Mode_SemiAuto
             {
                 dispersion = 0.00102;
 
@@ -245,7 +252,7 @@
                     soundClosure[] = {};
                     weaponSoundEffect = "";
                 };
-            };
+            };*/
         };
 
         
@@ -303,6 +310,7 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -387,15 +395,16 @@
             recoil = "IDA_recoil_RotaryBlaster";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
                 "aux187_Mag_75Rnd_DC15L"
             };
 
-            modes[] = { "LessFullAuto","FullAuto","close","short","medium","far_optic1","far_optic2" };
+            //modes[] = { "LessFullAuto","FullAuto","close","short","medium","far_optic1","far_optic2" };
 
-            class FullAuto : FullAuto
+            /*class FullAuto : FullAuto
             {
                 autoFire = 1;
                 dispersion = 0.00088;
@@ -452,7 +461,7 @@
                     soundClosure[] = {};
                     weaponSoundEffect = "";
                 };
-            };   
+            };*/ 
         };
 
         class IDA_Z6;
@@ -475,6 +484,7 @@
             recoil = "IDA_recoil_RotaryBlaster";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -492,7 +502,22 @@
                 recoil = "recoil_auto_primary_3outof10";
                 recoilProne = "recoil_auto_primary_prone_3outof10";
 
-                sounds[] = { "StandardSound" };
+                sounds[] = { "StandardSound", "BaseSoundModeType" };
+                class StandardSound : BaseSoundModeType
+                {
+                    begin1[] = {"\Indecisive_Armoury_Sounds\Republic\Z6.ogg",1,1,1800};
+                    begin2[] = {"\Indecisive_Armoury_Sounds\Republic\Z6.ogg",1,1.015,1800};
+                    begin3[] = {"\Indecisive_Armoury_Sounds\Republic\Z6.ogg",1,0.985,1800};
+                    begin4[] = {"\Indecisive_Armoury_Sounds\Republic\Z6.ogg",1,1.01,1800};
+                    begin5[] = {"\Indecisive_Armoury_Sounds\Republic\Z6.ogg",1,0.995,1800};
+                    beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\Z6.ogg",1,1,400};
+                    closure1[] = {};
+                    closure2[] = {};
+                    soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+                    soundBeginWater[] = {"beginwater1",1};
+                    soundClosure[] = {};
+                    weaponSoundEffect = "";
+                };
             };
         };
 
@@ -523,6 +548,7 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -530,7 +556,7 @@
                 "aux187_Mag_40Rnd_DC15S"
             };
 
-            modes[] = { "Single","FullAuto" };
+            //modes[] = { "Single","FullAuto" };
 
             class TAS_Stun_F {};
 
@@ -550,7 +576,7 @@
                 };
             };
 
-            class Single : Single
+            /*class Single : Single
             {
                 dispersion = 0.0010;
 
@@ -602,7 +628,7 @@
                     soundClosure[] = {};
                     weaponSoundEffect = "";
                 };
-            };
+            };*/
         };
 
         class 3AS_DC15C_GL: 3AS_DC15C_Base_F {};
@@ -657,17 +683,18 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
                 "aux187_Mag_45Rnd_DC15C"
             };
 
-            modes[] = { "Single","FullAuto" };
+            //modes[] = { "Single","FullAuto" };
 
             class TAS_Stun_F {};
 
-            class Single : Mode_SemiAuto
+            /*class Single : Mode_SemiAuto
             {
                 dispersion = 0.00102;
 
@@ -718,6 +745,60 @@
                     soundBeginWater[] = {"beginwater1",1};
                     soundClosure[] = {};
                     weaponSoundEffect = "";
+                };
+            };*/
+
+            class GL_3GL_F: UGL_F
+            {
+                displayName = "187th UGL";
+                descriptionShort = "Pew Tube";
+                useModelOptics = 0;
+                useExternalOptic = 0;
+                magazines[]=
+                {
+                    "3AS_3UGL_MK54_HE_shell",
+                    "aux187_Mag_3Rnd_HE_Grenade",
+                    "aux187_Mag_3Rnd_AP_Grenade"
+                };
+                magazineWell[]=
+                {
+                    "UGL_40x36",
+                    "3UGL_40x36",
+                    "3AS_3UGL_Magwell"
+                };
+                cameraDir = "OP_look";
+                discreteDistance[]=
+                {
+                    50,
+                    75,
+                    100,
+                    150,
+                    200,
+                    250,
+                    300,
+                    350,
+                    400
+                };
+                discreteDistanceCameraPoint[]=
+                {
+                    "OP_eye_50",
+                    "OP_eye_75",
+                    "OP_eye_100",
+                    "OP_eye_150",
+                    "OP_eye_200",
+                    "OP_eye_250",
+                    "OP_eye_300",
+                    "OP_eye_350",
+                    "OP_eye_400"
+                };
+                discreteDistanceInitIndex = 1;
+                reloadAction = "GestureReloadMXUGL";
+                reloadMagazineSound[]=
+                {
+                    "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload.ogg",
+                    1,
+                    1,
+                    10
                 };
             };
         };
@@ -775,6 +856,7 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -782,6 +864,60 @@
             };
 
             class TAS_Stun_F {};
+
+            class GL_3GL_F: UGL_F
+            {
+                displayName = "187th UGL";
+                descriptionShort = "Pew Tube";
+                useModelOptics = 0;
+                useExternalOptic = 0;
+                magazines[]=
+                {
+                    "3AS_3UGL_MK54_HE_shell",
+                    "aux187_Mag_3Rnd_HE_Grenade",
+                    "aux187_Mag_3Rnd_AP_Grenade"
+                };
+                magazineWell[]=
+                {
+                    "UGL_40x36",
+                    "3UGL_40x36",
+                    "3AS_3UGL_Magwell"
+                };
+                cameraDir = "OP_look";
+                discreteDistance[]=
+                {
+                    50,
+                    75,
+                    100,
+                    150,
+                    200,
+                    250,
+                    300,
+                    350,
+                    400
+                };
+                discreteDistanceCameraPoint[]=
+                {
+                    "OP_eye_50",
+                    "OP_eye_75",
+                    "OP_eye_100",
+                    "OP_eye_150",
+                    "OP_eye_200",
+                    "OP_eye_250",
+                    "OP_eye_300",
+                    "OP_eye_350",
+                    "OP_eye_400"
+                };
+                discreteDistanceInitIndex = 1;
+                reloadAction = "GestureReloadMXUGL";
+                reloadMagazineSound[]=
+                {
+                    "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload.ogg",
+                    1,
+                    1,
+                    10
+                };
+            };
         };
 
     /*
@@ -811,26 +947,48 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
                 "aux187_Mag_20Rnd_Valken38X"
             };
+
+            class WeaponSlotsInfo: WeaponSlotsInfo
+            {
+                class CowsSlot: CowsSlot
+                {
+                    linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+                    compatibleItems[]=
+                    {
+                        "3AS_optic_VK38X_F", "OPTRE_SRS99C_Scope", "OPTRE_M6C_Scope", "optic_Arco_blk_F"
+                    };
+                };
+                class UnderBarrelSlot : 3AS_UnderBarrelSlot_VK38X
+                {
+                    linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                    compatibleItems[]=
+                    {
+                        "3AS_bipod_VK38X_F"
+                    };
+                };
+            };
         };
 
-        class ls_weapon_firepuncher;
-        class aux187_Firepuncher : ls_weapon_firepuncher
+        class 3AS_DC15X_Base_F: Rifle_Base_F {};
+        class 3AS_DC15X_F: 3AS_DC15X_Base_F {};
+        class aux187_DC15X : 3AS_DC15X_F
         {
             author = "Tim";
             scope = 2;
             scopeArsenal = 2;
 
-            baseWeapon = "aux187_Firepuncher";
-            displayName = "[187th] 773-Firepuncher Sniper Blaster Rifle";
+            baseWeapon = "aux187_DC15X";
+            displayName = "[187th] DC-15X Heavy Sniper Rifle";
             
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
-                Marksman = "Firepuncher";
+                Marksman = "DC15X";
             };
 
             canShootInWater = 1;
@@ -838,10 +996,32 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
-                "aux187_Mag_10Rnd_Firepuncher"
+                "aux187_Mag_5Rnd_DC15X",
+                "aux187_Mag_1Rnd_CMag"
+            };
+
+            class WeaponSlotsInfo: WeaponSlotsInfo
+            {
+                class CowsSlot: CowsSlot
+                {
+                    linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+                    compatibleItems[]=
+                    {
+                        "OPTRE_SRS99C_Scope", "3AS_optic_DC15X_F"
+                    };
+                };
+                class UnderBarrelSlot : 3AS_UnderBarrelSlot_DC15X	
+                {
+                    linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                    compatibleItems[]=
+                    {
+                        "3AS_bipod_DC15X_F"
+                    };
+                };
             };
         };
 
@@ -885,6 +1065,22 @@
                     };
                 };
             };
+
+            class 3AS_FL_F: UGL_F
+            {
+                displayName="187th UGL";
+                descriptionShort="Pew Tube";
+                useModelOptics=0;
+                useExternalOptic=0;
+                magazines[]=
+                {
+                    "3AS_1Rnd_EC80_Flechette"
+                };
+                magazineWell[] = 
+                {
+                    "3AS_DP23_GL_Magwell"
+                };
+            };
         };
 
     /*
@@ -913,6 +1109,7 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -993,32 +1190,51 @@
             };
         };
 
-        class 3AS_DC15X_Base_F: Rifle_Base_F {};
-        class 3AS_DC15X_F: 3AS_DC15X_Base_F {};
-        class aux187_DC15X : 3AS_DC15X_F
+        class TKE_MDSniperGrey;
+        class aux187_amr : TKE_MDSniperGrey
         {
             author = "Tim";
             scope = 2;
             scopeArsenal = 2;
 
-            baseWeapon = "aux187_DC15X";
-            displayName = "[187th] DC-15X Heavy Sniper Rifle";
+            baseWeapon = "aux187_amr";
+            displayName = "[187th] XLE-279 Anti-Material Rifle";
             
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
-                Restricted = "DC15X";
+                Restricted = "XLE279";
             };
 
             canShootInWater = 1;
             drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
-            recoil = "IDA_recoil_BlasterCarbine";
+            //recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
-                "aux187_Mag_5Rnd_DC15X",
                 "aux187_Mag_1Rnd_CMag"
+            };
+
+            class WeaponSlotsInfo: WeaponSlotsInfo
+            {
+                class CowsSlot: CowsSlot
+                {
+                    linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+                    compatibleItems[]=
+                    {
+                        "OPTRE_SRS99C_Scope"
+                    };
+                };
+                class UnderBarrelSlot : 3AS_UnderBarrelSlot_DC15X	
+                {
+                    linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                    compatibleItems[]=
+                    {
+                        "3AS_bipod_DC15X_F"
+                    };
+                };
             };
         };
 
@@ -1042,6 +1258,7 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -1069,6 +1286,7 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -1108,10 +1326,13 @@
             recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
             reloadAction = "GestureReload_IDA_Reload_Blaster";
+            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
-                "aux187_Mag_40Rnd_DC17M"
+                "aux187_Mag_100Rnd_DC17M",
+                "aux187_Mag_10Rnd_DC17M",
+                "aux187_Mag_3Rnd_DC17M"
             };
         };
 
@@ -1126,6 +1347,11 @@
 
             baseWeapon = "aux187_PLX1";
             displayName = "[187th] PLX-1 Guided Missile Launcher";
+
+            ace_javelin_enabled = 1;
+            weaponInfoType = "ACE_RscOptics_javelin";
+            modelOptics = "\z\ace\addons\javelin\data\reticle_titan.p3d";
+            canLock = 0;
         };
 
     /*

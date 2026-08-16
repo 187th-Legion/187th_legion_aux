@@ -45,33 +45,26 @@ class CfgPatches
 			"aux187_RC_Wood",
 
 			//CUSTOM UNIFORMS
-			"aux187_Custom_Blade",
 			"aux187_Custom_Boss",
 			"aux187_Custom_Crypto",
-			"aux187_Custom_Dross",
 			"aux187_Custom_Dubz",
 			"aux187_Custom_Fader",
 			"aux187_Custom_Hesh",
 			"aux187_Custom_Horizon",
-			"aux187_Custom_Hunt",
 			"aux187_Custom_Iron",
-			"aux187_Custom_Isaac",
 			"aux187_Custom_Kalani",
 			"aux187_Custom_Kraken",
 			"aux187_Custom_Lord",
 			"aux187_Custom_Mindless",
-			"aux187_Custom_Mixer",
 			"aux187_Custom_Nexu",
 			"aux187_Custom_Ouroboros",
 			"aux187_Custom_Ringer",
-			"aux187_Custom_Seek",
-			"aux187_Custom_Solembum",
-			"aux187_Custom_Tac",
 			"aux187_Custom_Tim",
-			"aux187_Custom_Toad",
 			"aux187_Custom_Un",
 			"aux187_Custom_Vinokurov",
-			"aux187_Custom_Revan",
+			"aux187_Custom_Jack",
+			"aux187_Custom_Scorch",
+			"aux187_Custom_Fish",
 
 			//BACKPACKS
 			"aux187_backpack_trooper_base",
@@ -177,6 +170,12 @@ class CfgPatches
       		"aux187_BARC_Base_Helmet",
       		"aux187_ARC_Base_Helmet",
       		"aux187_Airborne_Base_Helmet",
+
+			//VESTS
+			"aux187_Vest_Holster",
+			"aux187_Vest_Grenade",
+			"aux187_Vest_CFR",
+			"aux187_Vest_Engineer",
       
       		//WEAPONS
 			"aux187_DC15S",
@@ -192,7 +191,7 @@ class CfgPatches
 			"aux187_DC15L",
 			"aux187_DC15X",
 			"aux187_Valken38X",
-			"aux187_Firepuncher",
+			"aux187_amr",
 			"aux187_XLE7",
 			"aux187_DC15S_shield",
 			"aux187_DC17M",
@@ -203,6 +202,41 @@ class CfgPatches
 			"aux187_Knife",
 			"aux187_Baton",
 
+			//FACEWEAR
+			/*"aux187_vest_Beltpouch",
+			"aux187_vest_Medpouch",
+			"aux187_vest_RTOAntenna",
+			"aux187_vest_ClearView",
+			"aux187_vest_CSMRangefinder",
+			"aux187_vest_OfficerRangefinder",
+			"aux187_vest_CommanderVisor",
+			"aux187_vest_MCCommanderVisor",
+			"aux187_vest_Commando_Leader",
+			"aux187_vest_Commando_Sniper",
+			"aux187_vest_Commando_Technician",
+			"aux187_vest_Commando_EOD",
+			"aux187_vest_Suspenders",
+			"aux187_vest_ChestRig",
+			"aux187_vest_ChestRigPouch",
+			"aux187_vest_Chestrig_Satchel",
+			"aux187_vest_base_1",
+			"aux187_vest_Medic_1",
+			"aux187_vest_HeavyChestRig",
+			"aux187_vest_HeavyChestRig2",
+			"aux187_vest_CloneReconNCO",
+			"aux187_vest_CloneAirborneNCO",
+			"aux187_vest_Command",
+			"aux187_vest_ChestPouch",
+			"aux187_vest_Sergeant_Harness_Kama",
+			"aux187_vest_Captain_Pauldron_Kama",
+			"aux187_vest_Lieutenant_Pauldron_Kama",
+			"aux187_vest_breacher",*/
+
+			//NVGS
+			"aux187_Officer_RF",
+			"aux187_Commander",
+			"aux187_Squad_Leader_Visor",
+
 			//ATTACHMENTS
 			"aux187_optic_LPVO",
 			"aux187_optic_reflex",
@@ -210,33 +244,26 @@ class CfgPatches
 			"aux187_optic_holo",
 
 			//CUSTOMS
-			"aux187_Uniform_Custom_Blade",
 			"aux187_Uniform_Custom_Boss",
 			"aux187_Uniform_Custom_Crypto",
-			"aux187_Uniform_Custom_Dross",
 			"aux187_Uniform_Custom_Dubz",
 			"aux187_Uniform_Custom_Fader",
 			"aux187_Uniform_Custom_Hesh",
 			"aux187_Uniform_Custom_Horizon",
-			"aux187_Uniform_Custom_Hunt",
 			"aux187_Uniform_Custom_Iron",
-			"aux187_Uniform_Custom_Isaac",
 			"aux187_Uniform_Custom_Kalani",
 			"aux187_Uniform_Custom_Kraken",
 			"aux187_Uniform_Custom_Lord",
 			"aux187_Uniform_Custom_Mindless",
-			"aux187_Uniform_Custom_Mixer",
 			"aux187_Uniform_Custom_Nexu",
 			"aux187_Uniform_Custom_Ouroboros",
 			"aux187_Uniform_Custom_Ringer",
-			"aux187_Uniform_Custom_Seek",
-			"aux187_Uniform_Custom_Solembum",
-			"aux187_Uniform_Custom_Tac",
 			"aux187_Uniform_Custom_Tim",
-			"aux187_Uniform_Custom_Toad",
 			"aux187_Uniform_Custom_Un",
 			"aux187_Uniform_Custom_Vinokurov",
-			"aux187_Uniform_Custom_Revan",
+			"aux187_Uniform_Custom_Jack",
+			"aux187_Uniform_Custom_Fish",
+			"aux187_Uniform_Custom_Scorch",
 
 			"aux187_Helmet_Custom_Mindless",
 			"aux187_Helmet_Custom_Icarus",
@@ -278,8 +305,14 @@ class CfgPatches
 			"aux187_Helmet_Custom_Boss",
 			"aux187_Helmet_Custom_Blade"
         };
-		magazines[] = {};
-		ammo[] = {};
+		magazines[] = 
+		{
+
+		};
+		ammo[] = 
+		{
+
+		};
 	};
 };
 
@@ -290,6 +323,8 @@ class XtdGearModels
         #include "uniforms\XtdGearModels.hpp"
         #include "helmets\XtdGearModels.hpp"
 		#include "weapons\XtdGearModels.hpp"
+		#include "vests\XtdGearModels.hpp"
+		#include "nvgs\XtdGearModels.hpp"
 
 		#include "helmets\customs\XtdGearModels_Custom.hpp"
 		#include "uniforms\customs\XtdGearModels_Custom.hpp"
@@ -298,6 +333,11 @@ class XtdGearModels
 	class CfgVehicles
 	{
 		#include "backpacks\XtdGearModels.hpp"
+	};
+
+	class CfgGlasses
+	{
+		#include "facewear\XtdGearModels.hpp"
 	};
 };
 
@@ -313,6 +353,8 @@ class CfgWeapons
     #include "uniforms\CfgWeapons.hpp"
     #include "helmets\CfgWeapons.hpp"
 	#include "weapons\CfgWeapons.hpp"
+	#include "vests\CfgWeapons.hpp"
+	#include "nvgs\CfgWeapons.hpp"
 
 	#include "helmets\customs\CfgWeapons_Custom.hpp"
     #include "uniforms\customs\CfgWeapons_Custom.hpp"
@@ -326,4 +368,9 @@ class CfgMagazines
 class CfgAmmo
 {
 	#include "weapons\CfgAmmo.hpp"
+};
+
+class CfgGlasses
+{
+	#include "facewear\CfgGlasses.hpp"
 };

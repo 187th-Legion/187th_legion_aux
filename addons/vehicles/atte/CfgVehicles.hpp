@@ -1,5 +1,9 @@
+    
     class 3AS_ATTE_Base;
+    //class Turrets;
+    //class MainTurret;
     class ACE_SelfActions;
+    
     class aux187_ATTE : 3AS_ATTE_Base
     {
         displayName = "AT-TE";
@@ -17,6 +21,7 @@
         scope = 2;
         side = 1;
         scopeCurator = 2;
+        scopeArsenal = 2;
         faction = "aux187_Faction_187th";
         editorCategory = "aux187_edCat_187th";
         editorSubcategory = "aux187_edSubcat_Vehicles";
@@ -25,6 +30,22 @@
         TFAR_hasIntercom = 1;
 
         textureList[] = {"aux187_ATTE_Texture_Default", 1};
+
+        /*class Turrets : Turrets
+        {
+            class MainTurretTop : MainTurret
+            {
+                magazines[] = {"3AS_30Rnd_Mass_Driver_shells","3AS_30Rnd_Mass_Driver_shells","3AS_30Rnd_Mass_Driver_shells","SmokeLauncherMag","SmokeLauncherMag"};
+            };
+            class MainTurretFront : MainTurretTop
+            {
+                magazines[] = { "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells"};
+            };
+            class MainTurretBack : MainTurretFront
+            {
+                magazines[] = { "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells", "Aux187_ATTE_250Rnd_MP_Shells"};
+            };
+        };*/
 
         class ACE_SelfActions : ACE_SelfActions
         {
@@ -37,7 +58,7 @@
                 priority = 2.5;
                 icon = "";
                 
-                class aux187_Z95_Skin_Default
+                class aux187_ATTE_Skin_Default
                 {
                     displayName = "Default";
                     statement = "(vehicle player) setObjectTextureGlobal [0,'z\aux187\addons\vehicles\atte\data\187th_Default_ATTE_Shell_CO.paa']; (vehicle player) setObjectTextureGlobal[1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa']; (vehicle player) setObjectTextureGlobal[2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa']; (vehicle player) setObjectTextureGlobal [3,'z\aux187\addons\vehicles\atte\data\187th_Default_ATTE_Legs_CO.paa']; (vehicle player) setObjectTextureGlobal[4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa']; (vehicle player) setObjectTextureGlobal[5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];";

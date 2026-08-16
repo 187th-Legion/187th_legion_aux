@@ -20,8 +20,8 @@
 			uniformClass="aux187_Base";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass  = "Supply150";
+	      	mass = 40;
 		};
 		
 		class XtdGearInfo
@@ -49,8 +49,8 @@
 			uniformClass="aux187_P2_Recruit";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -73,8 +73,8 @@
 			uniformClass="aux187_P2_Base";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -97,8 +97,8 @@
 			uniformClass="aux187_P2_BaseEOD";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -121,8 +121,8 @@
 			uniformClass="aux187_P2_BaseMedic";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -145,8 +145,8 @@
 			uniformClass="aux187_P2_Veteran";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -169,8 +169,8 @@
 			uniformClass="aux187_P2_VeteranEOD";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -193,8 +193,8 @@
 			uniformClass="aux187_P2_VeteranMedic";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -217,8 +217,8 @@
 			uniformClass="aux187_P2_CP";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -239,8 +239,8 @@
 			uniformClass="aux187_P2_CS";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -261,8 +261,8 @@
 			uniformClass="aux187_P2_CGS";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -283,8 +283,8 @@
 			uniformClass="aux187_P2_CL";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -305,8 +305,8 @@
 			uniformClass="aux187_P2_CC";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -327,8 +327,8 @@
 			uniformClass="aux187_P2_CO";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -349,8 +349,8 @@
 			uniformClass="aux187_P2_CM";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -371,8 +371,8 @@
 			uniformClass="aux187_P2_Sand";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -395,8 +395,8 @@
 			uniformClass="aux187_P2_Snow";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -419,8 +419,8 @@
 			uniformClass="aux187_P2_Wood";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -445,8 +445,8 @@
 			uniformClass="aux187_Airborne_Base";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -469,8 +469,8 @@
 			uniformClass="aux187_Airborne_BaseEOD";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -493,8 +493,8 @@
 			uniformClass="aux187_Airborne_BaseMedic";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -517,8 +517,8 @@
 			uniformClass="aux187_Airborne_Veteran";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -541,8 +541,8 @@
 			uniformClass="aux187_Airborne_VeteranEOD";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -565,8 +565,8 @@
 			uniformClass="aux187_Airborne_VeteranMedic";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -590,8 +590,8 @@
 			uniformClass="aux187_RC_Base";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -614,8 +614,8 @@
 			uniformClass="aux187_RC_Sand";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -638,8 +638,8 @@
 			uniformClass="aux187_RC_Snow";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -662,8 +662,8 @@
 			uniformClass="aux187_RC_Wood";
 			uniformModel="-";
 			uniformType="Neopren";
-			containerClass="Supply200";
-			mass=15;
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {

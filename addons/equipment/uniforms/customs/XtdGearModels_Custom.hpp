@@ -13,38 +13,30 @@
                 label="Customs";
                 values[]=
                 {
-                    "Blade",
                     "Boss",
-                    "Buzz",
                     "Crypto",
-                    "Dross",
                     "Dubz",
                     "Fader",
-                    "Hawk",
                     "Hesh",
                     "Horizon",
-                    "Hunt",
                     "Iron",
-                    "Isaac",
                     "Janitor",
                     "Kalani",
                     "Kraken",
                     "Lord",
                     "Mindless",
-                    "Mixer",
                     "Multicam",
                     "Nexu",
                     "Ouroboros",
-                    "Seek",
                     "Ringer",
-                    "Solembum",
                     "Star",
                     "Tac",
                     "Tim",
-                    "Toad",
                     "Un",
                     "Vinokurov",
-                    "Revan",
+                    "Jack",
+                    "Scorch",
+                    "Fish"
                 };
             };
         };

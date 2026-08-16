@@ -57,15 +57,15 @@
             class Marksman
 			{
 				label = "Marksman";
-				values[] = { "Valken", "Firepuncher" };
+				values[] = { "Valken", "DC15X" };
                 alwaysSelectable = 1;
                 class Valken
                 {
                     label = "Valken38X";
                 };
-                class Firepuncher
+                class DC15X
                 {
-                    label = "773-Firepuncher";
+                    label = "DC-15X";
                 };
 			};
             class Engineer
@@ -81,7 +81,7 @@
             class Restricted
 			{
 				label = "Restricted";
-				values[] = { "Shield", "DC15X", "E7", "DLT16", "DC17M" };
+				values[] = { "Shield", "XLE279", "E7", "DLT16", "DC17M" };
                 alwaysSelectable = 1;
                 class Shield
 				{
@@ -89,9 +89,9 @@
 					description = "Permission Required";
 				};
 
-                class DC15X
+                class XLE279
 				{
-					label = "DC-15X";
+					label = "XLE-279";
 					description = "Permission Required";
 				};
 

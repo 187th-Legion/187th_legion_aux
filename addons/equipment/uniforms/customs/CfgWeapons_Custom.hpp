@@ -1,18 +1,3 @@
-    class aux187_Uniform_Custom_Blade : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Blade)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Blade";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Blade";
-		};
-    };
 
 	class aux187_Uniform_Custom_Boss : aux187_Uniform_Base
     {
@@ -22,6 +7,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Boss";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -38,27 +28,16 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Crypto";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Crypto";
-		};
-    };
-
-	class aux187_Uniform_Custom_Dross : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Dross)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Dross";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Dross";
 		};
     };
 
@@ -70,6 +49,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Dubz";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -86,6 +70,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Fader";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -102,6 +91,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Hesh";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -118,27 +112,16 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Horizon";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Horizon";
-		};
-    };
-
-	class aux187_Uniform_Custom_Hunt : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Hunt)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Hunt";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Hunt";
 		};
     };
 
@@ -150,27 +133,16 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Iron";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Iron";
-		};
-    };
-
-	class aux187_Uniform_Custom_Isaac : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Isaac)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Isaac";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Isaac";
 		};
     };
 
@@ -182,6 +154,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Kalani";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -198,6 +175,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Kraken";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -214,6 +196,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Lord";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -230,27 +217,16 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Mindless";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Mindless";
-		};
-    };
-
-	class aux187_Uniform_Custom_Mixer : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Mixer)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Mixer";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Mixer";
 		};
     };
 
@@ -262,6 +238,11 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Nexu";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
@@ -278,27 +259,16 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Ouroboros";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Ouroboros";
-		};
-    };
-
-	class aux187_Uniform_Custom_Seek : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Seek)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Seek";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Seek";
 		};
     };
 
@@ -310,43 +280,16 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Ringer";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Ringer";
-		};
-    };
-
-	class aux187_Uniform_Custom_Solembum : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Solembum)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Solembum";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Solembum";
-		};
-    };
-
-	class aux187_Uniform_Custom_Tac : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Tac)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Tac";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Tac";
 		};
     };
 
@@ -358,27 +301,16 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Tim";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Tim";
-		};
-    };
-
-	class aux187_Uniform_Custom_Toad : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Toad)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Toad";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Toad";
 		};
     };
 
@@ -390,11 +322,79 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Un";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Un";
+		};
+    };
+
+	class aux187_Uniform_Custom_Scorch : aux187_Uniform_Base
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (Scorch)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_Scorch";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "Scorch";
+		};
+    };
+
+	class aux187_Uniform_Custom_Fish : aux187_Uniform_Base
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (Fish)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_Fish";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "Fish";
+		};
+    };
+
+	class aux187_Uniform_Custom_Jack : aux187_Uniform_Base
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (Jack)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_Jack";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "Jack";
 		};
     };
 
@@ -406,26 +406,15 @@
 		class ItemInfo : UniformItem
 		{
 			uniformClass="aux187_Custom_Vinokurov";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
 		};
 		
 		class XtdGearInfo {
 			model = "aux187_CustomUniform_Model";
 			Customs = "Vinokurov";
-		};
-    };
-
-	class aux187_Uniform_Custom_Revan : aux187_Uniform_Base
-    {
-		scope = 2;
-		displayName = "[187th] Custom Uniform (Revan)";
-		
-		class ItemInfo : UniformItem
-		{
-			uniformClass="aux187_Custom_Revan";
-		};
-		
-		class XtdGearInfo {
-			model = "aux187_CustomUniform_Model";
-			Customs = "Revan";
 		};
     };
