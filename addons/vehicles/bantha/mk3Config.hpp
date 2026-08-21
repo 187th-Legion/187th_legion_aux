@@ -208,11 +208,11 @@
     
     thrustDelay=0.5;
     fuelCapacity=50;
-    clutchStrength=85;
+    //clutchStrength=85;
 	//enginePower=2000;
-	peakTorque=6000;
-	idleRpm=600;
-	redRpm=3300;
+	//peakTorque=6000;
+	//idleRpm=600;
+	//redRpm=3300;
 
     armor=1500;
     armorStructural=6;

@@ -176,6 +176,7 @@ class CfgPatches
 			"aux187_Vest_Grenade",
 			"aux187_Vest_CFR",
 			"aux187_Vest_Engineer",
+			"aux187_Vest_Kama_Officer",
       
       		//WEAPONS
 			"aux187_DC15S",
@@ -202,40 +203,17 @@ class CfgPatches
 			"aux187_Knife",
 			"aux187_Baton",
 
-			//FACEWEAR
-			/*"aux187_vest_Beltpouch",
-			"aux187_vest_Medpouch",
-			"aux187_vest_RTOAntenna",
-			"aux187_vest_ClearView",
-			"aux187_vest_CSMRangefinder",
-			"aux187_vest_OfficerRangefinder",
-			"aux187_vest_CommanderVisor",
-			"aux187_vest_MCCommanderVisor",
-			"aux187_vest_Commando_Leader",
-			"aux187_vest_Commando_Sniper",
-			"aux187_vest_Commando_Technician",
-			"aux187_vest_Commando_EOD",
-			"aux187_vest_Suspenders",
-			"aux187_vest_ChestRig",
-			"aux187_vest_ChestRigPouch",
-			"aux187_vest_Chestrig_Satchel",
-			"aux187_vest_base_1",
-			"aux187_vest_Medic_1",
-			"aux187_vest_HeavyChestRig",
-			"aux187_vest_HeavyChestRig2",
-			"aux187_vest_CloneReconNCO",
-			"aux187_vest_CloneAirborneNCO",
-			"aux187_vest_Command",
-			"aux187_vest_ChestPouch",
-			"aux187_vest_Sergeant_Harness_Kama",
-			"aux187_vest_Captain_Pauldron_Kama",
-			"aux187_vest_Lieutenant_Pauldron_Kama",
-			"aux187_vest_breacher",*/
-
 			//NVGS
 			"aux187_Officer_RF",
 			"aux187_Commander",
 			"aux187_Squad_Leader_Visor",
+
+			//ITEMS
+			"aux187_item_bactaSpray",
+			"aux187_item_bactaBandage",
+			"aux187_item_normalBandage",
+			
+
 
 			//ATTACHMENTS
 			"aux187_optic_LPVO",
@@ -346,6 +324,7 @@ class CfgVehicles
     #include "uniforms\CfgVehicles.hpp"
 	#include "uniforms\customs\CfgVehicles_Custom.hpp"
 	#include "backpacks\CfgVehicles.hpp"
+	#include "crates\CfgVehicles.hpp"
 };
 
 class CfgWeapons
@@ -355,6 +334,8 @@ class CfgWeapons
 	#include "weapons\CfgWeapons.hpp"
 	#include "vests\CfgWeapons.hpp"
 	#include "nvgs\CfgWeapons.hpp"
+	#include "items\Flares\CfgWeapons.hpp"
+	#include "items\medical\CfgWeapons.hpp"
 
 	#include "helmets\customs\CfgWeapons_Custom.hpp"
     #include "uniforms\customs\CfgWeapons_Custom.hpp"
@@ -363,14 +344,28 @@ class CfgWeapons
 class CfgMagazines
 {
 	#include "weapons\CfgMagazines.hpp"
+	#include "items\Flares\CfgMagazines.hpp"
 };
 
 class CfgAmmo
 {
 	#include "weapons\CfgAmmo.hpp"
+	#include "items\Flares\CfgAmmo.hpp"
 };
 
 class CfgGlasses
 {
 	#include "facewear\CfgGlasses.hpp"
 };
+
+class CfgCloudlets
+{
+	#include "items\Flares\CfgCloudlets.hpp"
+};
+
+class CfgLights
+{
+	#include "items\Flares\CfgLights.hpp"
+};
+
+#include "items\Flares\FlareEffects.hpp"

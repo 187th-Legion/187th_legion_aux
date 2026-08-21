@@ -9,9 +9,39 @@ class CfgPatches
 		requiredVersion = 0.01;
 		requiredAddons[] = 
 		{
-			
+			"ls_props_staticships"
 		};
-		units[] = {};
+		units[] = 
+		{
+			//SHIP PIECES
+			"aux187_ship_retribution_interior8",
+			"aux187_ship_retribution_interior7",
+			"aux187_ship_retribution_interior6",
+			"aux187_ship_retribution_interior5",
+			"aux187_ship_retribution_interior4",
+			"aux187_ship_retribution_interior3",
+			"aux187_ship_retribution_interior2",
+			"aux187_ship_retribution_interior1",
+			"aux187_ship_retribution_engine",
+			"aux187_ship_retribution_door2",
+			"aux187_ship_retribution_door",
+			"aux187_ship_retribution_bridge",
+			"aux187_ship_retribution_body10",
+			"aux187_ship_retribution_body9",
+			"aux187_ship_retribution_body8",
+			"aux187_ship_retribution_body7",
+			"aux187_ship_retribution_body6",
+			"aux187_ship_retribution_body5",
+			"aux187_ship_retribution_body4",
+			"aux187_ship_retribution_body3",
+			"aux187_ship_retribution_body2_3",
+			"aux187_ship_retribution_body2_2",
+			"aux187_ship_retribution_body2_1",
+			"aux187_ship_retribution_body1_2",
+			"aux187_ship_retribution_body1_1",
+
+			"aux187_ship_venator_retribution_full"
+		};
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
@@ -25,7 +55,8 @@ class CfgPatches
 
 class CfgVehicles
 {
-	#include "props\CfgVehicles.hpp"
+	#include "props\venator\retribution\CfgVehicles.hpp"
+	#include "props\venator\retribution\VenatorPieces_CfgVehicles.hpp"
 };
 
 class CfgMarkers

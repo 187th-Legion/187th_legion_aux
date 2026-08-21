@@ -7,11 +7,16 @@
         class vestType
         {
             label = "Vest Options";
-            values[] = { "Holster", "Grenade", "CFR", "EOD" };
+            values[] = { "Holster", "Grenade", "CFR", "EOD", "OKama" };
         };
 
         class Grenade
         {
             label = "Grenade Holster";
+        };
+
+        class OKama
+        {
+            label = "Officer Kama";
         };
     };

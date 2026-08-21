@@ -156,7 +156,7 @@
 
         author = "Vinokurov";
 		hit = 500;
-		caliber = 230;
+		caliber = 280;
 		effectfly = "IDA_Laser_Red_fly";
 		indirecthit = 5.0;
 		flaresize = 5;
@@ -164,6 +164,8 @@
 		ACE_damageType = "bullet";
 		coefGravity = 0.0;
 		airFriction = -0.000;
+
+        maxspeed = 300;
 		class CamShakeExplode
 		{
 			power = "(13^0.5)";

@@ -493,7 +493,7 @@
 
             modes[] = { "FullAuto" };
 
-            class Auto : Auto
+            /*class Auto : Auto
             {
                 autoFire = 1;
                 dispersion = 0.00208;
@@ -518,7 +518,7 @@
                     soundClosure[] = {};
                     weaponSoundEffect = "";
                 };
-            };
+            };*/
         };
 
     /*

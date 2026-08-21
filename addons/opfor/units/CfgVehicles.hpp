@@ -200,12 +200,12 @@
 		
 		backpack = "ls_droidBackpack_b1_engineer";
         uniformClass = "ls_droidUniform_b1_engineer";
-		weapons[] = { "aux187_opfor_e5", "Throw", "Put" };
-		respawnWeapons[] = { "aux187_opfor_e5", "Throw", "Put" };
+		weapons[] = { "aux187_opfor_sbb3", "Throw", "Put" };
+		respawnWeapons[] = { "aux187_opfor_sbb3", "Throw", "Put" };
 		Items[] = { "FirstAidKit" };
 		RespawnItems[] = { "FirstAidKit" };
-		magazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red" };
-		respawnMagazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red" };
+		magazines[] = { "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red" };
+		respawnMagazines[] = { "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red" };
 		linkedItems[] = { "ls_droidHelmet_b1", "ls_droidNVG_b1Headlamp", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio" };
 		respawnLinkedItems[] = { "ls_droidHelmet_b1", "ls_droidNVG_b1Headlamp", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio" };
 	};
@@ -372,8 +372,8 @@
 		respawnWeapons[] = { "aux187_opfor_e5", "aux187_rps6", "Throw", "Put" };
 		Items[] = { "FirstAidKit" };
 		RespawnItems[] = { "FirstAidKit" };
-		magazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "JLTS_RPS6_mag", "JLTS_RPS6_mag" };
-		respawnMagazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "JLTS_RPS6_mag", "JLTS_RPS6_mag" };
+		magazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "JLTS_RPS6_mag", "JLTS_RPS6_mag", "JLTS_RPS6_mag" };
+		respawnMagazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "JLTS_RPS6_mag", "JLTS_RPS6_mag", "JLTS_RPS6_mag" };
 		linkedItems[] = { "ls_droidHelmet_b1_geonosis", "JLTS_NVG_droid_chip_1", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio" };
 		respawnLinkedItems[] = { "ls_droidHelmet_b1_geonosis", "JLTS_NVG_droid_chip_1", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio" };
 	};
@@ -392,12 +392,12 @@
 		
 		backpack = "ls_droidBackpack_b1_engineer_geonosis";
         uniformClass = "ls_droidUniform_b1_engineer_geonosis";
-		weapons[] = { "aux187_opfor_e5", "Throw", "Put" };
-		respawnWeapons[] = { "aux187_opfor_e5", "Throw", "Put" };
+		weapons[] = { "aux187_opfor_sbb3", "Throw", "Put" };
+		respawnWeapons[] = { "aux187_opfor_sbb3", "Throw", "Put" };
 		Items[] = { "FirstAidKit" };
 		RespawnItems[] = { "FirstAidKit" };
-		magazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red" };
-		respawnMagazines[] = { "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red", "IDA_Blaster_Cell_Power3_40Rnd_Red" };
+		magazines[] = { "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red" };
+		respawnMagazines[] = { "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red", "IDA_Blaster_Cell_Scatter_6Rnd_Red" };
 		linkedItems[] = { "ls_droidHelmet_b1_geonosis", "ls_droidNVG_b1Headlamp_geonosis", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio" };
 		respawnLinkedItems[] = { "ls_droidHelmet_b1_geonosis", "ls_droidNVG_b1Headlamp_geonosis", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio" };
 	};
@@ -680,7 +680,7 @@
 		picture = "";
 		backpack = "ls_droidBackpack_b1_advanced";
         uniformClass = "ls_droidUniform_b1_advanced";
-		weapons[] = { "aux187_opfor_e5", "Throw", "Put" };
+		weapons[] = { "aux187_opfor_e5s", "Throw", "Put" };
 		respawnWeapons[] = { "aux187_opfor_e5s", "Throw", "Put" };
 		Items[] = { "FirstAidKit" };
 		RespawnItems[] = { "FirstAidKit" };
@@ -776,7 +776,7 @@
 		picture = "";
 		backpack = "ls_droidBackpack_b1_marine";
         uniformClass = "ls_droidUniform_b1_marine";
-		weapons[] = { "aux187_opfor_e5", "Throw", "Put" };
+		weapons[] = { "aux187_opfor_e5s", "Throw", "Put" };
 		respawnWeapons[] = { "aux187_opfor_e5s", "Throw", "Put" };
 		Items[] = { "FirstAidKit" };
 		RespawnItems[] = { "FirstAidKit" };
@@ -872,7 +872,7 @@
 		picture = "";
 		backpack = "ls_droidBackpack_b1_security";
         uniformClass = "ls_droidUniform_b1_security";
-		weapons[] = { "aux187_opfor_e5", "Throw", "Put" };
+		weapons[] = { "aux187_opfor_e5s", "Throw", "Put" };
 		respawnWeapons[] = { "aux187_opfor_e5s", "Throw", "Put" };
 		Items[] = { "FirstAidKit" };
 		RespawnItems[] = { "FirstAidKit" };
