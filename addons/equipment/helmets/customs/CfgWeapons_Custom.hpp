@@ -2,19 +2,6 @@
 	//                                    PHASE 2
 	// ---------------------------------------------------------------------------------
 
-    class aux187_Helmet_Custom_Blade : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Blade)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Blade.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Blade";
-		};
-    };
-
     class aux187_Helmet_Custom_Boss : aux187_P2_Base_Helmet
     {
 		scope = 2;
@@ -80,6 +67,19 @@
 		};
     };
 
+	class aux187_Helmet_Custom_Fish : aux187_P2_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Fish)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Fish.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Fish";
+		};
+    };
+
     class aux187_Helmet_Custom_Fluffy : aux187_P2_Base_Helmet
     {
 		scope = 2;
@@ -90,6 +90,19 @@
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Fluffy";
+		};
+    };
+
+	class aux187_Helmet_Custom_Gandalf : aux187_P2_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Gandalf)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Gandalf.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Gandalf";
 		};
     };
 
@@ -106,46 +119,7 @@
 		};
     };
 
-    class aux187_Helmet_Custom_Horizon : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Horizon)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Horizon.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Horizon";
-		};
-    };
-
-    class aux187_Helmet_Custom_Hunt : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Hunt)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Hunt.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Hunt";
-		};
-    };
-
-    class aux187_Helmet_Custom_Isaac : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Isaac)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Isaac.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Isaac";
-		};
-    };
-
-    class aux187_Helmet_Custom_Kalani : aux187_P2_Base_Helmet
+    /*class aux187_Helmet_Custom_Kalani : aux187_P2_Base_Helmet
     {
 		scope = 2;
 		displayName = "[187th] Custom Helmet (Kalani)";
@@ -156,7 +130,7 @@
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Kalani";
 		};
-    };
+    };*/
 
     class aux187_Helmet_Custom_Knight : aux187_P2_Base_Helmet
     {
@@ -168,19 +142,6 @@
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Knight";
-		};
-    };
-
-    class aux187_Helmet_Custom_Koss : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Koss)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Koss.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Koss";
 		};
     };
 
@@ -210,19 +171,6 @@
 		};
     };
 
-    class aux187_Helmet_Custom_Mixer : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Mixer)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Mixer.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Mixer";
-		};
-    };
-
     class aux187_Helmet_Custom_Nexu : aux187_P2_Base_Helmet
     {
 		scope = 2;
@@ -246,19 +194,6 @@
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Ouroboros";
-		};
-    };
-
-    class aux187_Helmet_Custom_Seek : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Seek)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Seek.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Seek";
 		};
     };
 
@@ -314,19 +249,6 @@
 		};
     };
 
-    class aux187_Helmet_Custom_Dross : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Dross)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Dross.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Dross";
-		};
-    };
-
     class aux187_Helmet_Custom_Fives : aux187_P2_Base_Helmet
     {
 		scope = 2;
@@ -353,29 +275,29 @@
 		};
     };
 
-    class aux187_Helmet_Custom_Panda : aux187_P2_Base_Helmet
+	class aux187_Helmet_Custom_Jack : aux187_P2_Base_Helmet
     {
 		scope = 2;
-		displayName = "[187th] Custom Helmet (Panda)";
+		displayName = "[187th] Custom Helmet (Jack)";
 		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Panda.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Jack.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
 		
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
-			Customs = "Panda";
+			Customs = "Jack";
 		};
     };
 
-    class aux187_Helmet_Custom_Revan : aux187_P2_Base_Helmet
+	class aux187_Helmet_Custom_Scorch : aux187_P2_Base_Helmet
     {
 		scope = 2;
-		displayName = "[187th] Custom Helmet (Revan)";
+		displayName = "[187th] Custom Helmet (Scorch)";
 		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Revan.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Scorch.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
 		
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
-			Customs = "Revan";
+			Customs = "Scorch";
 		};
     };
 
@@ -401,19 +323,6 @@
 	//                                   P2 Pilot
 	// ---------------------------------------------------------------------------------
 
-    class aux187_Helmet_Custom_Fish : aux187_Pilot_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Fish)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Fish.paa), "", "3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", QPATHTOF(helmets\customs\data\187thHelmet_Fish.paa), "" };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Fish";
-		};
-    };
-
     class aux187_Helmet_Custom_Ixi : aux187_Pilot_Base_Helmet
     {
 		scope = 2;
@@ -424,19 +333,6 @@
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Ixi";
-		};
-    };
-
-    class aux187_Helmet_Custom_Solembum : aux187_Pilot_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Solembum)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Solembum.paa), "", "3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", QPATHTOF(helmets\customs\data\187thHelmet_Ixi.paa), "" };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Solembum";
 		};
     };
 
@@ -523,5 +419,18 @@
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Mindless";
+		};
+    };
+
+	class aux187_Helmet_Custom_Horizon : aux187_RC_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Horizon)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Horizon.paa), "\3AS\3AS_Characters\Commando\data\Katarn_Helmet_Standard_CO.paa" };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Horizon";
 		};
     };

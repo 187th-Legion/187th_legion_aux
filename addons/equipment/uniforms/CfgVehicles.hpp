@@ -149,7 +149,7 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CL_Uniform";
 
-		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 		
 		hiddenSelections[] = 
 		{
@@ -165,7 +165,7 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CC_Uniform";
 		
-		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 
 		hiddenSelections[] = 
 		{
@@ -181,7 +181,7 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CO_Uniform";
 
-		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 		
 		hiddenSelections[] = 
 		{
@@ -197,7 +197,7 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CM_Uniform";
 
-		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 		
 		hiddenSelections[] = 
 		{

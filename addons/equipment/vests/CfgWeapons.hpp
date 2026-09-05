@@ -1,4 +1,5 @@
-    class JLTS_CloneVestHolster;
+    class VestItem;
+	class JLTS_CloneVestHolster;
     class aux187_Vest_Holster : JLTS_CloneVestHolster
 	{
 		author = "Tim";
@@ -12,7 +13,13 @@
 		};
 
         maximumLoad = "180";
-        mass = 25;
+
+		class ItemInfo : VestItem
+		{
+			vestType="Rebreather";
+			containerClass = "Supply100";
+			mass=80;
+		};
 	};
 
     class ls_sob_commando_eod_vest;
@@ -29,7 +36,13 @@
 		};
 
         maximumLoad = "180";
-        mass = 25;
+        
+		class ItemInfo : VestItem
+		{
+			vestType="Rebreather";
+			containerClass = "Supply100";
+			mass=80;
+		};
 	};
 
     class ls_gar_cfr_vest;
@@ -46,7 +59,13 @@
 		};
 
         maximumLoad = "180";
-        mass = 25;
+        
+		class ItemInfo : VestItem
+		{
+			vestType="Rebreather";
+			containerClass = "Supply100";
+			mass=80;
+		};
 	};
 
     class aux187_Vest_Engineer : ls_gar_cfr_vest
@@ -64,7 +83,13 @@
 		};
 
         maximumLoad = "180";
-        mass = 25;
+		
+        class ItemInfo : VestItem
+		{
+			vestType="Rebreather";
+			containerClass = "Supply100";
+			mass=80;
+		};
 	};
 
 	class JLTS_CloneVestKama;
@@ -83,5 +108,11 @@
 		};
 
         maximumLoad = "180";
-        mass = 25;
+
+        class ItemInfo : VestItem
+		{
+			vestType="Rebreather";
+			containerClass = "Supply100";
+			mass=80;
+		};
 	};

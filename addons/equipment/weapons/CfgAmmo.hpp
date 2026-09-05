@@ -94,8 +94,8 @@
     {
         aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
 
-        caliber = 1;
-        hit = 6.5;
+        caliber = 1.4;
+        hit = 8.5;
         coefGravity = 0.02;
         airfriction = 0;
         waterFriction = -0.01;

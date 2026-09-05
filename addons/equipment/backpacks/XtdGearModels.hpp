@@ -8,24 +8,28 @@
 			{
 				label = "Backpack Type";
 				values[] = { "Trooper", "Medic", "Engineer", "Ammo" };
+				alwaysSelectable = 1;
 			};
 
 			class strapType
 			{
 				label = "Strap Settings";
 				values[] = { "Base", "Strapped" };
+				alwaysSelectable = 1;
 			};
 
 			class radioType
 			{
 				label = "Radio Settings";
 				values[] = { "Base", "Radio" };
+				alwaysSelectable = 1;
 			};
 
 			class camoType
 			{
 				label = "Camouflage Options";
 				values[] = { "Base", "Sand", "Snow", "Wood" };
+				alwaysSelectable = 1;
 				class Sand
 				{
 					label = "Sand";
@@ -102,3 +106,49 @@
 				};
 			};
 		};
+
+		/*class aux187_CommandoBags_Model
+		{
+			label = "[187th] Commando Packs";
+			author = "Tim";
+			options[] = { "customType", "radioType", "camoType" };
+			
+			class customType
+			{
+				label = "Backpack Variant";
+				values[] = { "base", "Horizon", "Mindless", "Ringer" };
+				alwaysSelectable = 1;
+			};
+
+			class radioType
+			{
+				label = "Radio Settings";
+				values[] = { "Base", "Radio" };
+				alwaysSelectable = 1;
+			};
+
+			class camoType
+			{
+				label = "Camouflage Options";
+				values[] = { "Base", "Sand", "Snow", "Wood" };
+				class Sand
+				{
+					label = "Sand";
+					image = QPATHTOF(uniforms\data\ui\Sand_UI.paa);
+					description = "Sand Camouflage";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = QPATHTOF(uniforms\data\ui\Snow_UI.paa);
+					description = "Snow Camouflage";
+				};
+				class Wood
+				{
+					label = "Wood";
+					image = QPATHTOF(uniforms\data\ui\Wood_UI.paa);
+					description = "Wood Camouflage";
+				};
+			};
+
+		};*/

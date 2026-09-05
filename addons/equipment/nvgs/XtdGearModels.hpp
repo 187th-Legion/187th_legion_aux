@@ -7,6 +7,6 @@
         class nvgType
         {
             label = "NVG Options";
-            values[] = { "P2", "Airborne", "Pilot", "SL", "CMDR", "Snow", "Snow2" };
+            values[] = { "P2", "Airborne", "Pilot", "SL", "CMDR", "Officer", "Marksman" };
         };
     };

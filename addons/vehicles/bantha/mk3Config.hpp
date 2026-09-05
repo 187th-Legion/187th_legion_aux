@@ -1,5 +1,9 @@
     class HitPoints : HitPoints
     {
+
+        amphibious = 1;
+        canFloat = 1;
+
         class HitBody
         {
             name = "karoserie";

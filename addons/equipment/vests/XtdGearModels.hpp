@@ -8,6 +8,7 @@
         {
             label = "Vest Options";
             values[] = { "Holster", "Grenade", "CFR", "EOD", "OKama" };
+            alwaysSelectable = 1;
         };
 
         class Grenade

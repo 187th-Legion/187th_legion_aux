@@ -20,6 +20,27 @@
 		};
     };
 
+	class aux187_Uniform_Custom_Buzz : aux187_Uniform_Base
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (Buzz)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_Buzz";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "Buzz";
+		};
+    };
+
 	class aux187_Uniform_Custom_Crypto : aux187_Uniform_Base
     {
 		scope = 2;

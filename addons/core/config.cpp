@@ -6,7 +6,7 @@ class CfgPatches
 	{
 		name = "187th Legion Core";
 		author = "Tim, PraetorPanda,";
-		requiredVersion = 0.01;
+		requiredVersion = 0.50;
 		requiredAddons[] = 
 		{
 			"ls_props_staticships"
@@ -40,7 +40,14 @@ class CfgPatches
 			"aux187_ship_retribution_body1_2",
 			"aux187_ship_retribution_body1_1",
 
-			"aux187_ship_venator_retribution_full"
+			"aux187_ship_venator_retribution_full",
+
+			"aux187_arsenal_crate",
+			"aux187_arsenal_locker",
+
+			"aux187_rifleman",
+			"aux187_crewman",
+			"aux187_pilot"
 		};
 		weapons[] = {};
 		magazines[] = {};
@@ -57,6 +64,8 @@ class CfgVehicles
 {
 	#include "props\venator\retribution\CfgVehicles.hpp"
 	#include "props\venator\retribution\VenatorPieces_CfgVehicles.hpp"
+	#include "props\arsenals\CfgVehicles.hpp"
+	#include "units\CfgVehicles.hpp"
 };
 
 class CfgMarkers

@@ -125,6 +125,19 @@
         magazines[] = { "aux187_opfor_droideka_magazine" };
     };
 
+    class 3AS_J10_Turret_MG;
+    class aux187_opfor_j10s_weapon : 3AS_J10_Turret_MG
+    {
+        author = "Tim";
+        scope = 1;
+        scopeArsenal = 1;
+
+        baseWeapon = "aux187_opfor_j10s_weapon";
+        displayName = "[187th OPFOR] Twin Blaster Turrets";
+
+        magazines[] = { "aux187_opfor_mag_500Rnd_j10s" };
+    };
+
 
 
 // HUMAN DIVISION GUNS

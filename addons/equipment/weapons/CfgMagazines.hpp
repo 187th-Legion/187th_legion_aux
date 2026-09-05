@@ -212,6 +212,18 @@
             mass=25;
         };
 
+        class aux187_Mag_80Rnd_Pistol : aux187_magazine_base
+        {
+            displayName = "[187th] DC-17 80rnd Low Power Magazine";
+            author = "Tim";
+            ammo = "aux187_ammo_rifle_LP";
+
+            count = 80;
+            descriptionShort="Rounds: 80";
+            displayNameShort = "17 80rnd";
+            mass=8;
+        };
+
     /*
 	---------------------------------------------------------------
 	                      SPECIAL MAGAZINE CLASSES
@@ -262,4 +274,14 @@
 		mass=4;
 		descriptionShort="Explosive Charge. Rounds: 1";
 	};
+
+    class CA_LauncherMagazine;
+    class aux187_disposable_rocket : CA_LauncherMagazine
+    {
+        author = "Tim";
+        displayName = "[187th] RPS-6 Disposable Rocket";
+        scope = 2;
+
+        mass = 40;
+    };
 

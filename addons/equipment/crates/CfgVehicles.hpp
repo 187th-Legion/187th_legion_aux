@@ -7,7 +7,7 @@
 	class DefaultEventhandlers;
 	class aux187_Crate_Base: Box_NATO_Ammo_F
 	{
-		class UserActions;
+		//class UserActions;
 		scope = 1;
 		scopecurator = 1;
 		author = "Panda";

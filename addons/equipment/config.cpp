@@ -9,7 +9,6 @@ class CfgPatches
 		requiredVersion = 0.01;
 		requiredAddons[] = 
 		{
-			"ace_arsenal_extended", 
 			"A3_Characters_F",
 			"JLTS_characters_CloneArmor",
 			"3AS_Characters",
@@ -65,6 +64,7 @@ class CfgPatches
 			"aux187_Custom_Jack",
 			"aux187_Custom_Scorch",
 			"aux187_Custom_Fish",
+			"aux187_Custom_Buzz",
 
 			//BACKPACKS
 			"aux187_backpack_trooper_base",
@@ -111,13 +111,30 @@ class CfgPatches
 			"aux187_backpack_trooper_radio_sand",
 			"aux187_backpack_trooper_radio_sand_strap",
 
+			"aux187_backpack_commando_base",
+			"aux187_backpack_commando_base_radio",
+			"aux187_backpack_commando_horizon",
+			"aux187_backpack_commando_horizon_radio",
+			"aux187_backpack_commando_ringer",
+			"aux187_backpack_commando_ringer_radio",
+			"aux187_backpack_commando_mindless",
+			"aux187_backpack_commando_mindless_radio",
+
 			"aux187_backpack_patrol",
 			"aux187_backpack_BeltBags",
 			"aux187_backpack_scoutPack",
 			"aux187_backpack_heavy_radio_2",
 			"aux187_backpack_patrol_radio",
 			"aux187_backpack_mini_radio_2",
-			"aux187_backpack_mini_radio_1"
+			"aux187_backpack_mini_radio_1",
+
+			"aux187_crate_Refuel_Box",
+			"aux187_crate_Rearm_Box",
+			"aux187_crate_Repair_Box",
+			"aux187_crate_Explosives",
+			"aux187_crate_Basic_Ammo",
+			"aux187_crate_Medical",
+			"aux187_crate_Rockets"
 
 		};
 		weapons[] = 
@@ -203,10 +220,14 @@ class CfgPatches
 			"aux187_Knife",
 			"aux187_Baton",
 
+			"aux187_DC15P_Stun",
+			"aux187_DC17_Stun",
+
 			//NVGS
 			"aux187_Officer_RF",
 			"aux187_Commander",
 			"aux187_Squad_Leader_Visor",
+			"aux187_Marksman_Visor",
 
 			//ITEMS
 			"aux187_item_bactaSpray",
@@ -220,6 +241,7 @@ class CfgPatches
 			"aux187_optic_reflex",
 			"aux187_optic_brScope",
 			"aux187_optic_holo",
+			"aux187_optic_15ascope",
 
 			//CUSTOMS
 			"aux187_Uniform_Custom_Boss",
@@ -242,6 +264,7 @@ class CfgPatches
 			"aux187_Uniform_Custom_Jack",
 			"aux187_Uniform_Custom_Fish",
 			"aux187_Uniform_Custom_Scorch",
+			"aux187_Uniform_Custom_Buzz",
 
 			"aux187_Helmet_Custom_Mindless",
 			"aux187_Helmet_Custom_Icarus",
@@ -249,30 +272,21 @@ class CfgPatches
 			"aux187_Helmet_Custom_Tim",
 			"aux187_Helmet_Custom_Iron",
 			"aux187_Helmet_Custom_Buzz",
-			"aux187_Helmet_Custom_Solembum",
 			"aux187_Helmet_Custom_Ixi",
 			"aux187_Helmet_Custom_Fish",
 			"aux187_Helmet_Custom_Un",
-			"aux187_Helmet_Custom_Revan",
-			"aux187_Helmet_Custom_Panda",
 			"aux187_Helmet_Custom_Tyr",
 			"aux187_Helmet_Custom_Fives",
-			"aux187_Helmet_Custom_Dross",
 			"aux187_Helmet_Custom_Vinokurov",
 			"aux187_Helmet_Custom_Ted",
 			"aux187_Helmet_Custom_Tac",
 			"aux187_Helmet_Custom_Star",
-			"aux187_Helmet_Custom_Seek",
 			"aux187_Helmet_Custom_Ouroboros",
 			"aux187_Helmet_Custom_Nexu",
-			"aux187_Helmet_Custom_Mixer",
 			"aux187_Helmet_Custom_Lord",
 			"aux187_Helmet_Custom_Kraken",
-			"aux187_Helmet_Custom_Koss",
 			"aux187_Helmet_Custom_Knight",
-			"aux187_Helmet_Custom_Kalani",
-			"aux187_Helmet_Custom_Isaac",
-			"aux187_Helmet_Custom_Hunt",
+			//"aux187_Helmet_Custom_kalani",
 			"aux187_Helmet_Custom_Horizon",
 			"aux187_Helmet_Custom_Hesh",
 			"aux187_Helmet_Custom_Fluffy",
@@ -281,7 +295,9 @@ class CfgPatches
 			"aux187_Helmet_Custom_Crypto",
 			"aux187_Helmet_Custom_Carmine",
 			"aux187_Helmet_Custom_Boss",
-			"aux187_Helmet_Custom_Blade"
+			"aux187_Helmet_Custom_Gandalf",
+			"aux187_Helmet_Custom_Jack",
+			"aux187_Helmet_Custom_Scorch"
         };
 		magazines[] = 
 		{
@@ -366,6 +382,15 @@ class CfgCloudlets
 class CfgLights
 {
 	#include "items\Flares\CfgLights.hpp"
+};
+
+class CBA_DisposableLaunchers
+{
+	aux187_RPS6_Disposable[] = 
+	{
+		"aux187_RPS6_Disposable_Loaded",
+		"aux187_RPS6_Disposable_Used"
+	};
 };
 
 #include "items\Flares\FlareEffects.hpp"

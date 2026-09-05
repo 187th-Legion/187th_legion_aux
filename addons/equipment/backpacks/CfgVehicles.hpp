@@ -1112,6 +1112,267 @@
             maximumLoad = "250";
             mass = 50;
         };
+    
+    //COMMANDO PACKS!!!!!!!!!
+
+        class 3AS_B_Katarn_Backpack;
+        class aux187_backpack_commando_base : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Base)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Base.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Base";
+                radioType = "Base";
+                camoType = "Base";
+            };*/
+
+            tf_hasLRradio = 0;
+
+            maximumLoad = "250";
+            mass = 50;
+        };
+
+        class aux187_backpack_commando_base_radio : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Base, Radio)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Base.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Base";
+                radioType = "Radio";
+                camoType = "Base";
+            };*/
+
+            maximumLoad = "250";
+            mass = 50;
+
+            tf_dialog = "JLTS_clone_rto_radio_dialog";
+            tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+            tf_encryptionCode = "tf_west_radio_code";
+            tf_hasLRradio = 1;
+            tf_isolatedAmount = 0.65;
+            tf_range = 20000;
+            tf_subtype = "digital_lr";
+        };
+
+        /*class aux187_backpack_commando_wood : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Wood)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Wood.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Base";
+                radioType = "Base";
+                camoType = "wood";
+            };
+
+            maximumLoad = "250";
+            mass = 50;
+        };
+
+        class aux187_backpack_commando_base_radio : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Wood, Radio)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Wood.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Base";
+                radioType = "Radio";
+                camoType = "wood";
+            };
+
+            maximumLoad = "250";
+            mass = 50;
+
+            tf_dialog = "JLTS_clone_rto_radio_dialog";
+            tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+            tf_encryptionCode = "tf_west_radio_code";
+            tf_hasLRradio = 1;
+            tf_isolatedAmount = 0.65;
+            tf_range = 20000;
+            tf_subtype = "digital_lr";
+        };*/
+
+        class aux187_backpack_commando_horizon : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Horizon)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Horizon.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Horizon";
+                radioType = "Base";
+                camoType = "Base";
+            };*/
+
+            tf_hasLRradio = 0;
+
+            maximumLoad = "250";
+            mass = 50;
+        };
+
+        class aux187_backpack_commando_horizon_radio : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Horizon, Radio)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Horizon.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Horizon";
+                radioType = "Radio";
+                camoType = "Base";
+            };*/
+
+            maximumLoad = "250";
+            mass = 50;
+
+            tf_dialog = "JLTS_clone_rto_radio_dialog";
+            tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+            tf_encryptionCode = "tf_west_radio_code";
+            tf_hasLRradio = 1;
+            tf_isolatedAmount = 0.65;
+            tf_range = 20000;
+            tf_subtype = "digital_lr";
+        };
+
+        class aux187_backpack_commando_ringer : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Ringer)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Ringer.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Ringer";
+                radioType = "Base";
+                camoType = "Base";
+            };*/
+
+            tf_hasLRradio = 0;
+
+            maximumLoad = "250";
+            mass = 50;
+        };
+
+        class aux187_backpack_commando_ringer_radio : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Ringer, Radio)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Ringer.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Ringer";
+                radioType = "Radio";
+                camoType = "Base";
+            };*/
+
+            maximumLoad = "250";
+            mass = 50;
+
+            tf_dialog = "JLTS_clone_rto_radio_dialog";
+            tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+            tf_encryptionCode = "tf_west_radio_code";
+            tf_hasLRradio = 1;
+            tf_isolatedAmount = 0.65;
+            tf_range = 20000;
+            tf_subtype = "digital_lr";
+        };
+
+        class aux187_backpack_commando_mindless : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Mindless)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Mindless";
+                radioType = "Base";
+                camoType = "Base";
+            };*/
+
+            tf_hasLRradio = 0;
+
+            maximumLoad = "250";
+            mass = 50;
+        };
+
+        class aux187_backpack_commando_mindless_radio : 3AS_B_Katarn_Backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Katarn Backpack (Mindless, Radio)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_CommandoBags_Model";
+                customType = "Mindless";
+                radioType = "Radio";
+                camoType = "Base";
+            };*/
+
+            maximumLoad = "250";
+            mass = 50;
+
+            tf_dialog = "JLTS_clone_rto_radio_dialog";
+            tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+            tf_encryptionCode = "tf_west_radio_code";
+            tf_hasLRradio = 1;
+            tf_isolatedAmount = 0.65;
+            tf_range = 20000;
+            tf_subtype = "digital_lr";
+        };
 
         
 

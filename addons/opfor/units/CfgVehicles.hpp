@@ -1257,9 +1257,10 @@
 
 		class Turrets : Turrets
 		{
-			class NewTurret : MainTurret
+			class MainTurret : MainTurret
 			{
-				magazines[] = { "aux187_500Rnd_J10MG_Mag", "aux187_500Rnd_J10MG_Mag", "aux187_500Rnd_J10MG_Mag", "aux187_500Rnd_J10MG_Mag", "aux187_500Rnd_J10MG_Mag"};
+				weapons[] = { "aux187_opfor_j10s_weapon" };
+				magazines[] = { "aux187_opfor_mag_500Rnd_j10s", "aux187_opfor_mag_500Rnd_j10s", "aux187_opfor_mag_500Rnd_j10s", "aux187_opfor_mag_500Rnd_j10s" };
 			};
 		};
 	};
@@ -1706,6 +1707,15 @@
 		crew = "O_UAV_AI";
 
 		scope = 2;
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = { "aux187_opfor_j10s_weapon" };
+				magazines[] = { "aux187_opfor_mag_500Rnd_j10s", "aux187_opfor_mag_500Rnd_j10s" };
+			};
+		};
 	};
 
 	class 3as_CIS_ScavDroid;

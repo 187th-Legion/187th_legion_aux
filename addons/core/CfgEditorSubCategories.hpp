@@ -5,6 +5,11 @@ class CfgEditorSubcategories
 		displayName = "Aircraft";
 	};
 
+	class aux187_edSubcat_Infantry
+	{
+		displayName = "Infantry";
+	};
+
 	class aux187_edSubcat_Vehicles
 	{
 		displayName = "Ground Vehicles";
@@ -12,7 +17,7 @@ class CfgEditorSubcategories
 
 	class aux187_edSubcat_Emplacements
 	{
-		displayName = "Ground Vehicles";
+		displayName = "Emplacements";
 	};
 
 	class aux187_edSubcat_venator_warden

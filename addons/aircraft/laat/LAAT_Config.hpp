@@ -33,7 +33,7 @@
     class EventHandlers
     {
         fired = "_this execVM '\3AS\3as_Laat\LAATI\scripts\fired_laser.sqf';";
-        init = "(_this select 0) execVM 'z\aux187\addons\core\functions\loadSupply';";
+        init = "(_this select 0) execVM 'z\aux187\addons\core\functions\loadSupply\fn_masterLoader.sqf';";
     };
 
     class ls_impulsor : ls_impulsor_base

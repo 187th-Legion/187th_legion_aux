@@ -8,11 +8,13 @@
 			{
 				label = "Helmet Options";
 				values[] = { "P2", "RC", "Pilot", "Airborne", "BARC", "ARC", "ARF" };
+				alwaysSelectable = 1;
 			};
 			class camoType
 			{
 				label = "Camouflage Options";
 				values[] = { "Recruit", "Base", "Veteran", "Sand", "Snow", "Wood" };
+				//alwaysSelectable = 1;
 				class Sand
 				{
 					label = "Sand";
