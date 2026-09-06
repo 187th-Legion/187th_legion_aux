@@ -83,6 +83,7 @@
                     {
                         aux187_optic_Reflex = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
                 class PointerSlot : PointerSlot
@@ -186,6 +187,7 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -308,6 +310,7 @@
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
                         aux187_optic_15ascope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -379,6 +382,7 @@
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
                         aux187_optic_15ascope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -549,8 +553,8 @@
 	*/
 
 
-        class 3AS_DC15S_Base_GL: Rifle_Base_F {};
-        class 3AS_DC15S_GL: 3AS_DC15S_Base_GL {};
+        //class 3AS_DC15S_Base_GL: Rifle_Base_F {};
+        class 3AS_DC15S_GL;//: 3AS_DC15S_Base_GL {};
         class aux187_DC15S_GL : 3AS_DC15S_GL
         {
             author = "Tim";
@@ -605,105 +609,51 @@
                     {
                         aux187_optic_Reflex = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
             };
-
             class GL_1GL_F: UGL_F
-        {
-            displayName="187th UGL";
-            descriptionShort="Pew Tube";
-            useModelOptics=0;
-            useExternalOptic=0;
-            magazines[]=
             {
-                "aux187_mag_1Rnd_AP_Grenade",
-                "aux187_mag_1Rnd_HE_Grenade",
-                "3AS_1UGL_MK54_HE_shell"
-            };
-            magazineWell[]=
-            {
-                "UGL_40x36",
-                "3AS_1UGL_Magwell"
-            };
-            cameraDir="OP_look";
-            discreteDistance[]={50,75,100,150,200,250,300,350,400};
-            discreteDistanceCameraPoint[]=
-            {
-                "OP_eye_50",
-                "OP_eye_75",
-                "OP_eye_100",
-                "OP_eye_150",
-                "OP_eye_200",
-                "OP_eye_250",
-                "OP_eye_300",
-                "OP_eye_350",
-                "OP_eye_400"
-            };
-            discreteDistanceInitIndex=1;
-            reloadAction="GestureReloadMXUGL";
-            reloadMagazineSound[]=
-            {
-                "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload.ogg",
-                1,
-                1,
-                10
-            };
-        };
-
-            /*class Single : Single
-            {
-                dispersion = 0.0010;
-
-                recoil = "recoil_single_primary_3outof10";
-                recoilProne = "recoil_single_primary_prone_3outof10";
-
-                sounds[] = { "StandardSound" };
-
-                class StandardSound : BaseSoundModeType
+                displayName="187th UGL";
+                descriptionShort="Pew Tube";
+                useModelOptics=0;
+                useExternalOptic=0;
+                magazines[]=
                 {
-                    begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1,1800};
-                    begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.025,1800};
-                    begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.95,1800};
-                    begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.05,1800};
-                    begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.9,1800};
-                    beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1,1,400};
-                    closure1[] = {};
-                    closure2[] = {};
-                    soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
-                    soundBeginWater[] = {"beginwater1",1};
-                    soundClosure[] = {};
-                    weaponSoundEffect = "";
+                    "aux187_mag_1Rnd_AP_Grenade",
+                    "aux187_mag_1Rnd_HE_Grenade",
+                    "3AS_1UGL_MK54_HE_shell"
+                };
+                magazineWell[]=
+                {
+                    "UGL_40x36",
+                    "3AS_1UGL_Magwell"
+                };
+                cameraDir="OP_look";
+                discreteDistance[]={50,75,100,150,200,250,300,350,400};
+                discreteDistanceCameraPoint[]=
+                {
+                    "OP_eye_50",
+                    "OP_eye_75",
+                    "OP_eye_100",
+                    "OP_eye_150",
+                    "OP_eye_200",
+                    "OP_eye_250",
+                    "OP_eye_300",
+                    "OP_eye_350",
+                    "OP_eye_400"
+                };
+                discreteDistanceInitIndex=1;
+                reloadAction="GestureReloadMXUGL";
+                reloadMagazineSound[]=
+                {
+                    "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload.ogg",
+                    1,
+                    1,
+                    10
                 };
             };
-
-            class FullAuto : FullAuto
-            {
-                autoFire = 1;
-                dispersion = 0.00133;
-                reloadTime = 0.085;
-
-                recoil = "recoil_auto_primary_3outof10";
-                recoilProne = "recoil_auto_primary_prone_3outof10";
-
-                sounds[] = { "StandardSound" };
-
-                class StandardSound : BaseSoundModeType
-                {
-                    begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1,1800};
-                    begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.025,1800};
-                    begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.95,1800};
-                    begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.05,1800};
-                    begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.9,1800};
-                    beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1,1,400};
-                    closure1[] = {};
-                    closure2[] = {};
-                    soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
-                    soundBeginWater[] = {"beginwater1",1};
-                    soundClosure[] = {};
-                    weaponSoundEffect = "";
-                };
-            };*/
         };
 
         class 3AS_DC15C_GL: 3AS_DC15C_Base_F {};
@@ -736,6 +686,7 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -910,6 +861,7 @@
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
                         aux187_optic_15ascope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -1076,8 +1028,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_5Rnd_DC15X",
-                "aux187_Mag_1Rnd_CMag"
+                "aux187_Mag_5Rnd_DC15X"
             };
 
             class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1138,6 +1089,7 @@
                         aux187_optic_LPVO = 1;
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
             };
@@ -1352,7 +1304,7 @@
                 {
                     compatibleItems[] = 
                     {
-                        "aux187_optic_LPVO", "aux187_optic_Reflex", "aux187_optic_brScope", "aux187_optic_holo"
+                        "aux187_optic_LPVO", "aux187_optic_Reflex", "aux187_optic_brScope", "aux187_optic_holo", "aux187_optic_smartlink"
                     };
 
                     linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
@@ -1538,8 +1490,8 @@
 	---------------------------------------------------------------
 	*/
 
-        class IDA_DC17;
-        class aux187_DC17 : IDA_DC17
+        class JLTS_DC17SA;
+        class aux187_DC17 : JLTS_DC17SA
         {
             author = "Tim";
             scope = 2;
@@ -1548,7 +1500,7 @@
             IDA_StunWeapon="aux187_DC17_Stun";
 
             baseWeapon = "aux187_DC17";
-            displayName = "[187th] DC-17 Blaster Pistol";
+            displayName = "[187th] DC-17SA Blaster Pistol";
             class XtdGearInfo {
                 model = "aux187_SecondaryWeapon_Model";
                 Pistols = "DC17";
@@ -1667,6 +1619,16 @@
             displayName = "[187th] Holo Optic";
         };
 
+        class Optre_Recon_Sight;
+        class aux187_optic_Recon : Optre_Recon_Sight
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Recon Optic";
+        };
+
         class OPTRE_BR_Classic_Scope_SLS_Raised;
         class aux187_optic_brScope : OPTRE_BR_Classic_Scope_SLS_Raised
         {
@@ -1685,6 +1647,26 @@
             scopeArsenal = 2;
 
             displayName = "[187th] 15A Rifle Optic";
+        };
+
+        class 3AS_optic_DC15L_F;
+        class aux187_optic_15lscope : 3AS_optic_DC15L_F
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] 15L Rifle Optic";
+        };
+
+        class OPTRE_MA37_Smartlink_Scope;
+        class aux187_optic_smartlink : OPTRE_MA37_Smartlink_Scope
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Smartlink Rifle Optic";
         };
 
         class optic_mrco;

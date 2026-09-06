@@ -60,7 +60,7 @@
 			class Bags
 			{
 				label = "Backpack Type";
-				values[] = { "BeltBag", "ScoutBag", "PatrolPack" };
+				values[] = { "BeltBag", "ScoutBag", "PatrolPack", "Sling" };
 				alwaysSelectable = 1;
 
 				class BeltBag
@@ -82,7 +82,7 @@
 			class Radios
 			{
 				label = "Backpack Type";
-				values[] = { "Mini1", "Mini2", "PatrolPackR", "RTO2" };
+				values[] = { "Mini1", "Mini2", "PatrolPackR", "RTO2", "Sling" };
 				alwaysSelectable = 1;
 
 				class Mini1

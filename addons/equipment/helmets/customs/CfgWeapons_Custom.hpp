@@ -119,19 +119,6 @@
 		};
     };
 
-    /*class aux187_Helmet_Custom_Kalani : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Kalani)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Kalani.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Kalani";
-		};
-    };*/
-
     class aux187_Helmet_Custom_Knight : aux187_P2_Base_Helmet
     {
 		scope = 2;
@@ -301,6 +288,19 @@
 		};
     };
 
+	class aux187_Helmet_Custom_Meister : aux187_P2_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Meister)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Meister.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Meister";
+		};
+    };
+
 	// ---------------------------------------------------------------------------------
 	//                                    Barc
 	// ---------------------------------------------------------------------------------
@@ -336,6 +336,19 @@
 		};
     };
 
+	class aux187_Helmet_Custom_Kalani : aux187_Pilot_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Kalani)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Kalani.paa), "", "3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", QPATHTOF(helmets\customs\data\187thHelmet_Kalani.paa), "" };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Kalani";
+		};
+    };
+
     // ---------------------------------------------------------------------------------
 	//                                   ARF
 	// ---------------------------------------------------------------------------------
@@ -350,6 +363,19 @@
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Buzz";
+		};
+    };
+
+	class aux187_Helmet_Custom_Swim : aux187_ARF_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Swim)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Swim.paa), QPATHTOF(helmets\data\187th_ARF_Base_Helmet.paa) };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Swim";
 		};
     };
 

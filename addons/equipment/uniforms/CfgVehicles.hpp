@@ -149,13 +149,13 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CL_Uniform";
 
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 		
 		hiddenSelections[] = 
 		{
             "camo1",
 			"camo2",
-			"camo3"
+			//"camo3"
         };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P2_CL_Torso.paa), QPATHTOF(uniforms\data\187th_P2_Base_Legs.paa), QPATHTOF(uniforms\data\Rank_Slider\Clone_Rank_CL.paa) };
 	};
@@ -165,13 +165,13 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CC_Uniform";
 		
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 
 		hiddenSelections[] = 
 		{
             "camo1",
 			"camo2",
-			"camo3"
+			//"camo3"
         };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P2_CC_Torso.paa), QPATHTOF(uniforms\data\187th_P2_Base_Legs.paa), QPATHTOF(uniforms\data\Rank_Slider\Clone_Rank_CC.paa) };
 	};
@@ -181,13 +181,13 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CO_Uniform";
 
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 		
 		hiddenSelections[] = 
 		{
             "camo1",
 			"camo2",
-			"camo3"
+			//"camo3"
         };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P2_CO_Torso.paa), QPATHTOF(uniforms\data\187th_P2_Base_Legs.paa), QPATHTOF(uniforms\data\Rank_Slider\Clone_Rank_CO.paa) };
 	};
@@ -197,13 +197,13 @@
 		scope = 1;
 		uniformClass = "aux187_P2_CM_Uniform";
 
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		//model = "\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
 		
 		hiddenSelections[] = 
 		{
             "camo1",
 			"camo2",
-			"camo3"
+			//"camo3"
         };
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\data\187th_P2_CM_Torso.paa), QPATHTOF(uniforms\data\187th_P2_Base_Legs.paa), QPATHTOF(uniforms\data\Rank_Slider\Clone_Rank_CM.paa) };
 	};

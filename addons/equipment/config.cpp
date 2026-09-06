@@ -226,8 +226,6 @@ class CfgPatches
 			//NVGS
 			"aux187_Officer_RF",
 			"aux187_Commander",
-			"aux187_Squad_Leader_Visor",
-			"aux187_Marksman_Visor",
 
 			//ITEMS
 			"aux187_item_bactaSpray",
@@ -242,6 +240,7 @@ class CfgPatches
 			"aux187_optic_brScope",
 			"aux187_optic_holo",
 			"aux187_optic_15ascope",
+			"aux187_optic_smartlink",
 
 			//CUSTOMS
 			"aux187_Uniform_Custom_Boss",
@@ -286,7 +285,7 @@ class CfgPatches
 			"aux187_Helmet_Custom_Lord",
 			"aux187_Helmet_Custom_Kraken",
 			"aux187_Helmet_Custom_Knight",
-			//"aux187_Helmet_Custom_kalani",
+			"aux187_Helmet_Custom_kalani",
 			"aux187_Helmet_Custom_Horizon",
 			"aux187_Helmet_Custom_Hesh",
 			"aux187_Helmet_Custom_Fluffy",
@@ -297,7 +296,9 @@ class CfgPatches
 			"aux187_Helmet_Custom_Boss",
 			"aux187_Helmet_Custom_Gandalf",
 			"aux187_Helmet_Custom_Jack",
-			"aux187_Helmet_Custom_Scorch"
+			"aux187_Helmet_Custom_Scorch",
+			"aux187_Helmet_Custom_Meister",
+			"aux187_Helmet_Custom_Swim"
         };
 		magazines[] = 
 		{

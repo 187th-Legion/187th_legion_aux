@@ -968,7 +968,7 @@
                 Radios = "Mini1";
             };
 
-            maximumLoad = "150";
+            maximumLoad = "250";
             mass = 50;
 
             tf_dialog = "JLTS_clone_rto_radio_dialog";
@@ -976,7 +976,7 @@
             tf_encryptionCode = "tf_west_radio_code";
             tf_hasLRradio = 1;
             tf_isolatedAmount = 0.65;
-            tf_range = 10000;
+            tf_range = 17500;
             tf_subtype = "digital_lr";
 
         };
@@ -995,7 +995,7 @@
                 Radios = "Mini2";
             };
 
-            maximumLoad = "150";
+            maximumLoad = "250";
             mass = 50;
 
             tf_dialog = "JLTS_clone_rto_radio_dialog";
@@ -1003,7 +1003,7 @@
             tf_encryptionCode = "tf_west_radio_code";
             tf_hasLRradio = 1;
             tf_isolatedAmount = 0.65;
-            tf_range = 10000;
+            tf_range = 17500;
             tf_subtype = "digital_lr";
         };
 
@@ -1029,7 +1029,7 @@
             tf_encryptionCode = "tf_west_radio_code";
             tf_hasLRradio = 1;
             tf_isolatedAmount = 0.65;
-            tf_range = 10000;
+            tf_range = 17500;
             tf_subtype = "digital_lr";
         };
 
@@ -1047,7 +1047,7 @@
                 Radios = "RTO2";
             };
 
-            maximumLoad = "200";
+            maximumLoad = "250";
             mass = 50;
 
             tf_dialog = "JLTS_clone_rto_radio_dialog";
@@ -1073,7 +1073,7 @@
                 Bags = "ScoutBag";
             };
 
-            maximumLoad = "150";
+            maximumLoad = "250";
             mass = 50;
         };
 
@@ -1091,7 +1091,7 @@
                 Bags = "BeltBag";
             };
 
-            maximumLoad = "150";
+            maximumLoad = "250";
             mass = 50;
         };
 
@@ -1371,6 +1371,104 @@
             tf_hasLRradio = 1;
             tf_isolatedAmount = 0.65;
             tf_range = 20000;
+            tf_subtype = "digital_lr";
+        };
+
+        class JMSLLTE_back_stormband_v2;
+        class aux187_backpack_sling_base : JMSLLTE_back_stormband_v2
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Sling Backpack";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_MiscBags_Model";
+                Bags = "Sling";
+            };
+
+            tf_hasLRradio = 0;
+
+            maximumLoad = "250";
+            mass = 50;
+        };
+
+        class aux187_backpack_sling_radio : JMSLLTE_back_stormband_v2
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Sling Backpack (Radio)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_MiscBags_Model";
+                Radios = "Sling";
+            };
+
+            maximumLoad = "250";
+            mass = 50;
+
+            tf_dialog = "JLTS_clone_rto_radio_dialog";
+            tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+            tf_encryptionCode = "tf_west_radio_code";
+            tf_hasLRradio = 1;
+            tf_isolatedAmount = 0.65;
+            tf_range = 17500;
+            tf_subtype = "digital_lr";
+        };
+
+        class JLTS_Clone_jumppack;
+        class aux187_backpack_jumppack_base : JLTS_Clone_jumppack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Jumppack";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_MiscBags_Model";
+                Bags = "Sling";
+            };*/
+
+            tf_hasLRradio = 0;
+
+            maximumLoad = "250";
+            mass = 50;
+        };
+
+        class aux187_backpack_jumppack_radio : JLTS_Clone_jumppack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Jumppack (Radio)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+
+            /*class XtdGearInfo {
+                model = "aux187_MiscBags_Model";
+                Radios = "Sling";
+            };*/
+
+            maximumLoad = "250";
+            mass = 50;
+
+            tf_dialog = "JLTS_clone_rto_radio_dialog";
+            tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+            tf_encryptionCode = "tf_west_radio_code";
+            tf_hasLRradio = 1;
+            tf_isolatedAmount = 0.65;
+            tf_range = 17500;
             tf_subtype = "digital_lr";
         };
 

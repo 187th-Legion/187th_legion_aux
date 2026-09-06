@@ -44,7 +44,9 @@
 					"Vinokurov",
 					"Scorch",
 					"Jack",
-					"Gandalf"
+					"Gandalf",
+					"Swim",
+					"Meister"
 				};
             };
         };

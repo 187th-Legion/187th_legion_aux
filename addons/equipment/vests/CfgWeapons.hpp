@@ -5,6 +5,8 @@
 		author = "Tim";
 		scope = 2;
 		displayName = "[187th] Clone Trooper Holster";
+
+		model = "\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
 		
 		class XtdGearInfo
 		{
@@ -12,13 +14,15 @@
             vestType = "Holster";
 		};
 
-        maximumLoad = "180";
+        maximumLoad = 180;
+		weaponPoolAvailable = 1;
 
 		class ItemInfo : VestItem
 		{
 			vestType="Rebreather";
 			containerClass = "Supply100";
 			mass=80;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
 		};
 	};
 
@@ -28,6 +32,8 @@
 		author = "Tim";
 		scope = 2;
 		displayName = "[187th] Clone Grenade Pouch";
+
+		model = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_eod.p3d";
 		
 		class XtdGearInfo
 		{
@@ -35,13 +41,15 @@
             vestType = "Grenade";
 		};
 
-        maximumLoad = "180";
+        maximumLoad = 180;
+		weaponPoolAvailable = 1;
         
 		class ItemInfo : VestItem
 		{
 			vestType="Rebreather";
 			containerClass = "Supply100";
 			mass=80;
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_eod.p3d";
 		};
 	};
 
@@ -51,6 +59,8 @@
 		author = "Tim";
 		scope = 2;
 		displayName = "[187th] Clone CFR Pouch";
+
+		model = "\ls\core\addons\characters_clone_legacy\vests\medic\ls_gar_cfr_vest.p3d";
 		
 		class XtdGearInfo
 		{
@@ -58,13 +68,15 @@
             vestType = "CFR";
 		};
 
-        maximumLoad = "180";
+        maximumLoad = 180;
+		weaponPoolAvailable = 1;
         
 		class ItemInfo : VestItem
 		{
 			vestType="Rebreather";
 			containerClass = "Supply100";
 			mass=80;
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\medic\ls_gar_cfr_vest.p3d";
 		};
 	};
 
@@ -75,6 +87,8 @@
 		displayName = "[187th] Clone EOD Pouch";
 
         hiddenSelectionsTextures[] = { "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa" };
+
+		model = "\ls\core\addons\characters_clone_legacy\vests\medic\ls_gar_cfr_vest.p3d";
 		
 		class XtdGearInfo
 		{
@@ -82,13 +96,15 @@
             vestType = "EOD";
 		};
 
-        maximumLoad = "180";
+        maximumLoad = 180;
+		weaponPoolAvailable = 1;
 		
         class ItemInfo : VestItem
 		{
 			vestType="Rebreather";
 			containerClass = "Supply100";
 			mass=80;
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\medic\ls_gar_cfr_vest.p3d";
 		};
 	};
 
@@ -99,7 +115,7 @@
 		scope = 2;
 		displayName = "[187th] Clone Officer Kama";
 
-        //hiddenSelectionsTextures[] = { "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa" };
+        model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
 		
 		class XtdGearInfo
 		{
@@ -107,12 +123,14 @@
             vestType = "OKama";
 		};
 
-        maximumLoad = "180";
+        maximumLoad = 180;
+		weaponPoolAvailable = 1;
 
         class ItemInfo : VestItem
 		{
 			vestType="Rebreather";
 			containerClass = "Supply100";
 			mass=80;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
 		};
 	};

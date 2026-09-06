@@ -138,52 +138,6 @@
         };
     };
 
-    class aux187_Squad_Leader_Visor: JLTS_CloneNVG
-	{
-		displayName="[187th] Squad Leader Visor";
-		identityTypes[]={};
-		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
-		Scope=2;
-		ScopeCurator=2;
-        visionMode[]=
-        {
-            "Normal",
-			"NVG",
-			"TI"
-        };
-        thermalMode[]={0,1};
-
-        class XtdGearInfo
-        {
-            model = "aux187_NVG_Model";
-            nvgType = "SL";
-        };
-	};
-
-    class aux187_Marksman_Visor: JLTS_CloneNVG
-	{
-		displayName="[187th] Squad Leader Visor";
-		identityTypes[]={};
-		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
-		Scope=2;
-		ScopeCurator=2;
-        visionMode[]=
-        {
-            "Normal",
-			"NVG",
-			"TI"
-        };
-        thermalMode[]={0,1};
-
-        class XtdGearInfo
-        {
-            model = "aux187_NVG_Model";
-            nvgType = "SL";
-        };
-	};
-
     class JLTS_CloneNVGCC;
     class aux187_Commander: JLTS_CloneNVGCC
     {
@@ -265,16 +219,6 @@
 			"TI"
         };
         thermalMode[]={0,1};
-        class ItemInfo
-        {
-            type=616;
-            //modelOff="";
-            mass=20;
-            hiddenSelections[]=
-            {
-                "camo"
-            };
-        };
 
         class XtdGearInfo
         {
@@ -315,5 +259,68 @@
         {
             model = "aux187_NVG_Model";
             nvgType = "Marksman";
+        };
+    };
+
+    class aux187_NVG_Chip_SL : JLTS_CloneNVG
+    {
+        author="187th Legion";
+        displayName="[187th] Squad Leader Visor";
+        modelOptics="";
+        visionMode[]=
+        {
+            "Normal",
+            "NVG",
+			"TI"
+        };
+        thermalMode[]={0,1};
+        class ItemInfo
+        {
+            type=616;
+            //modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+            //uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+            mass=20;
+            hiddenSelections[]=
+            {
+                "camo"
+            };
+        };
+
+        class XtdGearInfo
+        {
+            model = "aux187_NVG_Model";
+            nvgType = "SL";
+        };
+    };
+
+    class OPTRE_NVGT_C;
+    class aux187_NVG_Chip_ARF : OPTRE_NVGT_C
+    {
+        author="187th Legion";
+        displayName="[187th] ARF Visor";
+        modelOptics="";
+        visionMode[]=
+        {
+            "Normal",
+            "NVG",
+			"TI"
+        };
+        thermalMode[]={0,1};
+        class ItemInfo
+        {
+            type=616;
+            //modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+            //uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+            mass=20;
+            hiddenSelections[]=
+            {
+                "camo"
+            };
+        };
+
+        class XtdGearInfo
+        {
+            model = "aux187_NVG_Model";
+            nvgType = "ARF";
         };
     };
