@@ -9,6 +9,8 @@ include = [
     "meta.cpp",
     "LICENSE",
     "logo.paa",
+    "readme.md",
+    "addons/*.pbo"
 ]
 
 exclude = [

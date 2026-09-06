@@ -8,11 +8,13 @@
 			{
 				label = "Uniform Options";
 				values[] = { "P2", "RC", "Airborne" };
+				alwaysSelectable = 1;
 			};
 			class camoType
 			{
 				label = "Camouflage Options";
 				values[] = { "Recruit", "Base", "Veteran", "Sand", "Snow", "Wood" };
+				//alwaysSelectable = 1;
 				class Sand
 				{
 					label = "Sand";
@@ -37,6 +39,7 @@
 			{
 				label = "Role Type";
 				values[] = { "Trooper", "EOD", "Medic" };
+				//alwaysSelectable = 1;
 			};
 		};
 		
@@ -50,5 +53,6 @@
 			{
 				label = "Uniform Options";
 				values[] = { "CP", "CS", "CGS", "CL", "CC", "CO", "CM" };
+				alwaysSelectable = 1;
 			};
 		};

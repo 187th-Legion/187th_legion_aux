@@ -33,6 +33,8 @@
             descriptionShort="Rounds: 40";
             displayNameShort = "15S 40rnd";
             mass=8;
+
+            initSpeed = 750;
         };
 
         class aux187_Mag_80Rnd_DC15S : aux187_magazine_base
@@ -45,6 +47,8 @@
             descriptionShort="Rounds: 80";
             displayNameShort = "15S 80rnd";
             mass=10;
+
+            initSpeed = 700;
         };
 
         class aux187_Mag_100Rnd_DC17M : aux187_magazine_base
@@ -58,6 +62,8 @@
             displayNameShort = "17M 100rnd";
             modelSpecial = "3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel.p3d";
             mass=10;
+
+            initspeed = 900;
         };
 
         class aux187_Mag_10Rnd_DC17M : aux187_magazine_base
@@ -71,6 +77,8 @@
             displayNameShort = "17M 10rnd";
             modelSpecial = "3AS\3AS_Weapons\DC17M\attachments\sniper_Barrel.p3d";
             mass=15;
+
+            initspeed = 1500;
         };
 
         class 3AS_AntiArmour_mag;
@@ -96,6 +104,8 @@
             descriptionShort="Rounds: 45";
             displayNameShort = "15C 45rnd";
             mass=8;
+
+            initspeed = 900;
         };
 
         class aux187_Mag_45Rnd_DC15A : aux187_magazine_base
@@ -108,6 +118,9 @@
             descriptionShort="Rounds: 45";
             displayNameShort = "15A 45rnd";
             mass=8;
+
+            initspeed = 1100;
+            tracersEvery = 1;
         };
 
         class aux187_Mag_40Rnd_XLE7 : aux187_magazine_base
@@ -120,6 +133,8 @@
             descriptionShort="Rounds: 40";
             displayNameShort = "XLE7 40rnd";
             mass=8;
+
+            initspeed = 900;
         };
 
         class aux187_Mag_250Rnd_DLT16 : aux187_magazine_base
@@ -132,6 +147,8 @@
             descriptionShort="Rounds: 250";
             displayNameShort = "DLT16 250rnd";
             mass=60;
+
+            initspeed = 1100;
         };
 
         class aux187_Mag_300Rnd_Z6 : aux187_magazine_base
@@ -144,6 +161,8 @@
             descriptionShort="Rounds: 300";
             displayNameShort = "Z6 300rnd";
             mass=65;
+
+            initspeed = 1100;
         };
 
         class aux187_Mag_75Rnd_DC15L : aux187_magazine_base
@@ -156,6 +175,8 @@
             descriptionShort="Rounds: 75";
             displayNameShort = "15L 75rnd";
             mass=20;
+
+            initspeed = 1100;
         };
 
     /*
@@ -174,6 +195,8 @@
             descriptionShort="Rounds: 20";
             displayNameShort = "38X 20rnd";
             mass=15;
+
+            initspeed = 1500;
         };
 
         class aux187_Mag_10Rnd_Firepuncher : aux187_magazine_base
@@ -186,6 +209,8 @@
             descriptionShort="Rounds: 10";
             displayNameShort = "773 10rnd";
             mass=15;
+
+            initspeed = 1500;
         };
 
         class aux187_Mag_5Rnd_DC15X : aux187_magazine_base
@@ -198,6 +223,8 @@
             descriptionShort="Rounds: 5";
             displayNameShort = "15X 5rnd";
             mass=15;
+
+            initSpeed = 5000;
         };
 
         class aux187_Mag_1Rnd_CMag : aux187_magazine_base
@@ -210,6 +237,22 @@
             descriptionShort="Rounds: 1";
             displayNameShort = "CMAG 1rnd";
             mass=25;
+
+            initSpeed = 5000;
+        };
+
+        class aux187_Mag_80Rnd_Pistol : aux187_magazine_base
+        {
+            displayName = "[187th] DC-17 80rnd Low Power Magazine";
+            author = "Tim";
+            ammo = "aux187_ammo_rifle_LP";
+
+            count = 80;
+            descriptionShort="Rounds: 80";
+            displayNameShort = "17 80rnd";
+            mass=8;
+
+            initSpeed = 750;
         };
 
     /*
@@ -262,4 +305,14 @@
 		mass=4;
 		descriptionShort="Explosive Charge. Rounds: 1";
 	};
+
+    class CA_LauncherMagazine;
+    class aux187_disposable_rocket : CA_LauncherMagazine
+    {
+        author = "Tim";
+        displayName = "[187th] RPS-6 Disposable Rocket";
+        scope = 2;
+
+        mass = 40;
+    };
 

@@ -1,7 +1,7 @@
 class Extended_PostInit_EventHandlers
 {
-	// Adding our uniform guide items to Ace Arsenal
-	class default_arsenal_init_event {
-		init = "call compile preprocessFileLineNumbers '\187th-aux\Functions\inits\default_loadouts_init.sqf'";
+	class default_arsenal_init_event
+	{
+		init = "call compile preprocessFileLineNumbers 'z\aux187\addons\core\functions\inits\default_loadouts_init.sqf'; call compile preprocessFileLineNumbers 'z\aux187\addons\core\functions\inits\fortify_init.sqf';";
 	};
 };

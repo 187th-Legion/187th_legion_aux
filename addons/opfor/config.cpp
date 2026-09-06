@@ -166,6 +166,11 @@ class CfgAmmo
 	#include "weapons\CfgAmmo.hpp"
 };
 
+class cfgGroups
+{
+	#include "units\CfgGroups.hpp"
+};
+
 #include "CfgFactionClasses.hpp"
 #include "CfgEditorCategories.hpp"
 #include "CfgEditorSubCategories.hpp"

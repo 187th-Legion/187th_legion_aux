@@ -2,6 +2,7 @@
 	class JLTS_CloneHelmetP2;
 	class JLTS_CloneHelmetBARC;
     class JLTS_CloneHelmetAirborne;
+	class HeadgearItem;
 	class 3AS_H_Katarn_Helmet;
 	class 3as_P2_Pilot_helmet;
 
@@ -106,6 +107,9 @@
 		displayName = "[187th] Katarn Helmet (Base)";
 		author = "Tim";
 		
+		ace_hearing_protection = 0.80;
+        ace_hearing_lowerVolume = 0.60;
+        ace_hearing_hasEHP = 1;
 		
 		hiddenSelectionsTextures[] = { QPATHTOF(helmets\data\187th_RC_Base_Helmet.paa), QPATHTOF(helmets\data\187th_RC_Base_Helmet.paa) };
 		
@@ -240,6 +244,8 @@
 		displayName = "[187th] Pilot Helmet (Base)";
 		author = "Tim";
 		
+		allowedFacewear[] = {};
+		subItems[] = {};
 		
 		hiddenSelectionsTextures[] = 
 		{ 
@@ -247,9 +253,37 @@
 			"", 
 			"3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", 
 			QPATHTOF(helmets\data\187th_Pilot_Base_Helmet.paa), 
-			"" 
+			""
 		};
 
+		class ItemInfo : HeadgearItem
+	   	{
+	   		mass = 30;
+	   		uniformModel = "\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Pilot_P2.p3d";
+	   		hiddenSelections[]={"Camo", "Camo2", "Camo3", "Camo4", "Camo5"};
+	   		modelSides[] = {3,1};
+	   		class HitpointsProtectionInfo
+	   		{
+	   			class Face
+	   			{
+	   				armor = 8;
+	   				hitpointName = "HitFace";
+	   				passThrough = 0.03;
+	   			};
+	   			class Head
+	   			{
+	   				armor = 8;
+	   				hitPointName = "HitHead";
+	   				passThrough = 0.03;
+	   			};
+	   			class Neck
+	   			{
+	   				armor = 8;
+	   				hitpointName = "HitNeck";
+	   				passThrough = 0.03;
+	   			};
+	   		};
+	   	};
 
 		class XtdGearInfo {
 			model = "aux187_Helmet_Model";

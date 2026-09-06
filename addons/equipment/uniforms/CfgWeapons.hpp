@@ -1,6 +1,6 @@
     class UniformItem;
 	class JLTS_CloneArmor;
-	class JLTS_CloneArmorCM;
+	//class JLTS_CloneArmorCM;
 	class 3AS_U_Rep_Katarn_Armor;
 	
 	/*
@@ -271,7 +271,7 @@
 		};
 	};
 	
-	class aux187_P2_CL_Uniform : JLTS_CloneArmorCM
+	class aux187_P2_CL_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -293,7 +293,7 @@
 		};
 	};
 	
-	class aux187_P2_CC_Uniform : JLTS_CloneArmorCM
+	class aux187_P2_CC_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -315,7 +315,7 @@
 		};
 	};
 	
-	class aux187_P2_CO_Uniform : JLTS_CloneArmorCM
+	class aux187_P2_CO_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;
@@ -337,7 +337,7 @@
 		};
 	};
 	
-	class aux187_P2_CM_Uniform : JLTS_CloneArmorCM
+	class aux187_P2_CM_Uniform : aux187_Uniform_Base
 	{
 		author = "Tim";
 		scope = 2;

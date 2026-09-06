@@ -33,8 +33,9 @@
         class Launcher_Base_F: Launcher {};
         
 
-        class IDA_DC15S;
-        class aux187_DC15S : IDA_DC15S
+        class 3AS_DC15S_Base_F: Rifle_Base_F {};
+        class 3AS_DC15S_F: 3AS_DC15S_Base_F {};
+        class aux187_DC15S : 3AS_DC15S_F
         {
             author = "Tim";
             scope = 2;
@@ -43,6 +44,10 @@
             baseWeapon = "aux187_DC15S";
             displayName = "[187th] DC-15S Blaster Carbine";
 
+            IDA_AltWeapon="aux187_dc15s_shield";
+            IDA_AltWeaponItem="IDA_Shield_Rep_item";
+            IDA_AltWeaponSwap="false";
+            IDA_SwitchText="Switching Shield";
             
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
@@ -62,10 +67,25 @@
                 "aux187_Mag_40Rnd_DC15S"
             };
 
-            modes[] = { "Single","FullAuto" };
+            //modes[] = { "Single","FullAuto" };
+
+            class TAS_Stun_F {};
 
             class WeaponSlotsInfo
             {
+                class CowsSlot : 3AS_CowsSlot_DC15C
+                {
+                    linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                    displayName = "Optics Slot";
+                    iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+
+                    class CompatibleItems
+                    {
+                        aux187_optic_Reflex = 1;
+                        aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
+                    };
+                };
                 class PointerSlot : PointerSlot
                 {
                     access = 1;
@@ -80,7 +100,7 @@
                 };
             };
 
-            class Single : Single
+            /*class Single : Single
             {
                 dispersion = 0.0010;
 
@@ -132,7 +152,7 @@
                     soundClosure[] = {};
                     weaponSoundEffect = "";
                 };
-            };
+            };*/
         };
         
         class 3AS_DC15C_Base_F: Rifle_Base_F {};
@@ -167,6 +187,7 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -288,6 +309,8 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_15ascope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -358,6 +381,8 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_15ascope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -491,9 +516,9 @@
                 "aux187_Mag_300Rnd_Z6"
             };
 
-            modes[] = { "FullAuto" };
+            //modes[] = { "FullAuto" };
 
-            class Auto : Auto
+            /*class Auto : Auto
             {
                 autoFire = 1;
                 dispersion = 0.00208;
@@ -518,7 +543,7 @@
                     soundClosure[] = {};
                     weaponSoundEffect = "";
                 };
-            };
+            };*/
         };
 
     /*
@@ -528,8 +553,9 @@
 	*/
 
 
-        class IDA_DC15S_UGL;
-        class aux187_DC15S_GL : IDA_DC15S_UGL
+        //class 3AS_DC15S_Base_GL: Rifle_Base_F {};
+        class 3AS_DC15S_GL;//: 3AS_DC15S_Base_GL {};
+        class aux187_DC15S_GL : 3AS_DC15S_GL
         {
             author = "Tim";
             scope = 2;
@@ -558,8 +584,6 @@
 
             //modes[] = { "Single","FullAuto" };
 
-            class TAS_Stun_F {};
-
             class WeaponSlotsInfo
             {
                 class PointerSlot : PointerSlot
@@ -574,61 +598,62 @@
                     linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
                     scope = 0;
                 };
-            };
 
-            /*class Single : Single
-            {
-                dispersion = 0.0010;
-
-                recoil = "recoil_single_primary_3outof10";
-                recoilProne = "recoil_single_primary_prone_3outof10";
-
-                sounds[] = { "StandardSound" };
-
-                class StandardSound : BaseSoundModeType
+                class CowsSlot : 3AS_CowsSlot_DC15C
                 {
-                    begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1,1800};
-                    begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.025,1800};
-                    begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.95,1800};
-                    begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.05,1800};
-                    begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.9,1800};
-                    beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1,1,400};
-                    closure1[] = {};
-                    closure2[] = {};
-                    soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
-                    soundBeginWater[] = {"beginwater1",1};
-                    soundClosure[] = {};
-                    weaponSoundEffect = "";
+                    linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                    displayName = "Optics Slot";
+                    iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+
+                    class CompatibleItems
+                    {
+                        aux187_optic_Reflex = 1;
+                        aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
+                    };
                 };
             };
-
-            class FullAuto : FullAuto
+            class GL_1GL_F: UGL_F
             {
-                autoFire = 1;
-                dispersion = 0.00133;
-                reloadTime = 0.085;
-
-                recoil = "recoil_auto_primary_3outof10";
-                recoilProne = "recoil_auto_primary_prone_3outof10";
-
-                sounds[] = { "StandardSound" };
-
-                class StandardSound : BaseSoundModeType
+                displayName="187th UGL";
+                descriptionShort="Pew Tube";
+                useModelOptics=0;
+                useExternalOptic=0;
+                magazines[]=
                 {
-                    begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1,1800};
-                    begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.025,1800};
-                    begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.95,1800};
-                    begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,1.05,1800};
-                    begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1.25,0.9,1800};
-                    beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",1,1,400};
-                    closure1[] = {};
-                    closure2[] = {};
-                    soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
-                    soundBeginWater[] = {"beginwater1",1};
-                    soundClosure[] = {};
-                    weaponSoundEffect = "";
+                    "aux187_mag_1Rnd_AP_Grenade",
+                    "aux187_mag_1Rnd_HE_Grenade",
+                    "3AS_1UGL_MK54_HE_shell"
                 };
-            };*/
+                magazineWell[]=
+                {
+                    "UGL_40x36",
+                    "3AS_1UGL_Magwell"
+                };
+                cameraDir="OP_look";
+                discreteDistance[]={50,75,100,150,200,250,300,350,400};
+                discreteDistanceCameraPoint[]=
+                {
+                    "OP_eye_50",
+                    "OP_eye_75",
+                    "OP_eye_100",
+                    "OP_eye_150",
+                    "OP_eye_200",
+                    "OP_eye_250",
+                    "OP_eye_300",
+                    "OP_eye_350",
+                    "OP_eye_400"
+                };
+                discreteDistanceInitIndex=1;
+                reloadAction="GestureReloadMXUGL";
+                reloadMagazineSound[]=
+                {
+                    "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload.ogg",
+                    1,
+                    1,
+                    10
+                };
+            };
         };
 
         class 3AS_DC15C_GL: 3AS_DC15C_Base_F {};
@@ -661,6 +686,7 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -834,6 +860,8 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
+                        aux187_optic_15ascope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
 
@@ -1000,8 +1028,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_5Rnd_DC15X",
-                "aux187_Mag_1Rnd_CMag"
+                "aux187_Mag_5Rnd_DC15X"
             };
 
             class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1062,6 +1089,7 @@
                         aux187_optic_LPVO = 1;
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
+                        aux187_optic_smartlink = 1;
                     };
                 };
             };
@@ -1098,6 +1126,11 @@
 
             baseWeapon = "aux187_DC15S_Shield";
             displayName = "[187th] DC-15S Blaster Carbine (Shield)";
+
+            IDA_AltWeapon="aux187_dc15s";
+            IDA_AltWeaponItem="IDA_Shield_Rep_item";
+            IDA_AltWeaponSwap="true";
+            IDA_SwitchText="Switching Shield";
             
             class XtdGearInfo {
                 model = "aux187_PrimaryWeapon_Model";
@@ -1264,6 +1297,25 @@
             {
                 "aux187_Mag_40Rnd_XLE7"
             };
+
+            class WeaponSlotsInfo : WeaponSlotsInfo
+            {
+                class CowsSlot : CowsSlot
+                {
+                    compatibleItems[] = 
+                    {
+                        "aux187_optic_LPVO", "aux187_optic_Reflex", "aux187_optic_brScope", "aux187_optic_holo", "aux187_optic_smartlink"
+                    };
+
+                    linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                };
+
+                class PointerSlot : PointerSlot
+                {
+                    compatibleItems[] = {"acc_flashlight","ACE_SPIR","OPTRE_M12_Laser","acc_pointer_IR","ACE_acc_pointer_green","ACE_DBAL_A3_Red","ACE_DBAL_A3_Green"};
+                    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+                };
+            };
         };
 
         class IDA_DLT19;
@@ -1369,6 +1421,56 @@
 
             baseWeapon = "aux187_RPS6_Disposable";
             displayName = "[187th] RPS-6 Disposable Launcher";
+
+            class EventHandlers
+            {
+                fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+            };
+
+            class WeaponSlotsInfo: WeaponSlotsInfo
+            {
+                mass = 80;
+            };
+
+            magazines[] = { "aux187_disposable_rocket" };
+            magazineReloadTime = 0.1;
+            reloadMagazineSound[] = {"",1,1};
+
+        };
+
+        class aux187_RPS6_Disposable_Loaded : IDA_RPS6_Disposable
+        {
+            author = "Tim";
+            scope = 1;
+            scopeArsenal = 1;
+
+            baseWeapon = "aux187_RPS6_Disposable_Loaded";
+            displayName = "[187th] RPS-6 Disposable Launcher";
+
+            class WeaponSlotsInfo: WeaponSlotsInfo
+            {
+                mass = 120;
+            };
+
+            magazines[] = {"CBA_FakeLauncherMagazine"};
+
+        };
+
+        class aux187_RPS6_Disposable_Used : IDA_RPS6_Disposable
+        {
+            author = "Tim";
+            scope = 1;
+            scopeArsenal = 1;
+
+            baseWeapon = "aux187_RPS6_Disposable_Used";
+            displayName = "[187th] RPS-6 Disposable Launcher";
+
+            magazines[] = {"CBA_FakeLauncherMagazine"};
+
+            class WeaponSlotsInfo: WeaponSlotsInfo
+            {
+                mass = 80;
+            };
         };
 
         class JLTS_RPS6;
@@ -1388,18 +1490,25 @@
 	---------------------------------------------------------------
 	*/
 
-        class IDA_DC17;
-        class aux187_DC17 : IDA_DC17
+        class JLTS_DC17SA;
+        class aux187_DC17 : JLTS_DC17SA
         {
             author = "Tim";
             scope = 2;
             scopeArsenal = 2;
 
+            IDA_StunWeapon="aux187_DC17_Stun";
+
             baseWeapon = "aux187_DC17";
-            displayName = "[187th] DC-17 Blaster Pistol";
+            displayName = "[187th] DC-17SA Blaster Pistol";
             class XtdGearInfo {
                 model = "aux187_SecondaryWeapon_Model";
                 Pistols = "DC17";
+            };
+
+            magazines[] = 
+            {  
+                "aux187_mag_80Rnd_Pistol"
             };
         };
 
@@ -1410,12 +1519,45 @@
             scope = 2;
             scopeArsenal = 2;
 
+            IDA_StunWeapon="aux187_DC15P_Stun";
+
             baseWeapon = "aux187_DC15P";
             displayName = "[187th] DC-15P Blaster Pistol";
             class XtdGearInfo {
                 model = "aux187_SecondaryWeapon_Model";
                 Pistols = "DC15P";
             };
+
+            magazines[] = 
+            {  
+                "aux187_mag_80Rnd_Pistol"
+            };
+        };
+
+        class IDA_DC17_stun;
+        class aux187_DC17_stun : IDA_DC17_stun
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            IDA_StunWeapon="aux187_DC17";
+
+            baseWeapon = "aux187_DC17_stun";
+            displayName = "[187th] DC-17 Blaster Pistol";
+        };
+
+        class IDA_DC15P_stun;
+        class aux187_DC15P_stun : IDA_DC15P_stun
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            IDA_StunWeapon="aux187_DC15P";
+
+            baseWeapon = "aux187_DC15P_stun";
+            displayName = "[187th] DC-15P Blaster Pistol";
         };
 
         class IDA_Clone_Knife;
@@ -1477,6 +1619,16 @@
             displayName = "[187th] Holo Optic";
         };
 
+        class Optre_Recon_Sight;
+        class aux187_optic_Recon : Optre_Recon_Sight
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Recon Optic";
+        };
+
         class OPTRE_BR_Classic_Scope_SLS_Raised;
         class aux187_optic_brScope : OPTRE_BR_Classic_Scope_SLS_Raised
         {
@@ -1485,6 +1637,36 @@
             scopeArsenal = 2;
 
             displayName = "[187th] Battle Rifle Optic";
+        };
+
+        class 3AS_optic_DC15LE_F;
+        class aux187_optic_15ascope : 3AS_optic_DC15LE_F
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] 15A Rifle Optic";
+        };
+
+        class 3AS_optic_DC15L_F;
+        class aux187_optic_15lscope : 3AS_optic_DC15L_F
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] 15L Rifle Optic";
+        };
+
+        class OPTRE_MA37_Smartlink_Scope;
+        class aux187_optic_smartlink : OPTRE_MA37_Smartlink_Scope
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Smartlink Rifle Optic";
         };
 
         class optic_mrco;

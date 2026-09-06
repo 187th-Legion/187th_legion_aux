@@ -67,17 +67,19 @@
         model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
         ACE_damageType = "plasma";
         ace_vehicle_damage_incendiary = 0.1;
-        maxspeed = 180;
+        //maxspeed = 180;
+        affectedByWind = 0;
     };
     
     class aux187_ammo_rifle_HP : aux187_ammo_base
     {
         aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
 
-        caliber = 1.8;
-        hit = 13;
+        hit = 20;
+		caliber = 2.5;
+		lifeTime = 10;
         coefGravity = 0.02;
-        airfriction = 0;
+        airFriction = -0.0006;
         waterFriction = -0.01;
 
         effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
@@ -94,10 +96,11 @@
     {
         aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
 
-        caliber = 1;
-        hit = 6.5;
+        caliber = 1.5;
+        hit = 18;
+        lifeTime = 10;
         coefGravity = 0.02;
-        airfriction = 0;
+        airFriction = -0.0006;
         waterFriction = -0.01;
 
         effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
@@ -117,7 +120,7 @@
         caliber = 2.8;
         hit = 22;
         coefGravity = 0.01;
-        airfriction = 0;
+        airFriction = -0.0006;
         waterFriction = -0.01;
 
         effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
@@ -137,7 +140,7 @@
         caliber = 2.2;
         hit = 17;
         coefGravity = 0.01;
-        airfriction = 0;
+        airFriction = -0.0006;
         waterFriction = -0.01;
 
         effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
@@ -156,7 +159,7 @@
 
         author = "Vinokurov";
 		hit = 500;
-		caliber = 230;
+		caliber = 280;
 		effectfly = "IDA_Laser_Red_fly";
 		indirecthit = 5.0;
 		flaresize = 5;
@@ -164,6 +167,10 @@
 		ACE_damageType = "bullet";
 		coefGravity = 0.0;
 		airFriction = -0.000;
+        ace_vehicle_damage_incendiary = 0.5;
+        timeToLive = 10;
+
+        //maxspeed = 450;
 		class CamShakeExplode
 		{
 			power = "(13^0.5)";

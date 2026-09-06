@@ -280,7 +280,7 @@
 		hiddenselections[]={"camo"};
 		hiddenSelectionsTextures[]=
         {
-            "\187th-aux\Data\Glasses\aux187_Facewear_Commando_Medic.paa"
+            QPATHTOF(facewear\data\187th_Facewear_Commando_Medic.paa)
         };
 		Scope=2;
 		ScopeCurator=2;
@@ -295,7 +295,7 @@
 		hiddenselections[]={"camo"};
 		hiddenSelectionsTextures[]=
         {
-            "\187th-aux\Data\Glasses\aux187_Facewear_Commando_EOD.paa"
+            QPATHTOF(facewear\data\187th_Facewear_Commando_EOD.paa)
         };
 		Scope=2;
 		ScopeCurator=2;
@@ -336,8 +336,8 @@
 		identityTypes[]={};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestRecon_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
-		hiddenselections[]={"camo1"};
-		hiddenSelectionsTextures[]={"\187th-aux\Data\Vests\ReconNCO\Clone_vest_recon_cpl.paa"};
+		//hiddenselections[]={"camo1"};
+		//hiddenSelectionsTextures[]={QPATHTOF(facewear\data\187th_Vest_Recon_NCO.paa)};
 		Scope=2;
 		ScopeCurator=2;
 	};
@@ -350,8 +350,8 @@
 		identityTypes[]={};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestAirborne_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
-		hiddenselections[]={"camo1"};
-		hiddenSelectionsTextures[]={"\187th-aux\Data\Vests\AirborneNCO\Clone_vest_airborne_cpl.paa"};
+		//hiddenselections[]={"camo1"};
+		//hiddenSelectionsTextures[]={QPATHTOF(facewear\data\187th_Vest_Recon_NCO.paa)};
 		Scope=2;
 		ScopeCurator=2;
 	};

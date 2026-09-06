@@ -14,6 +14,7 @@
                 values[]=
                 {
                     "Boss",
+                    "Buzz",
                     "Crypto",
                     "Dubz",
                     "Fader",

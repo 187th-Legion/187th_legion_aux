@@ -8,6 +8,14 @@
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_Boss_Torso.paa), QPATHTOF(uniforms\customs\data\187th_Uniform_Boss_Legs.paa) };
 	};
 
+	class aux187_Custom_Buzz : aux187_P2_Base
+	{
+		scope = 1;
+		uniformClass = "aux187_Uniform_Custom_Buzz";
+		
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_Buzz_Torso.paa), QPATHTOF(uniforms\customs\data\187th_Uniform_Buzz_Legs.paa) };
+	};
+
     class aux187_Custom_Crypto : aux187_P2_Base
 	{
 		scope = 1;

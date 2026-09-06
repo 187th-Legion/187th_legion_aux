@@ -4,4 +4,9 @@ class CfgEditorCategories
 	{
 		displayName = "187th Legion";
 	};
+
+	class aux187_edCat_Props
+	{
+		displayName = "187th Legion Props";
+	};
 };
