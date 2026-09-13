@@ -259,20 +259,15 @@
 				name = "kat_IV_16";
 				count = 20;
 			};
-			class xx_aux187_item_BactaBandage
+			class xx_ida_BactaBandage
 			{
-				name = "aux187_item_BactaBandage";
+				name = "IDA_BactaBandage";
 				count = 20;
 			};
-			class xx_aux187_item_normalBandage
+			class xx_ACE_elasticBandage
 			{
-				name = "aux187_item_normalBandage";
+				name = "aux187_ACE_elasticBandage";
 				count = 100;
-			};
-            class xx_aux187_item_BactaSpray
-			{
-				name = "aux187_item_normalBandage";
-				count = 2;
 			};
 			class xx_ACE_morphine
 			{
@@ -366,9 +361,9 @@
 							magazine = "aux187_mag_80Rnd_DC15S";
 							count = 30; 
 					}; 
-					class xx_aux187_mag_45Rnd_DC15A 
+					class xx_aux187_mag_35Rnd_DC15A 
 					{ 
-							magazine = "aux187_mag_45Rnd_DC15A"; 
+							magazine = "aux187_mag_35Rnd_DC15A"; 
 							count = 30; 
 					}; 
 					class xx_aux187_mag_1Rnd_CMag 
@@ -376,9 +371,9 @@
 							magazine = "aux187_mag_1Rnd_CMag"; 
 							count = 15; 
 					};  
-					class xx_aux187_mag_300Rnd_Z6 
+					class xx_aux187_mag_400Rnd_Z6 
 					{ 
-							magazine = "aux187_mag_300Rnd_Z6"; 
+							magazine = "aux187_mag_400Rnd_Z6"; 
 							count = 6; 
 					}; 
 					class xx_3AS_10Rnd_EC30_Pellets 
@@ -391,9 +386,9 @@
 							magazine = "3AS_1Rnd_EC80_Flechette"; 
 							count = 8; 
 					}; 
-					class xx_aux187_mag_75Rnd_DC15L
+					class xx_aux187_mag_150Rnd_DC15L
 					{
-							magazine = "aux187_mag_75Rnd_DC15L";
+							magazine = "aux187_mag_150Rnd_DC15L";
 							count = 12;
 					};
 					class xx_aux187_mag_5Rnd_DC15X
@@ -401,9 +396,9 @@
 							magazine = "aux187_mag_5Rnd_DC15X";
 							count = 20;
 					};
-					class xx_aux187_mag_20Rnd_Valken38X
+					class xx_aux187_mag_30Rnd_Valken38X
 					{
-							magazine = "aux187_mag_20Rnd_Valken38X";
+							magazine = "aux187_mag_30Rnd_Valken38X";
 							count = 30;
 					};
 					class xx_aux187_Mag_40Rnd_XLE7
@@ -428,7 +423,66 @@
 							magazine = "aux187_Mag_10Rnd_DC17M";
 							count = 15;
 					};
+
+					class xx_aux187_Mag_3Rnd_DC17M
+					{
+							magazine = "aux187_Mag_3Rnd_DC17M";
+							count = 10;
+					};
 		}; 
+		
+		class TransportItems { 
+		}; 
+		
+		class TransportBackpacks { 
+		}; 
+		class AnimationSources
+		{
+			class ammo_source
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class grenades_source: ammo_source
+			{
+				initPhase = 1;
+			};
+		};
+	};
+
+	class aux187_crate_AMR: JLTS_Ammobox_ammo_GAR
+	{
+		faction = "aux187_Faction_187th";
+		editorCategory = "aux187_edCat_Props"; //aux187_edCat_Props, aux187_CIS_Assets, aux187_Test_Assets
+		editorSubcategory = "aux187_edSubcat_crates"; //aux187_Infantry, aux187_Armor, aux187_Boat, aux187_Helicopter, aux187_Special, aux187_Plane, aux187_Turret, aux187_Transport, aux187_Sith, aux187_Car, aux187_Artillery, aux187_AntiAir, aux187_edSubcat_crates
+		scope = 2;
+		maximumLoad = 4000;
+		scopecurator = 2;
+		mass = 10;
+		displayName="[187th] XLE-279 AMR Crate";
+		editorPreview = "\MRC\JLTS\weapons\Crates\data\ui\editorPreviews\JLTS_Ammobox_ammo_GAR.jpg";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\Crates\data\crate_3_GAR_co.paa",QPATHTOF(crates\data\screen_amr)};
+		icon = "iconCrateAmmo";
+		model = "\MRC\JLTS\weapons\Crates\crate_3.p3d";
+		class TransportWeapons 
+		{
+			class xx_aux187_amr
+					{ 
+							magazine = "aux187_amr";
+							count = 1; 
+					};  
+		};
+ 
+		class TransportMagazines
+		{ 
+					class xx_aux187_mag_1Rnd_CMag
+					{ 
+							magazine = "aux187_mag_1Rnd_CMag";
+							count = 10; 
+					};  
+		};
 		
 		class TransportItems { 
 		}; 

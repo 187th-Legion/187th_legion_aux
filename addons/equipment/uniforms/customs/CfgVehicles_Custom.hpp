@@ -160,6 +160,14 @@
 		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_Un_Torso.paa), QPATHTOF(uniforms\customs\data\187th_Uniform_Un_Legs.paa) };
 	};
 
+	class aux187_Custom_Knight : aux187_P2_Base
+	{
+		scope = 1;
+		uniformClass = "aux187_Uniform_Custom_Knight";
+		
+		hiddenSelectionsTextures[] = { QPATHTOF(uniforms\customs\data\187th_Uniform_Knight_Torso.paa), QPATHTOF(uniforms\customs\data\187th_Uniform_Knight_Legs.paa) };
+	};
+
     class aux187_Custom_Vinokurov : aux187_P2_Base
 	{
 		scope = 1;

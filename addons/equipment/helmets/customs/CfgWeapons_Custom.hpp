@@ -301,6 +301,19 @@
 		};
     };
 
+	class aux187_Helmet_Custom_Pete : aux187_P2_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Pete)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Pete.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Pete";
+		};
+    };
+
 	// ---------------------------------------------------------------------------------
 	//                                    Barc
 	// ---------------------------------------------------------------------------------

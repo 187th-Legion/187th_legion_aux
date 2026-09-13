@@ -83,7 +83,8 @@
                     {
                         aux187_optic_Reflex = 1;
                         aux187_optic_holo = 1;
-                        aux187_optic_smartlink = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
+                        aux187_optic_recon = 1;
                     };
                 };
                 class PointerSlot : PointerSlot
@@ -187,7 +188,8 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
-                        aux187_optic_smartlink = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
+                        aux187_optic_recon = 1;
                     };
                 };
 
@@ -310,7 +312,9 @@
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
                         aux187_optic_15ascope = 1;
-                        aux187_optic_smartlink = 1;
+                        aux187_optic_15lscope = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
+                        aux187_optic_recon = 1;
                     };
                 };
 
@@ -337,7 +341,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_45Rnd_DC15A"
+                "aux187_Mag_35Rnd_DC15A"
             };
 
             class TAS_Stun_F {};
@@ -380,9 +384,9 @@
                         aux187_optic_LPVO = 1;
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
-                        aux187_optic_holo = 1;
                         aux187_optic_15ascope = 1;
-                        aux187_optic_smartlink = 1;
+                        aux187_optic_15lscope = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
                     };
                 };
 
@@ -424,7 +428,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_75Rnd_DC15L"
+                "aux187_Mag_150Rnd_DC15L"
             };
 
             //modes[] = { "LessFullAuto","FullAuto","close","short","medium","far_optic1","far_optic2" };
@@ -513,7 +517,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_300Rnd_Z6"
+                "aux187_Mag_400Rnd_Z6"
             };
 
             //modes[] = { "FullAuto" };
@@ -609,7 +613,8 @@
                     {
                         aux187_optic_Reflex = 1;
                         aux187_optic_holo = 1;
-                        aux187_optic_smartlink = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
+                        aux187_optic_recon = 1;
                     };
                 };
             };
@@ -621,8 +626,8 @@
                 useExternalOptic=0;
                 magazines[]=
                 {
-                    "aux187_mag_1Rnd_AP_Grenade",
-                    "aux187_mag_1Rnd_HE_Grenade",
+                    "aux187_mag_3Rnd_AP_Grenade",
+                    "aux187_mag_3Rnd_HE_Grenade",
                     "3AS_1UGL_MK54_HE_shell"
                 };
                 magazineWell[]=
@@ -686,7 +691,8 @@
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
                         aux187_optic_holo = 1;
-                        aux187_optic_smartlink = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
+                        aux187_optic_recon = 1;
                     };
                 };
 
@@ -713,7 +719,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_45Rnd_DC15C"
+                "aux187_Mag_40Rnd_DC15C"
             };
 
             //modes[] = { "Single","FullAuto" };
@@ -859,9 +865,9 @@
                         aux187_optic_LPVO = 1;
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
-                        aux187_optic_holo = 1;
                         aux187_optic_15ascope = 1;
-                        aux187_optic_smartlink = 1;
+                        aux187_optic_15lscope = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
                     };
                 };
 
@@ -888,7 +894,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_45Rnd_DC15A"
+                "aux187_Mag_35Rnd_DC15A"
             };
 
             class TAS_Stun_F {};
@@ -979,7 +985,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_20Rnd_Valken38X"
+                "aux187_Mag_30Rnd_Valken38X"
             };
 
             class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1089,7 +1095,8 @@
                         aux187_optic_LPVO = 1;
                         aux187_optic_Reflex = 1;
                         aux187_optic_brScope = 1;
-                        aux187_optic_smartlink = 1;
+                        OPTRE_MA37_Smartlink_Scope = 1;
+                        aux187_optic_recon = 1;
                     };
                 };
             };
@@ -1242,8 +1249,6 @@
             drySound[] = {"\Indecisive_Armoury_Sounds\weapon_dry.ogg",5,1,10};
             //recoil = "IDA_recoil_BlasterCarbine";
             recoilProne = "assaultRifleBase";
-            reloadAction = "GestureReload_IDA_Reload_Blaster";
-            reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
 
             magazines[] = 
             {
@@ -1304,7 +1309,7 @@
                 {
                     compatibleItems[] = 
                     {
-                        "aux187_optic_LPVO", "aux187_optic_Reflex", "aux187_optic_brScope", "aux187_optic_holo", "aux187_optic_smartlink"
+                        "aux187_optic_LPVO", "aux187_optic_Reflex", "aux187_optic_brScope", "aux187_optic_holo", "OPTRE_MA37_Smartlink_Scope", "aux187_optic_recon"
                     };
 
                     linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
@@ -1657,6 +1662,16 @@
             scopeArsenal = 2;
 
             displayName = "[187th] 15L Rifle Optic";
+        };
+
+        class optic_MRD_black;
+        class aux187_optic_17ascope : optic_MRD_black
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] 17A Pistol Optic";
         };
 
         class OPTRE_MA37_Smartlink_Scope;

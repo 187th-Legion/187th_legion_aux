@@ -7,7 +7,7 @@
         class vestType
         {
             label = "Vest Options";
-            values[] = { "Holster", "Grenade", "CFR", "EOD", "OKama" };
+            values[] = { "Holster", "Grenade", "Recon", "EOD", "OKama", "Grenadier", "Vest1" };
             alwaysSelectable = 1;
         };
 

@@ -277,8 +277,8 @@
         class ItemInfo
         {
             type=616;
-            //modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
-            //uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+            modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+            uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
             mass=20;
             hiddenSelections[]=
             {
