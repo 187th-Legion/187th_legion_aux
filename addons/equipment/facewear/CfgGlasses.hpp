@@ -383,3 +383,27 @@
 		Scope=2;
 		ScopeCurator=2;
 	};
+
+	class aux187_vest_Grenadier_Chest_Harness
+	{
+		displayname="[187th] Grenadier Chest Pouches";
+		identityTypes[]={};
+		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCNLogoUI.paa";
+		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCNFaceWear1GL.p3d";
+		hiddenSelections[] = {"camo","camo1"};
+		hiddenSelectionsTextures[] = {"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNWebbing_co.paa"};
+		Scope=2;
+		ScopeCurator=2;
+	};
+
+	class aux187_vest_Officer_Pauldron
+	{
+		displayname="[187th] Officer Pauldron";
+		identityTypes[]={};
+		picture = "\Indecisive_Armoury_Units\REPUBLIC\Vests\pauldronCW_ui.paa";
+		model = "\Indecisive_Armoury_units\REPUBLIC\Vests\IDA_Vests.p3d";
+		hiddenSelections[] = {"Recon_Harness","GrenadeBag","KamaCW","KamaEp3","PauldronCW_L","PauldronCW_R","PauldronEp3_L","PauldronEp3_R","PauldronAccessory","ArmPouches_L","ArmPouches_R","SuspenderL","SuspenderR","ChestPadR","ShoulderPadR","PauldronARC"};
+		hiddenSelectionsTextures[] = {"","","\Indecisive_Armoury_Units\REPUBLIC\Vests\IDA_KamaCW\IDA_KamaCW_co.paa","","\Indecisive_Armoury_Units\REPUBLIC\Vests\IDA_PauldronCW\IDA_PauldronCW_co.paa","","","","","","","","","","",""};
+		Scope=2;
+		ScopeCurator=2;
+	};
