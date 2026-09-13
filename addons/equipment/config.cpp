@@ -375,12 +375,26 @@ class CfgMagazines
 {
 	#include "weapons\CfgMagazines.hpp"
 	#include "items\Flares\CfgMagazines.hpp"
+
+	#include "memes\CfgMagazines.hpp"
 };
 
 class CfgAmmo
 {
 	#include "weapons\CfgAmmo.hpp"
 	#include "items\Flares\CfgAmmo.hpp"
+
+	#include "memes\CfgAmmo.hpp"
+};
+
+class CfgSoundSets
+{
+	#include "memes\CfgSoundsets.hpp"
+};
+
+class CfgSoundShaders
+{
+	#include "memes\CfgSoundShaders.hpp"
 };
 
 class CfgGlasses
