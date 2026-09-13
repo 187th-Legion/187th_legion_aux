@@ -65,6 +65,7 @@ class CfgPatches
 			"aux187_Custom_Scorch",
 			"aux187_Custom_Fish",
 			"aux187_Custom_Buzz",
+			"aux187_Custom_Knight",
 
 			//BACKPACKS
 			"aux187_backpack_trooper_base",
@@ -120,6 +121,11 @@ class CfgPatches
 			"aux187_backpack_commando_mindless",
 			"aux187_backpack_commando_mindless_radio",
 
+			"aux187_backpack_jumppack_radio",
+			"aux187_backpack_jumppack_base",
+			"aux187_backpack_sling_radio",
+			"aux187_backpack_sling_base",
+
 			"aux187_backpack_patrol",
 			"aux187_backpack_BeltBags",
 			"aux187_backpack_scoutPack",
@@ -127,6 +133,7 @@ class CfgPatches
 			"aux187_backpack_patrol_radio",
 			"aux187_backpack_mini_radio_2",
 			"aux187_backpack_mini_radio_1",
+			"aux187_backpack_at_base",
 
 			"aux187_crate_Refuel_Box",
 			"aux187_crate_Rearm_Box",
@@ -134,7 +141,8 @@ class CfgPatches
 			"aux187_crate_Explosives",
 			"aux187_crate_Basic_Ammo",
 			"aux187_crate_Medical",
-			"aux187_crate_Rockets"
+			"aux187_crate_Rockets",
+			"aux187_crate_amr"
 
 		};
 		weapons[] = 
@@ -241,6 +249,9 @@ class CfgPatches
 			"aux187_optic_holo",
 			"aux187_optic_15ascope",
 			"aux187_optic_smartlink",
+			"aux187_optic_recon",
+			"aux187_optic_15lscope",
+			"aux187_optic_17ascope",
 
 			//CUSTOMS
 			"aux187_Uniform_Custom_Boss",
@@ -264,6 +275,7 @@ class CfgPatches
 			"aux187_Uniform_Custom_Fish",
 			"aux187_Uniform_Custom_Scorch",
 			"aux187_Uniform_Custom_Buzz",
+			"aux187_Uniform_Custom_Knight",
 
 			"aux187_Helmet_Custom_Mindless",
 			"aux187_Helmet_Custom_Icarus",
@@ -298,7 +310,8 @@ class CfgPatches
 			"aux187_Helmet_Custom_Jack",
 			"aux187_Helmet_Custom_Scorch",
 			"aux187_Helmet_Custom_Meister",
-			"aux187_Helmet_Custom_Swim"
+			"aux187_Helmet_Custom_Swim",
+			"aux187_Helmet_Custom_Pete"
         };
 		magazines[] = 
 		{

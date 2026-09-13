@@ -7,7 +7,7 @@
 			class roleType
 			{
 				label = "Backpack Type";
-				values[] = { "Trooper", "Medic", "Engineer", "Ammo" };
+				values[] = { "Trooper", "Medic", "Engineer", "Ammo", "Jumppack" };
 				alwaysSelectable = 1;
 			};
 
@@ -60,7 +60,7 @@
 			class Bags
 			{
 				label = "Backpack Type";
-				values[] = { "BeltBag", "ScoutBag", "PatrolPack", "Sling" };
+				values[] = { "BeltBag", "ScoutBag", "PatrolPack", "Sling", "Rocket" };
 				alwaysSelectable = 1;
 
 				class BeltBag

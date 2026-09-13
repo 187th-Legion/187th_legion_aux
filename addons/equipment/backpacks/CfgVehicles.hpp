@@ -125,7 +125,7 @@
                 camoType = "Base";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -147,7 +147,7 @@
                 camoType = "Base";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -361,7 +361,7 @@
                 camoType = "Snow";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -383,7 +383,7 @@
                 camoType = "Snow";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -598,7 +598,7 @@
                 camoType = "Sand";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -620,7 +620,7 @@
                 camoType = "Sand";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -834,7 +834,7 @@
                 camoType = "Wood";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -856,7 +856,7 @@
                 camoType = "Wood";
             };
 
-            maximumLoad = "250";
+            maximumLoad = "350";
             mass = 50;
         };
 
@@ -1432,12 +1432,15 @@
 
             displayName = "[187th] Jumppack";
 
-            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+            //hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
 
-            /*class XtdGearInfo {
-                model = "aux187_MiscBags_Model";
-                Bags = "Sling";
-            };*/
+            class XtdGearInfo {
+                model = "aux187_Backpack_Model";
+                roleType = "Jumppack";
+                strapType = "Base";
+                radioType = "Base";
+                camoType = "Base";
+            };
 
             tf_hasLRradio = 0;
 
@@ -1453,12 +1456,15 @@
 
             displayName = "[187th] Jumppack (Radio)";
 
-            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+            //hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
 
-            /*class XtdGearInfo {
-                model = "aux187_MiscBags_Model";
-                Radios = "Sling";
-            };*/
+            class XtdGearInfo {
+                model = "aux187_Backpack_Model";
+                roleType = "Jumppack";
+                strapType = "Base";
+                radioType = "Radio";
+                camoType = "Base";
+            };
 
             maximumLoad = "250";
             mass = 50;
@@ -1470,6 +1476,28 @@
             tf_isolatedAmount = 0.65;
             tf_range = 17500;
             tf_subtype = "digital_lr";
+        };
+
+        class 3AS_B_CloneTrooper_Rocket_F;
+        class aux187_backpack_at_base : 3AS_B_CloneTrooper_Rocket_F
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Clone Rocket Backpack";
+
+            //hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_MiscBags_Model";
+                Bags = "Rocket";
+            };
+
+            tf_hasLRradio = 0;
+
+            maximumLoad = "250";
+            mass = 50;
         };
 
         

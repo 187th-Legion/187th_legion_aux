@@ -39,6 +39,7 @@
 					"Star",
 					"Tac",
 					"Ted",
+					"Tyr",
 					"Tim",
 					"Un",
 					"Vinokurov",
@@ -46,7 +47,9 @@
 					"Jack",
 					"Gandalf",
 					"Swim",
-					"Meister"
+					"Meister",
+					"Icarus",
+					"Pete",
 				};
             };
         };

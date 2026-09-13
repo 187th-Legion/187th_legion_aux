@@ -37,7 +37,8 @@
                     "Vinokurov",
                     "Jack",
                     "Scorch",
-                    "Fish"
+                    "Fish",
+                    "Knight"
                 };
             };
         };

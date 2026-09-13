@@ -88,14 +88,14 @@
                     "aux187_mag_100rnd_z20_autocannon",
                     "aux187_mag_100rnd_z20_autocannon",
                     "aux187_mag_100rnd_z20_autocannon",
-					"aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
+					"aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
 					"aux187_Bantha_Missile",
 					"aux187_Bantha_Missile",
 					"aux187_Bantha_Missile"
@@ -477,12 +477,12 @@
 				};
 				magazines[]=
 				{
-					"aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
+					"aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
                     "aux187_mag_30rnd_z35_cannon",
                     "aux187_mag_30rnd_z35_cannon",
                     "aux187_mag_15rnd_z35_cannon",
@@ -586,14 +586,14 @@
                     "aux187_mag_100rnd_z20_autocannon",
                     "aux187_mag_100rnd_z20_autocannon",
                     "aux187_mag_100rnd_z20_autocannon",
-					"aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
-                    "aux187_mag_300rnd_z6",
+					"aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
+                    "aux187_mag_400rnd_z6",
 					"aux187_Bantha_Missile",
 					"aux187_Bantha_Missile",
 					"aux187_Bantha_Missile"
@@ -681,6 +681,100 @@
 				textures[]= 
 				{
 				    QPATHTOF(bantha\data\Bantha_Mk3_Shell_CO.paa)
+				};
+			};
+        };
+    };
+
+    class FCF_APC_AA;
+    class aux187_bantha_mk3_aa : FCF_APC_AA
+    {
+        displayName = "Bantha SPAAG (Mk3)";
+        forceInGarage=1;
+        author = "Tim";
+        
+        hiddenSelectionsTextures[] = 
+        { 
+            QPATHTOF(bantha\data\Bantha_Mk3_Shell_CO.paa), 
+			QPATHTOF(bantha\data\Bantha_MK3_Turret_2_CO.paa)
+        };
+
+        #include "mk3Config.hpp"
+
+        scope = 2;
+        side = 1;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        faction = "aux187_Faction_187th";
+        editorCategory = "aux187_edCat_187th";
+        editorSubcategory = "aux187_edSubcat_vehicles";
+        crew="aux187_crewman";
+
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"aux187_bantha_cannon_aa",
+					"aux187_bantha_plx"
+				};
+				magazines[]=
+				{
+					"aux187_mag_300rnd_z20_autocannon",
+                    "aux187_mag_300rnd_z20_autocannon",
+                    "aux187_mag_300rnd_z20_autocannon",
+                    "aux187_mag_300rnd_z20_autocannon",
+                    "aux187_mag_300rnd_z20_autocannon",
+
+					"aux187_Bantha_Missile_AA",
+					"aux187_Bantha_Missile_AA",
+					"aux187_Bantha_Missile_AA"
+				};
+
+                class Components
+                {
+                    class VehicleSystemsDisplayManagerComponentLeft : VehicleSystemsTemplateLeftCommander
+                    {
+                        class Components : Components
+                        {
+                            class SensorDisplay
+                            {
+                                componentType = "SensorsDisplayComponent";
+                                range[] = {10,20};
+                                resource = "RscCustomInfoSensors";
+                            };
+                        };
+                    };
+                    class VehicleSystemsDisplayManagerComponentRight : VehicleSystemsTemplateRightCommander
+                    {
+                        class Components : Components
+                        {
+                            class SensorDisplay
+                            {
+                                componentType = "SensorsDisplayComponent";
+                                range[] = {10,15};
+                                resource = "RscCustomInfoSensors";
+                            };
+                        };
+                    };
+                };
+
+			};
+        };
+
+        textureList[] = {"aux187_BanthaMk3_Texture_Default ", 1};
+
+        class TextureSources
+        {
+            class aux187_BanthaMk3_Texture_Default 
+			{
+				author = "187th Legion";
+				displayName = "Default";
+				textures[]= 
+				{
+				    QPATHTOF(bantha\data\Bantha_Mk3_Shell_CO.paa),
+			        QPATHTOF(bantha\data\Bantha_MK3_Turret_2_CO.paa)
 				};
 			};
         };

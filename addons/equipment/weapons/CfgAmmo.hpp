@@ -18,7 +18,7 @@
         bulletFly9[] = {"A3\sounds_f\arsenal\sfx\bullet_flyby\bullet_flyby09",2.23872,1,75};
 
         brightness = 1000;
-        coefGravity = 0.02;
+        coefGravity = 0.05;
         cmImmunity = 1;
 
         hitArmor[] = {"soundMetal1",0.0666,"soundMetal2",0.0666,"soundMetal3",0.0666,"soundMetal4",0.0666,"soundMetal5",0.0666,"soundMetal6",0.0666,"soundMetal7",0.0666,"soundMetal8",0.0666,"soundMetal9",0.0666,"soundMetal10",0.0666,"soundMetal11",0.0666,"soundMetal12",0.0666,"soundMetal13",0.0666,"soundMetal14",0.0666,"soundMetal15",0.0666};
@@ -65,91 +65,100 @@
         impactWood[] = {"soundImpactDefault1",1};
 
         model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
-        ACE_damageType = "plasma";
+        ACE_damageType = "bullet";
         ace_vehicle_damage_incendiary = 0.1;
         //maxspeed = 180;
         affectedByWind = 0;
     };
     
-    class aux187_ammo_rifle_HP : aux187_ammo_base
+    class aux187_ammo_15A : aux187_ammo_base
     {
         aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
 
         hit = 20;
 		caliber = 2.5;
 		lifeTime = 10;
-        coefGravity = 0.02;
-        airFriction = -0.0006;
         waterFriction = -0.01;
 
-        effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
+        effectfly = "WM_plasma_blue";
         model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
 
-        tracerColor[] = {0.7,0.7,0.5,0.04};
-        tracerColorR[] = {0.7,0.7,0.5,0.04};
-        Lightcolor[] = {0,0.3,1};
-        timeToLive = 2;
+        flaresize = 3;
+		tracerscale = 1;
+		coefGravity = 0.5;
+		airFriction = -0.0006;
         brightness = 1000;
     };
 
-    class aux187_ammo_rifle_LP : aux187_ammo_base
+    class aux187_ammo_15S : aux187_ammo_base
     {
         aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
 
         caliber = 1.5;
-        hit = 18;
-        lifeTime = 10;
-        coefGravity = 0.02;
+        hit = 16;
+        coefGravity = 0.01;
         airFriction = -0.0006;
         waterFriction = -0.01;
 
-        effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
+        effectfly = "WM_plasma_blue";
         model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
 
-        tracerColor[] = {0.7,0.7,0.5,0.04};
-        tracerColorR[] = {0.7,0.7,0.5,0.04};
-        Lightcolor[] = {0,0.3,1};
-        timeToLive = 2;
+        flaresize = 3;
+		tracerscale = 1;
         brightness = 1000;
     };
 
-    class aux187_ammo_sniper_HP : aux187_ammo_base
+    class aux187_ammo_15C : aux187_ammo_base
+    {
+        aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
+
+        caliber = 2.0;
+        hit = 18;
+        coefGravity = 0.01;
+        airFriction = -0.0006;
+        waterFriction = -0.01;
+
+        effectfly = "WM_plasma_blue";
+        model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
+
+        flaresize = 3;
+		tracerscale = 1;
+        brightness = 1000;
+    };
+
+    class aux187_ammo_Z6 : aux187_ammo_base
+    {
+        aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
+
+        caliber = 2.0;
+        hit = 18;
+        coefGravity = 0.01;
+        airFriction = -0.0006;
+        waterFriction = -0.01;
+
+        effectfly = "WM_plasma_blue";
+        model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
+
+        flaresize = 3;
+		tracerscale = 1;
+        brightness = 1000;
+    };
+
+    class aux187_ammo_sniper : aux187_ammo_base
     {
         aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
 
         caliber = 2.8;
-        hit = 22;
+        hit = 30;
         coefGravity = 0.01;
         airFriction = -0.0006;
         waterFriction = -0.01;
 
-        effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
-        model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
-
-        tracerColor[] = {0.7,0.7,0.5,0.04};
-        tracerColorR[] = {0.7,0.7,0.5,0.04};
-        Lightcolor[] = {0,0.3,1};
-        timeToLive = 4;
-        brightness = 1000;
-    };
-
-    class aux187_ammo_sniper_LP : aux187_ammo_base
-    {
-        aiAmmoUsageFlags = "64 + 128 + 256"; // INF + VEH + AIR
-
-        caliber = 2.2;
-        hit = 17;
-        coefGravity = 0.01;
-        airFriction = -0.0006;
-        waterFriction = -0.01;
-
-        effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
-        model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
-
-        tracerColor[] = {0.7,0.7,0.5,0.04};
-        tracerColorR[] = {0.7,0.7,0.5,0.04};
-        Lightcolor[] = {0,0.3,1};
-        timeToLive = 4;
+        effectfly = "WM_plasma_yellow";
+        model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Yellow.p3d";
+        
+        flaresize = 3;
+		tracerscale = 1;
         brightness = 1000;
     };
 
@@ -161,6 +170,7 @@
 		hit = 500;
 		caliber = 280;
 		effectfly = "IDA_Laser_Red_fly";
+        explosionEffects = "GrenadeExplosion";
 		indirecthit = 5.0;
 		flaresize = 5;
 		tracerscale = 3.5;
@@ -168,7 +178,7 @@
 		coefGravity = 0.0;
 		airFriction = -0.000;
         ace_vehicle_damage_incendiary = 0.5;
-        timeToLive = 10;
+        timeToLive = 2;
 
         //maxspeed = 450;
 		class CamShakeExplode
@@ -186,7 +196,6 @@
 			distance = 1;
 		};
 		explosionEffectsRadius = 5;
-		explosionEffects = "GrenadeExplosion";
 		craterEffects = "ExploAmmoCrater";
     };
 

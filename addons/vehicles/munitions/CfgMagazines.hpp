@@ -8,14 +8,26 @@
 
 	class 3as_saber_80Rnd_autocannon_30mm_mag;
 	class 3AS_JLTS_MK43_AT;
+	class 3AS_JLTS_MK39_AA;
 
 	class aux187_mag_100rnd_z20_autocannon : 3as_saber_80Rnd_autocannon_30mm_mag
 	{
 		ammo="aux187_ammo_bantha_z20_green";
 		count = 100;
 	};
+
+	class aux187_mag_300rnd_z20_autocannon : 3as_saber_80Rnd_autocannon_30mm_mag
+	{
+		ammo="aux187_ammo_bantha_z20_green";
+		count = 300;
+	};
 	
 	class aux187_bantha_missile : 3AS_JLTS_MK43_AT
+	{
+		count = 1;
+	};
+
+	class aux187_bantha_missile_aa : 3AS_JLTS_MK39_AA
 	{
 		count = 1;
 	};

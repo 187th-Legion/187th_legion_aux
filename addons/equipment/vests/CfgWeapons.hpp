@@ -65,7 +65,7 @@
 		class XtdGearInfo
 		{
 			model = "aux187_Vests_Model";
-            vestType = "CFR";
+            vestType = "Recon";
 		};
 
         maximumLoad = 180;
@@ -121,6 +121,60 @@
 		{
 			model = "aux187_Vests_Model";
             vestType = "OKama";
+		};
+
+        maximumLoad = 180;
+		weaponPoolAvailable = 1;
+
+        class ItemInfo : VestItem
+		{
+			vestType="Rebreather";
+			containerClass = "Supply100";
+			mass=80;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
+		};
+	};
+
+	class TKE_UCNFaceWear1GL;
+	class aux187_Vest_Grenadier : TKE_UCNFaceWear1GL
+	{
+		author = "Tim";
+		scope = 2;
+		displayName = "[187th] Clone Grenadier Vest";
+
+        model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
+		
+		class XtdGearInfo
+		{
+			model = "aux187_Vests_Model";
+            vestType = "Grenadier";
+		};
+
+        maximumLoad = 180;
+		weaponPoolAvailable = 1;
+
+        class ItemInfo : VestItem
+		{
+			vestType="Rebreather";
+			containerClass = "Supply100";
+			mass=80;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
+		};
+	};
+
+	class ls_gar_clone_vest;
+	class aux187_Vest_1 : ls_gar_clone_vest
+	{
+		author = "Tim";
+		scope = 2;
+		displayName = "[187th] Clone Vest 1";
+
+        model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
+		
+		class XtdGearInfo
+		{
+			model = "aux187_Vests_Model";
+            vestType = "Vest1";
 		};
 
         maximumLoad = 180;

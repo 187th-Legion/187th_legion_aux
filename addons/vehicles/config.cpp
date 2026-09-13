@@ -24,7 +24,8 @@ class CfgPatches
 			"aux187_bantha_mk2_unarmed",
 			"aux187_bantha_mk3_mgs",
 			"aux187_bantha_mk3_ifv",
-			"aux187_bantha_mk3_cmd"
+			"aux187_bantha_mk3_cmd",
+			"aux187_bantha_mk3_aa"
 		};
 		weapons[] = 
 		{
