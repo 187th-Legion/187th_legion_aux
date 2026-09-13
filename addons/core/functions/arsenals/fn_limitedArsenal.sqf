@@ -112,6 +112,8 @@
     "aux187_Vest_Suspenders",
     "aux187_Vest_Trooper_Chest_Harness",
     "aux187_Vest_ClearView",
+    "aux187_vest_Grenadier_Chest_Harness",
+    "aux187_Vest_Officer_Pauldron",
     
     "aux187_optic_LPVO",
     "aux187_optic_reflex",
