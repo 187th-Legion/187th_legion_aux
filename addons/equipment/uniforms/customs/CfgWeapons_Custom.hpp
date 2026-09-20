@@ -377,6 +377,27 @@
 		};
     };
 
+	class aux187_Uniform_Custom_Carmine : aux187_Uniform_Base
+    {
+		scope = 2;
+		displayName = "[187th] Custom Uniform (Carmine)";
+		
+		class ItemInfo : UniformItem
+		{
+			uniformClass="aux187_Custom_Carmine";
+
+			uniformModel="-";
+			uniformType="Neopren";
+			containerClass="Supply150";
+			mass = 40;
+		};
+		
+		class XtdGearInfo {
+			model = "aux187_CustomUniform_Model";
+			Customs = "Carmine";
+		};
+    };
+
 	class aux187_Uniform_Custom_Scorch : aux187_Uniform_Base
     {
 		scope = 2;

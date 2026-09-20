@@ -40,10 +40,10 @@
     {
         enabled = 1;
         speed = 400;
-        fuelDrain = 0.00012;
+        fuelDrain = 0.00008;
         overchargeSpeed = 600;
-        overchargeFuelDrain = 0.00035;
-        overchargeCooldown = 45;
+        overchargeFuelDrain = 0.000125;
+        overchargeCooldown = 35;
     };
 
     class ACE_SelfActions : ACE_SelfActions

@@ -47,6 +47,12 @@
     "aux187_Vest_Engineer",
     "aux187_Vest_Kama_Officer",
 
+    "aux187_Vest_Leadership_CC",
+    "aux187_Vest_Leadership_CL",
+    "aux187_Vest_Leadership_CS",
+    "aux187_Vest_Leadership_CGS",
+    "aux187_Vest_Leadership_CP",
+
     "aux187_DC15S",
     "aux187_DC15A",
     "aux187_DC15C",
@@ -144,8 +150,10 @@
     "aux187_Uniform_Custom_Scorch",
     "aux187_Uniform_Custom_Buzz",
     "aux187_Uniform_Custom_Knight",
+    "aux187_Uniform_Custom_Carmine",
 
     "aux187_Helmet_Custom_Mindless",
+    "aux187_Helmet_Custom_Trapper",
     "aux187_Helmet_Custom_Icarus",
     "aux187_Helmet_Custom_Ringer",
     "aux187_Helmet_Custom_Tim",
@@ -423,7 +431,7 @@
     "OPTRE_SignalSmokeR",
     "OPTRE_SignalSmokeY",
     "ACE_HuntIR_M203",
-
+    
     "aux187_Mag_1Rnd_AP_Grenade",
     "aux187_Mag_1Rnd_HE_Grenade",
     "aux187_Mag_3Rnd_HE_Grenade",
@@ -474,7 +482,7 @@
     "IDA_grenade_smoke_Green_mag",
     "IDA_grenade_smoke_Purple_mag",
     "IDA_grenade_smoke_Red_mag",
-    "IDA_grenade_smoke_White_mag",
+    "IDA_grenade_smoke_mag",
     "IDA_grenade_smoke_Yellow_mag",
     "SquadShieldMagazine",
     "OPTRE_ELB47_Strobe",

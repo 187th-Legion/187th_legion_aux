@@ -33,6 +33,29 @@
         brightness = 1000;
 	};
 
+    class B_35mm_AA_Tracer_Red;
+    class aux187_ammo_bantha_z20_aa_green : B_35mm_AA_Tracer_Red
+	{
+		author = "187th Legion";
+		model="\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Green.p3d";
+		effectfly = "IDA_BlasterBoltGlow_Green_Fly";
+		tracerScale=2;
+        brightness = 1000;
+
+        caliber = 2.8;
+        hit = 60;
+	};
+
+    class ace_missile_manpad_stinger;
+    class aux187_ammo_bantha_aa : ace_missile_manpad_stinger
+	{
+		author = "187th Legion";
+
+        effectsMissile = "IDA_MissileGlow_Blue_fly";
+        indirectHit = 100;
+        indirectHitRange = 4;
+	};
+
     class 3AS_Mass_Driver_Shell;
     class aux187_ammo_bantha_z35_blue : 3AS_Mass_Driver_Shell
 	{

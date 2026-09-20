@@ -1,7 +1,7 @@
 	class ls_cloneHelmet_arf;
 	class JLTS_CloneHelmetP2;
 	class JLTS_CloneHelmetBARC;
-    class JLTS_CloneHelmetAirborne;
+    class JLTS_CloneHelmetAB;
 	class HeadgearItem;
 	class 3AS_H_Katarn_Helmet;
 	class 3as_P2_Pilot_helmet;
@@ -322,11 +322,11 @@
 		};
 	};
 
-    class aux187_Airborne_Base_Helmet : JLTS_CloneHelmetAirborne
+    class aux187_Airborne_Base_Helmet : JLTS_CloneHelmetAB
 	{
 		displayName = "[187th] P2 Trooper Helmet (Airborne)";
 		author = "Tim";
-		
+
 		
 		hiddenSelectionsTextures[] = { QPATHTOF(helmets\data\187th_Airborne_Base_Helmet.paa), QPATHTOF(helmets\data\187th_Airborne_Base_Helmet.paa) };
 		

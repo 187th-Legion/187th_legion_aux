@@ -32,9 +32,9 @@
     {
         enabled = 1;
         speed = 400;
-        fuelDrain = 0.00015;
-        overchargeSpeed = 600;
-        overchargeFuelDrain = 0.0004;
+        fuelDrain = 0.000095;
+        overchargeSpeed = 675;
+        overchargeFuelDrain = 0.00025;
         overchargeCooldown = 60;
     };
 

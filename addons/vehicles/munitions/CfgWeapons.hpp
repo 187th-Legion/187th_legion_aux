@@ -1,10 +1,11 @@
     class player;
     class HE;
+	class manual;
     
     class 3AS_Sabre_Missiles;
     class aux187_Bantha_PLX: 3AS_Sabre_Missiles
 	{
-		displayName="Bantha Rocket Launcher";
+		displayName="PLX-2 Bantha Rocket Launcher";
 		magazines[]=
 		{
 			"aux187_bantha_missile",
@@ -215,145 +216,68 @@
 	class TKE_TwinAutocannon_30mm_AA;
     class aux187_bantha_cannon_aa : TKE_TwinAutocannon_30mm_AA
 	{
-		displayName="Z20 Cannon";
+		displayName="Z20 Twin Autocannon";
 		scope=1;
-		muzzles[]=
+		magazines[]=
 		{
-			"aux187_J_Plasma"
+			"aux187_mag_300rnd_z20_autocannon"
 		};
-		class aux187_J_Plasma : HE
+		class close : manual
 		{
-			displayName="Z20 Cannon";
-			magazines[]=
+			class StandardSound
 			{
-				"aux187_mag_300rnd_z20_autocannon"
-			};
-			class player : player
-			{
-				sounds[]=
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				soundSetShot[]=
 				{
-					"StandardSound"
-				};
-				class BaseSoundModeType;
-				class StandardSound: BaseSoundModeType
-				{
-					soundSetShot[]=
-					{
-						"3AS_lightwalkercanon_Shot_SoundSet",
-						"Autocannon30mmBody_tail_SoundSet"
-					};
+					"3AS_lightwalkercanon_Shot_SoundSet",
+					"Autocannon30mmBody_tail_SoundSet"
 				};
 			};
-			bullet1[]=
+		};
+		/*class far : close
+		{
+			class StandardSound
 			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_01",
-				0.2818383,
-				1,
-				10
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				soundSetShot[]=
+				{
+					"3AS_lightwalkercanon_Shot_SoundSet",
+					"Autocannon30mmBody_tail_SoundSet"
+				};
 			};
-			bullet2[]=
+		};
+		class medium : close
+		{
+			class StandardSound
 			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_02",
-				0.2818383,
-				1,
-				10
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				soundSetShot[]=
+				{
+					"3AS_lightwalkercanon_Shot_SoundSet",
+					"Autocannon30mmBody_tail_SoundSet"
+				};
 			};
-			bullet3[]=
+		};
+		class short : close
+		{
+			class StandardSound
 			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_03",
-				0.2818383,
-				1,
-				10
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				soundSetShot[]=
+				{
+					"3AS_lightwalkercanon_Shot_SoundSet",
+					"Autocannon30mmBody_tail_SoundSet"
+				};
 			};
-			bullet4[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_04",
-				0.2818383,
-				1,
-				10
-			};
-			bullet5[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Dirt_01",
-				0.2818383,
-				1,
-				10
-			};
-			bullet6[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Dirt_02",
-				0.2818383,
-				1,
-				10
-			};
-			bullet7[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Dirt_03",
-				0.2818383,
-				1,
-				10
-			};
-			bullet8[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Dirt_04",
-				0.2818383,
-				1,
-				10
-			};
-			bullet9[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Grass_01",
-				0.2818383,
-				1,
-				10
-			};
-			bullet10[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Grass_02",
-				0.2818383,
-				1,
-				10
-			};
-			bullet11[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Grass_03",
-				0.2818383,
-				1,
-				10
-			};
-			bullet12[]=
-			{
-				"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Grass_04",
-				0.2818383,
-				1,
-				10
-			};
-			soundBullet[]=
-			{
-				"bullet1",
-				0.079999998,
-				"bullet2",
-				0.083999999,
-				"bullet3",
-				0.083999999,
-				"bullet4",
-				0.083999999,
-				"bullet5",
-				0.093000002,
-				"bullet6",
-				0.093000002,
-				"bullet7",
-				0.074000001,
-				"bullet8",
-				0.074000001,
-				"bullet9",
-				0.083999999,
-				"bullet10",
-				0.085000001,
-				"bullet11",
-				0.082999997,
-				"bullet12",
-				0.082999997
-			};
+		};*/
+	};
+
+	class OPTRE_SGM122_Mortar_122mm;
+	class aux187_weapon_au44 : OPTRE_SGM122_Mortar_122mm
+	{
+		displayName="AU-44";
+		magazines[]=
+		{
+			""
 		};
 	};

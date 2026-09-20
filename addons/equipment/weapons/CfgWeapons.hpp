@@ -719,7 +719,7 @@
 
             magazines[] = 
             {
-                "aux187_Mag_40Rnd_DC15C"
+                "aux187_Mag_45Rnd_DC15C"
             };
 
             //modes[] = { "Single","FullAuto" };
