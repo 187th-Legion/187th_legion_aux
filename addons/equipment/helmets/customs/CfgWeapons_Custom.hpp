@@ -1,6 +1,6 @@
-	// ---------------------------------------------------------------------------------
-	//                                    PHASE 2
-	// ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+//                                    PHASE 2
+// ---------------------------------------------------------------------------------
 
     class aux187_Helmet_Custom_Boss : aux187_P2_Base_Helmet
     {
@@ -210,19 +210,6 @@
 		};
     };
 
-    class aux187_Helmet_Custom_Ted : aux187_P2_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Ted)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Ted.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Ted";
-		};
-    };
-
     class aux187_Helmet_Custom_Vinokurov : aux187_P2_Base_Helmet
     {
 		scope = 2;
@@ -314,9 +301,35 @@
 		};
     };
 
-	// ---------------------------------------------------------------------------------
-	//                                    Barc
-	// ---------------------------------------------------------------------------------
+	class aux187_Helmet_Custom_Trapper : aux187_P2_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Trapper)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Trapper.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Trapper";
+		};
+    };
+
+	class aux187_Helmet_Custom_Tim : aux187_P2_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Tim)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Tim.paa), QPATHTOF(helmets\data\187th_P2_Base_Helmet.paa) };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Tim";
+		};
+    };
+
+// ---------------------------------------------------------------------------------
+//                                    Barc
+// ---------------------------------------------------------------------------------
 
 
     class aux187_Helmet_Custom_Un : aux187_BARC_Base_Helmet
@@ -332,9 +345,9 @@
 		};
     };
 
-    // ---------------------------------------------------------------------------------
-	//                                   P2 Pilot
-	// ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+//                                   P2 Pilot
+// ---------------------------------------------------------------------------------
 
     class aux187_Helmet_Custom_Ixi : aux187_Pilot_Base_Helmet
     {
@@ -362,9 +375,22 @@
 		};
     };
 
-    // ---------------------------------------------------------------------------------
-	//                                   ARF
-	// ---------------------------------------------------------------------------------
+	class aux187_Helmet_Custom_Ted : aux187_Pilot_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Ted)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Ted.paa), "", "3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", QPATHTOF(helmets\customs\data\187thHelmet_Ted.paa), "" };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Ted";
+		};
+    };
+
+// ---------------------------------------------------------------------------------
+//                                   ARF
+// ---------------------------------------------------------------------------------
 
     class aux187_Helmet_Custom_Buzz : aux187_ARF_Base_Helmet
     {
@@ -402,19 +428,6 @@
 		class XtdGearInfo {
 			model = "aux187_CustomHelmet_Model";
 			Customs = "Iron";
-		};
-    };
-
-    class aux187_Helmet_Custom_Tim : aux187_ARF_Base_Helmet
-    {
-		scope = 2;
-		displayName = "[187th] Custom Helmet (Tim)";
-		
-        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Tim.paa), QPATHTOF(helmets\data\187th_ARF_Base_Helmet.paa) };
-		
-		class XtdGearInfo {
-			model = "aux187_CustomHelmet_Model";
-			Customs = "Tim";
 		};
     };
 

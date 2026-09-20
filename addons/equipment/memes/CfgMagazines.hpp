@@ -5,7 +5,7 @@
 	*/
 
         class IDA_grenade_Nerf_mag;
-        class aux187_meme_mag_1Rnd_skull : IDA_grenade_Nerf_mag //THE THROW CLASS IS IN items\flares\CfgWeapons.hpp
+        class aux187_meme_mag_1Rnd_skull : IDA_grenade_Nerf_mag
         {
             author = "Tim";
             scope = 2;

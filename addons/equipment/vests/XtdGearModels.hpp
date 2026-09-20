@@ -21,3 +21,17 @@
             label = "Officer Kama";
         };
     };
+
+    class aux187_LeadershipVests_Model
+    {
+        label = "[187th] Leadership Vests";
+        author = "Tim";
+        options[] = { "vestType" };
+        
+        class vestType
+        {
+            label = "Vest Options";
+            values[] = { "CP", "CS", "CGS", "CL", "CC" };
+            alwaysSelectable = 1;
+        };
+    };

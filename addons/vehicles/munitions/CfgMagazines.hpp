@@ -8,7 +8,6 @@
 
 	class 3as_saber_80Rnd_autocannon_30mm_mag;
 	class 3AS_JLTS_MK43_AT;
-	class 3AS_JLTS_MK39_AA;
 
 	class aux187_mag_100rnd_z20_autocannon : 3as_saber_80Rnd_autocannon_30mm_mag
 	{
@@ -18,7 +17,7 @@
 
 	class aux187_mag_300rnd_z20_autocannon : 3as_saber_80Rnd_autocannon_30mm_mag
 	{
-		ammo="aux187_ammo_bantha_z20_green";
+		ammo="aux187_ammo_bantha_z20_aa_green";
 		count = 300;
 	};
 	
@@ -27,9 +26,11 @@
 		count = 1;
 	};
 
-	class aux187_bantha_missile_aa : 3AS_JLTS_MK39_AA
+	class ace_missile_manpad_stinger;
+	class aux187_bantha_missile_aa : ace_missile_manpad_stinger
 	{
-		count = 1;
+		count = 4;
+		ammo = "aux187_ammo_bantha_aa";
 	};
 
 	class 3AS_30Rnd_Mass_Driver_Shells;
@@ -52,4 +53,18 @@
 		displayName = "15Rnd HE Mass Driver Round";
 		ammo = "aux187_ammo_bantha_z35_heat";
 		count = 15;
+	};
+
+// MORTARS STUFF!!!!!!!!!
+	class 8Rnd_125mm_HE;
+
+	class aux187_mag_12Rnd_HE_au44 : 8Rnd_125mm_HE
+	{
+		ammo = "aux187_ammo_au44_he";
+		
+		author = "Tim";
+		displayName = "HE Mortar Shells";
+		displayNameShort = "HE";
+
+		count = 12;
 	};

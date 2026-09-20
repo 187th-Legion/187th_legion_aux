@@ -45,6 +45,7 @@ class CfgPatches
 
 			//CUSTOM UNIFORMS
 			"aux187_Custom_Boss",
+			"aux187_Custom_Carmine",
 			"aux187_Custom_Crypto",
 			"aux187_Custom_Dubz",
 			"aux187_Custom_Fader",
@@ -201,7 +202,12 @@ class CfgPatches
 			"aux187_Vest_Grenade",
 			"aux187_Vest_CFR",
 			"aux187_Vest_Engineer",
-			"aux187_Vest_Kama_Officer",
+
+			"aux187_Vest_Leadership_CC",
+			"aux187_Vest_Leadership_CL",
+			"aux187_Vest_Leadership_CS",
+			"aux187_Vest_Leadership_CGS",
+			"aux187_Vest_Leadership_CP",
       
       		//WEAPONS
 			"aux187_DC15S",
@@ -255,6 +261,7 @@ class CfgPatches
 
 			//CUSTOMS
 			"aux187_Uniform_Custom_Boss",
+			"aux187_Uniform_Custom_Carmine",
 			"aux187_Uniform_Custom_Crypto",
 			"aux187_Uniform_Custom_Dubz",
 			"aux187_Uniform_Custom_Fader",
@@ -306,6 +313,7 @@ class CfgPatches
 			"aux187_Helmet_Custom_Crypto",
 			"aux187_Helmet_Custom_Carmine",
 			"aux187_Helmet_Custom_Boss",
+			"aux187_Helmet_Custom_Trapper",
 			"aux187_Helmet_Custom_Gandalf",
 			"aux187_Helmet_Custom_Jack",
 			"aux187_Helmet_Custom_Scorch",
@@ -364,7 +372,8 @@ class CfgWeapons
 	#include "weapons\CfgWeapons.hpp"
 	#include "vests\CfgWeapons.hpp"
 	#include "nvgs\CfgWeapons.hpp"
-	#include "items\Flares\CfgWeapons.hpp"
+
+	#include "items\CfgWeapons_Throw.hpp"
 	#include "items\medical\CfgWeapons.hpp"
 
 	#include "helmets\customs\CfgWeapons_Custom.hpp"
@@ -375,6 +384,7 @@ class CfgMagazines
 {
 	#include "weapons\CfgMagazines.hpp"
 	#include "items\Flares\CfgMagazines.hpp"
+	#include "items\Grenades\CfgMagazines.hpp"
 
 	#include "memes\CfgMagazines.hpp"
 };
@@ -383,6 +393,7 @@ class CfgAmmo
 {
 	#include "weapons\CfgAmmo.hpp"
 	#include "items\Flares\CfgAmmo.hpp"
+	#include "items\Grenades\CfgAmmo.hpp"
 
 	#include "memes\CfgAmmo.hpp"
 };

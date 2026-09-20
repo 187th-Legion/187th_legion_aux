@@ -218,8 +218,8 @@
 	//idleRpm=600;
 	//redRpm=3300;
 
-    armor=1500;
-    armorStructural=6;
+    armor=1700;
+    armorStructural=10;
     armorLights=1;
     transportSoldier = 11;
     reportRemoteTargets = 1;
@@ -234,7 +234,7 @@
         color[] = {0,0,0,1};
         name = "spz";
         plateFont = "RobotoCondensed";
-        plateFormat = "LORD-SUCKZ-##";
+        plateFormat = "REP-MK3-###";
         plateLetters = "0123456789";
     };
 

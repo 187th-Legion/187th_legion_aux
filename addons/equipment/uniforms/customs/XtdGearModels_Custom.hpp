@@ -38,7 +38,8 @@
                     "Jack",
                     "Scorch",
                     "Fish",
-                    "Knight"
+                    "Knight",
+                    "Carmine"
                 };
             };
         };

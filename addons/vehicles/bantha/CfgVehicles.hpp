@@ -473,7 +473,8 @@
 				weapons[]=
 				{
 					"aux187_bantha_massDriver",
-                    "aux187_bantha_z6"
+                    "aux187_bantha_z6",
+                    "SmokeLauncher"
 				};
 				magazines[]=
 				{
@@ -487,9 +488,11 @@
                     "aux187_mag_30rnd_z35_cannon",
                     "aux187_mag_15rnd_z35_cannon",
                     "aux187_mag_15rnd_z35_cannon",
-                    "aux187_mag_5rnd_z35_cannon",
-                    "aux187_mag_5rnd_z35_cannon",
-                    "aux187_mag_5rnd_z35_cannon",
+                    //"aux187_mag_5rnd_z35_cannon",
+                    //"aux187_mag_5rnd_z35_cannon",
+                    //"aux187_mag_5rnd_z35_cannon",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
 				};
 
                 class Components
@@ -520,8 +523,8 @@
                     };
                 };
 
-                maxHorizontalRotSpeed = 0.5;
-                maxVerticalRotSpeed = 0.45;
+                maxHorizontalRotSpeed = 0.7;
+                maxVerticalRotSpeed = 0.65;
 			};
         };
 
@@ -574,7 +577,8 @@
 				{
 					"aux187_bantha_cannon",
 					"aux187_bantha_plx",
-                    "aux187_bantha_z6"
+                    "aux187_bantha_z6",
+                    "SmokeLauncher"
 				};
 				magazines[]=
 				{
@@ -596,7 +600,9 @@
                     "aux187_mag_400rnd_z6",
 					"aux187_Bantha_Missile",
 					"aux187_Bantha_Missile",
-					"aux187_Bantha_Missile"
+					"aux187_Bantha_Missile",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
 				};
 
                 class Components
@@ -710,14 +716,15 @@
         editorSubcategory = "aux187_edSubcat_vehicles";
         crew="aux187_crewman";
 
-        class Turrets: Turrets
+        class Turrets : Turrets
 		{
-			class MainTurret: MainTurret
+			class MainTurret : MainTurret
 			{
 				weapons[]=
 				{
 					"aux187_bantha_cannon_aa",
-					"aux187_bantha_plx"
+					"aux187_bantha_plx",
+                    "SmokeLauncher"
 				};
 				magazines[]=
 				{
@@ -729,7 +736,9 @@
 
 					"aux187_Bantha_Missile_AA",
 					"aux187_Bantha_Missile_AA",
-					"aux187_Bantha_Missile_AA"
+					"aux187_Bantha_Missile_AA",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
 				};
 
                 class Components
