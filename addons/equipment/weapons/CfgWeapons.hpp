@@ -1071,7 +1071,9 @@
             author = "Tim";
             scope = 2;
             scopeArsenal = 2;
-
+            reloadAction = "GestureReload_IDA_Reload_Blaster";
+		    reloadMagazineSound[] = {"\Indecisive_Armoury_Sounds\Blaster_reload_Vent.ogg",5,1,100};
+		    recoil = "IDA_recoil_BlasterRifle";
             baseWeapon = "aux187_DP23";
             displayName = "[187th] DP-23 Scatter Blaster";
             
@@ -1092,11 +1094,7 @@
 
                     class CompatibleItems
                     {
-                        aux187_optic_LPVO = 1;
-                        aux187_optic_Reflex = 1;
-                        aux187_optic_brScope = 1;
-                        OPTRE_MA37_Smartlink_Scope = 1;
-                        aux187_optic_recon = 1;
+                        "OPTRE_M6C_Scope", "Optre_Recon_Sight"
                     };
                 };
             };
