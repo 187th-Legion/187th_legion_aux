@@ -1094,7 +1094,8 @@
 
                     class CompatibleItems
                     {
-                        "OPTRE_M6C_Scope", "Optre_Recon_Sight"
+                        OPTRE_M6C_Scope = 1;
+                        Optre_Recon_Sight = 1;
                     };
                 };
             };
@@ -1513,6 +1514,15 @@
             {  
                 "aux187_mag_80Rnd_Pistol"
             };
+
+            class WeaponSlotsInfo : WeaponSlotsInfo
+            {
+                class CowsSlot
+                {
+                    compatibleItems[] += { "aux187_optic_17ascope" };
+                    iconPicture = "";
+                };
+            };
         };
 
         class IDA_DC15P;
@@ -1548,6 +1558,13 @@
 
             baseWeapon = "aux187_DC17_stun";
             displayName = "[187th] DC-17 Blaster Pistol";
+
+            class CowsSlot
+            {
+                compatibleItems[] += { "aux187_optic_17ascope" };
+                iconPicture = "";
+                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            };
         };
 
         class IDA_DC15P_stun;

@@ -1,3 +1,23 @@
+    class CMFlareLauncher;
+	class Mode_Burst;
+    class aux187_cm_launcher : CMFlareLauncher
+	{
+        magazines[] = { "aux187_mag_300Rnd_CMFlare" };
+
+        magazineReloadTime = 0.2;
+
+        class Burst : Mode_Burst
+        {
+            burst = 10;
+        };
+
+        class AIBurst : Burst
+        {
+            burst = 10;
+            burstRangeMax = -1;
+        };
+	};
+
     class 3as_LAAT_Missile_AGM;
 	class Aux187_LAATC_AGM_Missile : 3as_LAAT_Missile_AGM
 	{

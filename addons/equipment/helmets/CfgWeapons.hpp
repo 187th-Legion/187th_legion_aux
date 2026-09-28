@@ -120,7 +120,7 @@
 		};
 	};
 	
-	class aux187_RC_Sand_Helmet : 3AS_H_Katarn_Helmet
+	class aux187_RC_Sand_Helmet : aux187_RC_Base_Helmet
 	{
 		displayName = "[187th] Katarn Helmet (Sand)";
 		author = "Tim";
@@ -135,7 +135,7 @@
 		};
 	};
 	
-	class aux187_RC_Snow_Helmet : 3AS_H_Katarn_Helmet
+	class aux187_RC_Snow_Helmet : aux187_RC_Base_Helmet
 	{
 		displayName = "[187th] Katarn Helmet (Snow)";
 		author = "Tim";
@@ -150,7 +150,7 @@
 		};
 	};
 	
-	class aux187_RC_Wood_Helmet : 3AS_H_Katarn_Helmet
+	class aux187_RC_Wood_Helmet : aux187_RC_Base_Helmet
 	{
 		displayName = "[187th] Katarn Helmet (Wood)";
 		author = "Tim";

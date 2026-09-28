@@ -602,7 +602,7 @@
 		};
 	};
 	
-	class aux187_RC_Sand_Uniform : 3AS_U_Rep_Katarn_Armor
+	class aux187_RC_Sand_Uniform : aux187_RC_Base_Uniform
 	{
 		author = "Tim";
 		scope = 2;
@@ -626,7 +626,7 @@
 		};
 	};
 	
-	class aux187_RC_Snow_Uniform : 3AS_U_Rep_Katarn_Armor
+	class aux187_RC_Snow_Uniform : aux187_RC_Base_Uniform
 	{
 		author = "Tim";
 		scope = 2;
@@ -650,7 +650,7 @@
 		};
 	};
 	
-	class aux187_RC_Wood_Uniform : 3AS_U_Rep_Katarn_Armor
+	class aux187_RC_Wood_Uniform : aux187_RC_Base_Uniform
 	{
 		author = "Tim";
 		scope = 2;

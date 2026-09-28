@@ -1,4 +1,4 @@
-	class 3as_LAAT_8Rnd_Missile_AGM;
+    class 3as_LAAT_8Rnd_Missile_AGM;
 	class Aux187_LAATC_2Rnd_AGM_Missile : 3as_LAAT_8Rnd_Missile_AGM
 	{
 		displayName = "[187th] Torrent 2Rnd AGM Missiles";

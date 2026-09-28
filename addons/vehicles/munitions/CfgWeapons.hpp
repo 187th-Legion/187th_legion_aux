@@ -66,6 +66,23 @@
         reloadSound[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_105mm\Cannon_105mm_Reload_01.ogg",2.51189,1,10};
 	};
 
+	class aux187_gozanti_massDriver : aux187_bantha_massDriver
+	{
+		displayName="Z35 Cannon";
+		scope=1;
+        magazines[]=
+        {
+            "aux187_mag_30rnd_z35_cannon",
+        };
+
+		class close : player
+		{
+			burst = 2;
+			reloadTime = 20;
+		};
+
+	};
+
     //class autocannon_40mm_CTWS;
 	class TKE_Autocannon;
     class aux187_bantha_cannon : TKE_Autocannon

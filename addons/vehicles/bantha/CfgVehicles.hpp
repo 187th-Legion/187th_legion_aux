@@ -16,10 +16,13 @@
     class TKE_Galea_Cannon : TKE_Galea_Autocannon {};
     class FCF_APC_MGS : TKE_Galea_Cannon {};
     
+    class EventHandlers;
     class VehicleSystemsTemplateLeftCommander;
     class VehicleSystemsTemplateRightCommander;
     class HitPoints;
     class Components;
+    class CommanderOptics;
+    class ViewOptics;
     
     class aux187_bantha_mk2 : B_APC_Wheeled_01_cannon_F
     {
@@ -465,6 +468,8 @@
         editorCategory = "aux187_edCat_187th";
         editorSubcategory = "aux187_edSubcat_vehicles";
         crew="aux187_crewman";
+
+        mass = 31751;
         
         class Turrets : Turrets
 		{
@@ -494,6 +499,15 @@
                     "SmokeLauncherMag",
                     "SmokeLauncherMag",
 				};
+
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        turretFollowFreeLook = 1;
+                        stabilizedInAxes = 3;
+                    };
+                };
 
                 class Components
                 {
@@ -569,6 +583,8 @@
         editorSubcategory = "aux187_edSubcat_vehicles";
         crew="aux187_crewman";
 
+        mass = 27215;
+
         class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -604,6 +620,15 @@
                     "SmokeLauncherMag",
                     "SmokeLauncherMag",
 				};
+
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        turretFollowFreeLook = 1;
+                        stabilizedInAxes = 3;
+                    };
+                };
 
                 class Components
                 {
@@ -676,7 +701,25 @@
         editorSubcategory = "aux187_edSubcat_vehicles";
         crew="aux187_crewman";
 
+        mass = 24494;
+
         textureList[] = {"aux187_BanthaMk3_Texture_Default ", 1};
+
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        turretFollowFreeLook = 1;
+                        stabilizedInAxes = 3;
+                        
+                    };
+                };
+            };
+        };
 
         class TextureSources
         {
@@ -716,6 +759,8 @@
         editorSubcategory = "aux187_edSubcat_vehicles";
         crew="aux187_crewman";
 
+        mass = 27215;
+
         class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -740,6 +785,53 @@
                     "SmokeLauncherMag",
                     "SmokeLauncherMag",
 				};
+
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        turretFollowFreeLook = 1;
+                        stabilizedInAxes = 3;
+                        /*class OpticsIn
+                        {
+                            class Wide : ViewOptics
+                            {
+                                directionStabilized = 1;
+                                thermalMode[] = {0,1};
+                                visionMode[] = {"Normal","NVG","TI"};
+                                minFov = 0.5;
+                                minAngleY = -100;
+                                minAngleX = -30;
+                                gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_APC_01_w_F.p3d";
+                                gunnerOpticsEffect[] = {};
+                                initAngleX = 0;
+                                initAngleY = 0;
+                                initFov = 0.5;
+                                maxAngleX = 30;
+                                maxAngleY = 100;
+                                maxFov = 0.5;
+                            };
+
+                            class Narrow : Wide
+                            {
+                                directionStabilized = 1;
+                                gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_APC_01_n_F.p3d";
+                                initFov = 0.028;
+                                maxFov = 0.028;
+                                minFov = 0.028;
+                            };
+
+                            class Medium : Wide
+                            {
+                                directionStabilized = 1;
+                                gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_APC_01_w_F.p3d";
+                                initFov = 0.07;
+                                maxFov = 0.07;
+                                minFov = 0.07;
+                            };
+                        };*/
+                    };
+                };
 
                 class Components
                 {

@@ -126,6 +126,7 @@
     "aux187_optic_brScope",
     "aux187_optic_holo",
     "aux187_optic_15ascope",
+    "aux187_optic_17ascope",
     "OPTRE_MA37_Smartlink_Scope",
 
     "aux187_Uniform_Custom_Boss",

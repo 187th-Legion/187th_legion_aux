@@ -79,7 +79,7 @@
             name = "wheel_1_4_steering";
             visual = "wheel_1_4_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -94,7 +94,7 @@
             name = "wheel_1_2";
             visual = "wheel_1_2_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -109,7 +109,7 @@
             name = "wheel_1_1";
             visual = "wheel_1_1_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -124,7 +124,7 @@
             name = "wheel_1_3";
             visual = "wheel_1_3_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -139,7 +139,7 @@
             name = "wheel_2_4_steering";
             visual = "wheel_2_4_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -154,7 +154,7 @@
             name = "wheel_2_2";
             visual = "wheel_2_2_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -169,7 +169,7 @@
             name = "wheel_2_1";
             visual = "wheel_2_1_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -184,7 +184,7 @@
             name = "wheel_2_3";
             visual = "wheel_2_3_hide";
 
-            armor = -250;
+            armor = -150;
             explosionShielding = 4;
             minimalHit = -0.016;
             passThrough = 0;
@@ -205,16 +205,64 @@
         turnIncreaseTime = 0;
     };
 
+    class EventHandlers : EventHandlers
+    {
+        class AddWrenDroneAction
+        {
+            postinit = "[_this select 0] call OPTRE_fnc_viper_drone_deploy_add_hold_action;";
+        };
+        class Mk3Bantha
+        {
+            incomingMissile = "_this call OPTRE_fnc_viper_blackveil_register_incoming_missile;";
+        };
+    };
+
+    class UserActions
+    {
+        class StartSmoke
+        {
+            condition = "[this] call OPTRE_fnc_vehicle_vape_nation_action_show_condition";
+            displayName = "<t color='#2abd76'>Start Smoke";
+            displayNameDefault = "<t color='#2abd76'>Start Smoke";
+            onlyForPlayer = 0;
+            position = "";
+            priority = 10;
+            radius = 100000;
+            showWindow = 0;
+            statement = "[vehicle (missionNamespace getVariable ['bis_fnc_moduleRemoteControl_unit', player]),30,0.05,10] call OPTRE_fnc_vehicle_vape_nation_start";
+            textToolTip = "<t color='#2abd76'>Start Smoke";
+            userActionID = 1;
+        };
+
+        class StopSmoke : StartSmoke
+        {
+            condition = "([this] call OPTRE_fnc_vehicle_vape_nation_action_show_stop_condition)";
+            displayName = "<t color='#b05353'>Stop Smoke";
+            displayNameDefault = "<t color='#b05353'>Stop Smoke";
+            statement = "this setVariable ['OPTRE_Vic_Vape_Nation', VEHICLE_VAPE_NATION_STOP, true];";
+            textToolTip = "<t color='#b05353'>Stop Smoke";
+            userActionID = 2;
+        };
+    };
+
     TFAR_hasIntercom = 1;
 
     tas_canBlift=2;
     tas_liftVars="[[[[0,-3.5,-6]],[[-2,-3.5,-6],[2,-3.5,-6]]], [0.4,-0.06], [0,0.3]]";
     
     thrustDelay=0.5;
-    fuelCapacity=50;
+    fuelCapacity=65;
+    
+    maxSpeed = 75;
+    slowSpeedForwardCoef = 0.3;
+    normalSpeedForwardCoef = 0.85;
+
+    WaterLeakiness = 0;
+    canFloat = 1;
+
     //clutchStrength=85;
-	//enginePower=2000;
-	//peakTorque=6000;
+	//enginePower=200;
+	//peakTorque=600;
 	//idleRpm=600;
 	//redRpm=3300;
 
@@ -250,21 +298,23 @@
         {
             dampingRate = 0.1;
             dampingRateDamaged = 1;
-            dampingRateDestroyed = 1000;
+            dampingRateDestroyed = 750;
+            dampersBumpCoef = 0.3;
+
             frictionVsSlipGraph[] = {{0,1},{0.5,1},{1,1}};
             latStiffX = 25;
             latStiffY = 180;
             longitudinalStiffnessPerUnitGravity = 5000;
-            mass = 150;
+            mass = 225;
             maxBrakeTorque = 25000;
             maxCompression = 0.1125;
-            maxDroop = 0.15;
+            maxDroop = 0.18;
             maxHandBrakeTorque = 0;
             MOI = 180;
             side = "left";
             springDamperRate = 20600.6;
-            springStrength = 130000;
-            sprungMass = 1334;
+            springStrength = 132500;
+            sprungMass = 1534;
             steering = 1;
             suspTravelDirection[] = {-0.125,-1,0};
             width = 0.35;

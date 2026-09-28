@@ -38,6 +38,21 @@
         overchargeCooldown = 60;
     };
 
+    class EjectionSystem
+    {
+        CanopyClass = "Plane_Fighter_04_Canopy_F";
+        CanopyForce = 30;
+        EjectionDual = 0;
+        EjectionParachute = "NonSteerable_Parachute_F";
+        EjectionSeatClass = "I_Ejection_Seat_Plane_Fighter_04_F";
+        EjectionSeatEnabled = 1;
+        EjectionSeatForce = 50;
+        EjectionSeatPos = "pos_eject";
+        EjectionSeatRailAnim = "ejection_seat_motion";
+        EjectionSoundExt = "Plane_Fighter_01_ejection_ext_sound";
+        EjectionSoundInt = "Plane_Fighter_01_ejection_in_sound";
+    };
+
     textureList[] = {"aux187_LAAT_C_Skin_Default", 1};
 
     class ACE_SelfActions : ACE_SelfActions
