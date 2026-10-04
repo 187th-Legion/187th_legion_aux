@@ -122,6 +122,11 @@ class CfgPatches
 			"aux187_backpack_commando_mindless",
 			"aux187_backpack_commando_mindless_radio",
 
+			"aux187_backpack_mortar_base",
+			"aux187_backpack_mortar_sand",
+			"aux187_backpack_mortar_snow",
+			"aux187_backpack_mortar_wood",
+
 			"aux187_backpack_jumppack_radio",
 			"aux187_backpack_jumppack_base",
 			"aux187_backpack_sling_radio",
@@ -297,6 +302,7 @@ class CfgPatches
 			"aux187_Helmet_Custom_Fives",
 			"aux187_Helmet_Custom_Vinokurov",
 			"aux187_Helmet_Custom_Ted",
+			"aux187_Helmet_Custom_Bobby",
 			"aux187_Helmet_Custom_Tac",
 			"aux187_Helmet_Custom_Star",
 			"aux187_Helmet_Custom_Ouroboros",

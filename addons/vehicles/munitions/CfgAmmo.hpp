@@ -1,3 +1,4 @@
+//TANK/APC AMMO
     class 3AS_ATTE_30mm_MP;
     class Aux187_ATTE_30mm_MP : 3AS_ATTE_30mm_MP
     {
@@ -121,3 +122,138 @@
             power = 25;
         };
 	};
+
+//AU44 MORTAR AMMO
+
+    class Sh_155mm_AMOS;
+    class aux187_ammo_au44_base : Sh_155mm_AMOS
+	{
+		author = "Tim";
+
+        CraterEffects = "ArtyShellCrater";
+        CraterWaterEffects = "ImpactEffectsWaterHE";
+        effectFlare = "FlareShell";
+        effectsFire = "CannonFire";
+        effectsMissile = "ExplosionEffects";
+        effectsSmoke = "SmokeShellWhite";
+        ExplosionEffects = "MortarExplosion";
+
+        simulation = "shotShell";
+        submunitionAmmo = "";
+
+        model = "\A3\Weapons_F\Ammo\shell.p3d";
+        SoundSetExplosion[] = {"Shell155mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
+        soundSetSonicCrack[] = {"bulletSonicCrack_SoundSet","bulletSonicCrackTail_SoundSet"};
+
+        warheadName = "HE";
+        whistleDist = 80;
+
+        ace_rearm_caliber = 122;
+
+        class CamShakeExplode
+        {
+            distance = 450;
+            duration = 3.5;
+            frequency = 25;
+            power = 40;
+        };
+	};
+
+    class aux187_ammo_au44_he : aux187_ammo_au44_base
+	{
+		hit = 275;
+        indirectHit = 125;
+        indirectHitRange = 18;
+
+        caliber = 10;
+        cost = 300;
+	};
+
+    class aux187_ammo_au44_smoke : aux187_ammo_au44_base
+	{
+		hit = 1;
+        indirectHit = 0.25;
+        indirectHitRange = 5;
+
+        caliber = 1;
+        cost = 1000;
+
+        simulation = "shotDeploy";
+        submunitionAmmo = "aux187_ammo_smoke_shell_arty";
+	};
+
+    class aux187_ammo_au44_flare : aux187_ammo_au44_base
+	{
+		hit = 1;
+        indirectHit = 0.25;
+        indirectHitRange = 5;
+
+        caliber = 1;
+        cost = 1000;
+
+        aimAboveDefault = 4;
+        aimAboveTarget[] = {30,60,120,180,240,300,360};
+
+        brightness = 75000;
+
+        simulation = "shotIlluminating";
+        timeToLive = 300;
+	};
+
+    class aux187_ammo_au44_thermo : aux187_ammo_au44_base
+	{
+		hit = 185;
+        indirectHit = 500;
+        indirectHitRange = 25;
+
+        caliber = 15;
+        cost = 300;
+	};
+
+    class aux187_ammo_au44_laser : aux187_ammo_au44_base
+	{
+		hit = 450;
+        indirectHit = 5;
+        indirectHitRange = 8;
+
+        caliber = 15;
+        cost = 500;
+
+        explosionAngle = 60;
+        explosionForceCoef = 1;
+
+        irLock = 0;
+        laserLock = 1;
+        lockSeekRadius = 125;
+        lockType = 0;
+        maneuvrability = 1;
+        
+        simulation = "shotSubmunitions";
+        submunitionAmmo = "OPTRE_M_Mo_122mm_SABOT_LG";
+	};
+
+    class aux187_ammo_au44_apfgds : aux187_ammo_au44_base
+	{
+		hit = 560;
+        indirectHit = 0;
+        indirectHitRange = 8;
+
+        caliber = 34.8387;
+        cost = 500;
+
+        explosionAngle = 60;
+        explosionForceCoef = 1;
+
+        irLock = 1;
+        laserLock = 0;
+        lockSeekRadius = 85;
+        lockType = 0;
+        maneuvrability = 1;
+        
+	};
+
+    class SmokeShellArty;
+    class aux187_ammo_smoke_shell_arty : SmokeShellArty
+    {
+        timeToLive = 175;
+    };

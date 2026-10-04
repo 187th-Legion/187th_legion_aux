@@ -3,6 +3,12 @@
         class JLTS_Clone_backpack_RTO;
         class JLTS_Clone_backpack_s_RTO;
 
+    /*
+	---------------------------------------------------------------
+	                    CLONE TROOPER BACKPACK CLASSES
+	---------------------------------------------------------------
+	*/
+    
         class aux187_backpack_trooper_base : JLTS_Clone_backpack
         {
             author = "Tim";
@@ -950,6 +956,138 @@
 
     /*
 	---------------------------------------------------------------
+	                    DEPLOYABLE BACKPACK CLASSES
+	---------------------------------------------------------------
+	*/
+
+        class aux187_backpack_mortar_base : JLTS_Clone_backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Clone Mortar Backpack";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Mortar.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_Backpack_Model";
+                roleType = "Mortar";
+                strapType = "Base";
+                radioType = "Base";
+                camoType = "Base";
+            };
+
+            maximumLoad = "0";
+            mass = 50;
+
+            class assembleInfo
+            {
+                assembleTo = "aux187_au44";
+                base = "";
+                displayName = "AU-44 Republic Mortar";
+                dissasembleTo[] = {};
+                primary = 1;
+            };
+        };
+
+        class aux187_backpack_mortar_wood : JLTS_Clone_backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Clone Mortar Backpack (Wood)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Mortar_Wood.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_Backpack_Model";
+                roleType = "Mortar";
+                strapType = "Base";
+                radioType = "Base";
+                camoType = "Wood";
+            };
+
+            maximumLoad = "0";
+            mass = 50;
+
+            class assembleInfo
+            {
+                assembleTo = "aux187_au44_wood";
+                base = "";
+                displayName = "AU-44 Republic Mortar";
+                dissasembleTo[] = {};
+                primary = 1;
+            };
+        };
+
+        class aux187_backpack_mortar_snow : JLTS_Clone_backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Clone Mortar Backpack (Snow)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Mortar_Snow.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_Backpack_Model";
+                roleType = "Mortar";
+                strapType = "Base";
+                radioType = "Base";
+                camoType = "Snow";
+            };
+
+            maximumLoad = "0";
+            mass = 50;
+
+            class assembleInfo
+            {
+                assembleTo = "aux187_au44_snow";
+                base = "";
+                displayName = "AU-44 Republic Mortar";
+                dissasembleTo[] = {};
+                primary = 1;
+            };
+        };
+
+        class aux187_backpack_mortar_sand : JLTS_Clone_backpack
+        {
+            author = "Tim";
+            scope = 2;
+            scopeArsenal = 2;
+
+            displayName = "[187th] Clone Mortar Backpack (Sand)";
+
+            hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Mortar_Sand.paa) };
+
+            class XtdGearInfo {
+                model = "aux187_Backpack_Model";
+                roleType = "Mortar";
+                strapType = "Base";
+                radioType = "Base";
+                camoType = "Sand";
+            };
+
+            maximumLoad = "0";
+            mass = 50;
+
+            class assembleInfo
+            {
+                assembleTo = "aux187_au44_sand";
+                base = "";
+                displayName = "AU-44 Republic Mortar";
+                dissasembleTo[] = {};
+                primary = 1;
+            };
+        };
+
+        
+
+    /*
+	---------------------------------------------------------------
 	                    MISC BACKPACK CLASSES
 	---------------------------------------------------------------
 	*/
@@ -1126,12 +1264,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Base.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Base";
                 radioType = "Base";
                 camoType = "Base";
-            };*/
+            };
 
             tf_hasLRradio = 0;
 
@@ -1149,12 +1287,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Base.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Base";
                 radioType = "Radio";
                 camoType = "Base";
-            };*/
+            };
 
             maximumLoad = "250";
             mass = 50;
@@ -1168,7 +1306,7 @@
             tf_subtype = "digital_lr";
         };
 
-        /*class aux187_backpack_commando_wood : 3AS_B_Katarn_Backpack
+        class aux187_backpack_commando_wood : 3AS_B_Katarn_Backpack
         {
             author = "Tim";
             scope = 2;
@@ -1189,7 +1327,7 @@
             mass = 50;
         };
 
-        class aux187_backpack_commando_base_radio : 3AS_B_Katarn_Backpack
+        class aux187_backpack_commando_wood_radio : 3AS_B_Katarn_Backpack
         {
             author = "Tim";
             scope = 2;
@@ -1216,7 +1354,7 @@
             tf_isolatedAmount = 0.65;
             tf_range = 20000;
             tf_subtype = "digital_lr";
-        };*/
+        };
 
         class aux187_backpack_commando_horizon : 3AS_B_Katarn_Backpack
         {
@@ -1228,12 +1366,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Horizon.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Horizon";
                 radioType = "Base";
                 camoType = "Base";
-            };*/
+            };
 
             tf_hasLRradio = 0;
 
@@ -1251,12 +1389,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Horizon.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Horizon";
                 radioType = "Radio";
                 camoType = "Base";
-            };*/
+            };
 
             maximumLoad = "250";
             mass = 50;
@@ -1280,12 +1418,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Ringer.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Ringer";
                 radioType = "Base";
                 camoType = "Base";
-            };*/
+            };
 
             tf_hasLRradio = 0;
 
@@ -1303,12 +1441,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Ringer.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Ringer";
                 radioType = "Radio";
                 camoType = "Base";
-            };*/
+            };
 
             maximumLoad = "250";
             mass = 50;
@@ -1332,12 +1470,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Mindless";
                 radioType = "Base";
                 camoType = "Base";
-            };*/
+            };
 
             tf_hasLRradio = 0;
 
@@ -1355,12 +1493,12 @@
 
             hiddenSelectionsTextures[] = { QPATHTOF(backpacks\data\187th_Backpack_Commando_Mindless.paa) };
 
-            /*class XtdGearInfo {
+            class XtdGearInfo {
                 model = "aux187_CommandoBags_Model";
                 customType = "Mindless";
                 radioType = "Radio";
                 camoType = "Base";
-            };*/
+            };
 
             maximumLoad = "250";
             mass = 50;

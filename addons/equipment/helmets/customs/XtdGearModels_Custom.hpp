@@ -50,7 +50,8 @@
 					"Meister",
 					"Icarus",
 					"Pete",
-					"Trapper"
+					"Trapper",
+					"Bobby"
 				};
             };
         };

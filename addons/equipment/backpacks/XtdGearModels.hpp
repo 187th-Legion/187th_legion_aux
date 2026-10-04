@@ -7,7 +7,7 @@
 			class roleType
 			{
 				label = "Backpack Type";
-				values[] = { "Trooper", "Medic", "Engineer", "Ammo", "Jumppack" };
+				values[] = { "Trooper", "Medic", "Engineer", "Ammo", "Jumppack", "Mortar", "Repeater" };
 				alwaysSelectable = 1;
 			};
 
@@ -15,21 +15,21 @@
 			{
 				label = "Strap Settings";
 				values[] = { "Base", "Strapped" };
-				alwaysSelectable = 1;
+				//alwaysSelectable = 1;
 			};
 
 			class radioType
 			{
 				label = "Radio Settings";
 				values[] = { "Base", "Radio" };
-				alwaysSelectable = 1;
+				//alwaysSelectable = 1;
 			};
 
 			class camoType
 			{
 				label = "Camouflage Options";
 				values[] = { "Base", "Sand", "Snow", "Wood" };
-				alwaysSelectable = 1;
+				//alwaysSelectable = 1;
 				class Sand
 				{
 					label = "Sand";
@@ -107,7 +107,7 @@
 			};
 		};
 
-		/*class aux187_CommandoBags_Model
+		class aux187_CommandoBags_Model
 		{
 			label = "[187th] Commando Packs";
 			author = "Tim";
@@ -124,7 +124,7 @@
 			{
 				label = "Radio Settings";
 				values[] = { "Base", "Radio" };
-				alwaysSelectable = 1;
+				//alwaysSelectable = 1;
 			};
 
 			class camoType
@@ -151,4 +151,4 @@
 				};
 			};
 
-		};*/
+		};

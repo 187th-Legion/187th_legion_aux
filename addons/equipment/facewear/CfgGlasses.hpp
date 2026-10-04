@@ -44,6 +44,11 @@
 		hiddenSelectionsTextures[] = {"3as\3AS_Republic_Characters\data\Misc\Misc_CO.paa","3as\3AS_Republic_Characters\data\MiscStraps\MiscStraps_CO.paa","3as\3AS_Republic_Characters\Glasses\data\FusionCutter\FusionCutter_CO.paa","3as\3AS_Republic_Characters\Glasses\data\EngineeringTablet\EngineeringTablet_CO.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			trooperPacks = "Breacher";
+		};
 	};
 
 	class aux187_vest_ChestRig
@@ -56,6 +61,11 @@
 		hiddenSelectionsTextures[] = {"\ls\core\addons\characters\equipment\chestrig\data\camo1_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			chestRigs = "Chestrig";
+		};
 	};
 
 	class aux187_vest_ChestRigPouch
@@ -68,6 +78,11 @@
 		hiddenSelectionsTextures[] = {"\ls\core\addons\characters\equipment\chestrig\data\camo1_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+		
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			chestRigs = "Pouch";
+		};
 	};
 
 	class aux187_vest_ChestPouch
@@ -80,6 +95,11 @@
 		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_rebels\equipment\chestPouches\data\camo1_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			trooperPacks = "Pouch";
+		};
 	};
 
 	class aux187_vest_RTOAntenna
@@ -90,6 +110,11 @@
 		model = "kobra\442_equipment\backpack\model\clone\k_p2_comms.p3d";
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			antennas = "RTO";
+		};
 	};
 	
 	class aux187_vest_Chestrig_Satchel
@@ -102,6 +127,11 @@
 		picture = "\ls\core\addons\characters_imperial\data\ui\backpack_chestrig_satchel_ui_ca.paa";
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			chestRigs = "Satchel";
+		};
 	};
 
 	class aux187_vest_Suspenders
@@ -114,6 +144,11 @@
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_vest_suspender_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			trooperPacks = "Suspenders";
+		};
 	};
 
 	class aux187_vest_base_1
@@ -146,6 +181,11 @@
 	    };
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			trooperPacks = "Medic";
+		};
 	};
 
 	class aux187_vest_Beltpouch
@@ -164,6 +204,11 @@
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_belt_bag_co.paa"
 		};
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\clone_belt_bag_ui_ca.paa";
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			trooperPacks = "Belt";
+		};
 	};
 
 	class aux187_vest_Medpouch
@@ -193,6 +238,11 @@
 		model = "";
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			miscPacks = "Overlay";
+		};
 	};
 
 	class aux187_vest_CSMRangefinder
@@ -203,6 +253,11 @@
 		model="\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			antennas = "SNCO";
+		};
 	};
 
 	class aux187_vest_OfficerRangefinder
@@ -218,6 +273,11 @@
         };
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			antennas = "Officer";
+		};
 	};
 
 	class aux187_vest_CommanderVisor
@@ -230,6 +290,11 @@
 		hiddenSelectionsTextures[]={"\MRC\JLTS\characters\CloneArmor\data\Clone_nvg_visor_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			antennas = "Major";
+		};
 	};
 
 	class aux187_vest_MCCommanderVisor
@@ -242,6 +307,11 @@
 		hiddenSelectionsTextures[]={"\MRC\JLTS\characters\CloneArmor\data\Clone_nvg_visor_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			antennas = "Commander";
+		};
 	};
 
 	class aux187_vest_Commando_Leader
@@ -257,6 +327,11 @@
         };
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			commandoPacks = "Leader";
+		};
 	};
 
 	class aux187_vest_Commando_Sniper
@@ -269,6 +344,11 @@
 		hiddenSelectionsTextures[]={"\3AS\3AS_Characters\Commando\data\Katarn_Vest_Sniper_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			commandoPacks = "Sniper";
+		};
 	};
 
 	class aux187_vest_Commando_Technician
@@ -284,6 +364,11 @@
         };
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			commandoPacks = "Technician";
+		};
 	};
 
 	class aux187_vest_Commando_EOD
@@ -299,6 +384,11 @@
         };
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			commandoPacks = "EOD";
+		};
 	};
 
 	class aux187_vest_HeavyChestRig
@@ -314,6 +404,11 @@
         };
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			chestRigs = "Heavy";
+		};
 	};
 
 	//JMSLLTE_StormtrooperHeavy2_armor
@@ -382,6 +477,11 @@
 		hiddenSelectionsTextures[] = {"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNWebbing_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			trooperPacks = "Trooper";
+		};
 	};
 
 	class aux187_vest_Grenadier_Chest_Harness
@@ -394,6 +494,11 @@
 		hiddenSelectionsTextures[] = {"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNWebbing_co.paa"};
 		Scope=2;
 		ScopeCurator=2;
+
+		class XtdGearInfo {
+			model = "aux187_Facewear_Model";
+			trooperPacks = "Grenadier";
+		};
 	};
 
 	class aux187_vest_Officer_Pauldron

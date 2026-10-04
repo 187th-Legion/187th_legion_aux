@@ -77,8 +77,8 @@ class CfgEditorSubcategories
 		displayName = "Aircraft";
 	};
 
-	class aux187_edSubCat_opfor_Geonosians
+	class aux187_edSubCat_opfor_Wistril
 	{
-		displayName = "Geonosians";
+		displayName = "Wistril Rangers";
 	};
 };

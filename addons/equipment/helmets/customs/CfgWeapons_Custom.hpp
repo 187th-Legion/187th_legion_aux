@@ -362,6 +362,19 @@
 		};
     };
 
+	class aux187_Helmet_Custom_Bobby : aux187_Pilot_Base_Helmet
+    {
+		scope = 2;
+		displayName = "[187th] Custom Helmet (Bobby)";
+		
+        hiddenSelectionsTextures[] = { QPATHTOF(helmets\customs\data\187thHelmet_Bobby.paa), "", "3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", QPATHTOF(helmets\customs\data\187thHelmet_Bobby.paa), "" };
+		
+		class XtdGearInfo {
+			model = "aux187_CustomHelmet_Model";
+			Customs = "Bobby";
+		};
+    };
+
 	class aux187_Helmet_Custom_Kalani : aux187_Pilot_Base_Helmet
     {
 		scope = 2;

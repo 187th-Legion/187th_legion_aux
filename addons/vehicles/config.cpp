@@ -15,7 +15,8 @@ class CfgPatches
 			"3AS_ATTE",
 			"TKE_Wheeled_C",
 			"TKE_Unit_Groups",
-			"3AS_VehicleWeapons"
+			"3AS_VehicleWeapons",
+			"OPTRE_AU_44_Mortar"
 		};
 		units[] = 
 		{
@@ -25,7 +26,12 @@ class CfgPatches
 			"aux187_bantha_mk3_mgs",
 			"aux187_bantha_mk3_ifv",
 			"aux187_bantha_mk3_cmd",
-			"aux187_bantha_mk3_aa"
+			"aux187_bantha_mk3_aa",
+
+			"aux187_au44",
+			"aux187_au44_sand",
+			"aux187_au44_wood",
+			"aux187_au44_snow",
 		};
 		weapons[] = 
 		{
@@ -50,6 +56,7 @@ class CfgVehicles
 {
 	#include "atte\CfgVehicles.hpp"
 	#include "bantha\CfgVehicles.hpp"
+	#include "mortar\CfgVehicles.hpp"
 };
 
 class CfgMagazines
@@ -65,4 +72,9 @@ class CfgAmmo
 class CfgWeapons
 {
 	#include "munitions\CfgWeapons.hpp"
+};
+
+class ACE_CSW_Groups
+{
+	#include "mortar\ACE_CSW_Groups.hpp"
 };

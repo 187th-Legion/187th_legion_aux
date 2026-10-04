@@ -68,3 +68,43 @@
 
 		count = 12;
 	};
+
+	class aux187_mag_12Rnd_SMOKE_au44 : aux187_mag_12Rnd_HE_au44
+	{
+		ammo = "aux187_ammo_au44_smoke";
+
+		displayName = "Smoke Mortar Shells";
+		displayNameShort = "Smoke";
+	};
+
+	class aux187_mag_12Rnd_FLARE_au44 : aux187_mag_12Rnd_HE_au44
+	{
+		ammo = "aux187_ammo_au44_flare";
+
+		displayName = "Smoke Mortar Shells";
+		displayNameShort = "Smoke";
+	};
+
+	class aux187_mag_12Rnd_THERMO_au44 : aux187_mag_12Rnd_HE_au44
+	{
+		ammo = "aux187_ammo_au44_thermo";
+
+		displayName = "Thermobaric Mortar Shells";
+		displayNameShort = "Thermobaric";
+	};
+
+	class aux187_mag_12Rnd_laser_au44 : aux187_mag_12Rnd_HE_au44
+	{
+		ammo = "aux187_ammo_au44_laser";
+
+		displayName = "Laser Guided Mortar Shells";
+		displayNameShort = "Laser Guided";
+	};
+
+	class aux187_mag_12Rnd_APFGDS_au44 : aux187_mag_12Rnd_HE_au44
+	{
+		ammo = "aux187_ammo_au44_apfgds";
+
+		displayName = "APFGDS Mortar Shells";
+		displayNameShort = "APFGDS";
+	};

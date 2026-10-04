@@ -5,8 +5,8 @@ class CfgFactionClasses
 		displayName = "187th Legion Confederacy of Independant Systems";
 	};
 
-	class aux187_Faction_opforOrganics
+	class aux187_Faction_opfor_wistril
 	{
-		displayName = "187th Legion CIS Organic Divisions";
+		displayName = "187th Legion Free Systems Fleet of Wistril";
 	};
 };

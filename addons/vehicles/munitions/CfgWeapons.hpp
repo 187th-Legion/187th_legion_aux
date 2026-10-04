@@ -295,6 +295,11 @@
 		displayName="AU-44";
 		magazines[]=
 		{
-			""
+			"aux187_ammo_au44_he",
+			"aux187_ammo_au44_smoke",
+			"aux187_ammo_au44_flare",
+			"aux187_ammo_au44_thermo",
+			"aux187_ammo_au44_laser",
+			"aux187_ammo_au44_apfgds"
 		};
 	};

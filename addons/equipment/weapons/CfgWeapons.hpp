@@ -1515,12 +1515,24 @@
                 "aux187_mag_80Rnd_Pistol"
             };
 
-            class WeaponSlotsInfo : WeaponSlotsInfo
+            class WeaponSlotsInfo: WeaponSlotsInfo
             {
-                class CowsSlot
+                class CowsSlot: CowsSlot
                 {
-                    compatibleItems[] += { "aux187_optic_17ascope" };
-                    iconPicture = "";
+                    linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+                    compatibleItems[]=
+                    {
+                        "aux187_optic_holo", "aux187_optic_recon"
+                    };
+                    iconPicture="";
+                };
+                class PointerSlot: PointerSlot
+                {
+                    linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+                    compatibleItems[]=
+                    {
+                        "JLTS_DC17SA_flashlight"
+                    };   
                 };
             };
         };
@@ -1559,11 +1571,25 @@
             baseWeapon = "aux187_DC17_stun";
             displayName = "[187th] DC-17 Blaster Pistol";
 
-            class CowsSlot
+            class WeaponSlotsInfo: WeaponSlotsInfo
             {
-                compatibleItems[] += { "aux187_optic_17ascope" };
-                iconPicture = "";
-                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                class CowsSlot: CowsSlot
+                {
+                    linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+                    compatibleItems[]=
+                    {
+                        "aux187_optic_holo", "aux187_optic_recon"
+                    };
+                    iconPicture="";
+                };
+                class PointerSlot: PointerSlot
+                {
+                    linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+                    compatibleItems[]=
+                    {
+                        "JLTS_DC17SA_flashlight"
+                    };   
+                };
             };
         };
 
@@ -1679,7 +1705,7 @@
             displayName = "[187th] 15L Rifle Optic";
         };
 
-        class optic_MRD_black;
+        /*class optic_MRD_black;
         class aux187_optic_17ascope : optic_MRD_black
         {
             author = "Tim";
@@ -1697,7 +1723,7 @@
             scopeArsenal = 2;
 
             displayName = "[187th] Smartlink Rifle Optic";
-        };
+        };*/
 
         class optic_mrco;
         class aux187_optic_LPVO : optic_mrco
